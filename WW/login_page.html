@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <!-- 상태 바의 색상을 정하는 코드 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 바로가가ㅣ 아이콘, 아이폰, 안드로이드 둘다 적용 -->
+    <link rel="apple-touch-icon-precomposed" href=".png" />
+    <!-- 인트로 화면을 설정하는 코드 -->
+    <link rel="apple-touch-startup-image" href=".png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    
+    <script src="https://kit.fontawesome.com/62d594c538.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/total.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h1><span>Hello</span><br />Sign In</h1>
+        <section class="log" id="log">
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="blind">Sign In</legend>
+                    <label for="email">Email</label>
+                    <div class="email"></div>
+                    <input type="email" id="email" required/>
+                    <label for="pw">Password</label>
+                    <div class="passw"></div>
+                    <input type="password" id="pw" required/>
+                    <p><a href="#">Forgot Password?</a></p>
+                    <input type="image" src="images/btn_login.png" title="로그인"/>
+                </fieldset>
+            </form>
+            <div class="line_box">
+                <span></span>
+                <p>Or</p>
+            </div>
+            <footer>
+                <ul class="sns">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                </ul>
+                <p><span>Creat Your Account?</span><a href="#sign">Sign Up</a></p>    
+            </footer>
+        </section>
+        
+        <div class="click"></div>
+        <section class="sign" id="sign">
+           <h2><span>Welcome</span><br />Sign Up</h2>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="blind">Sign In</legend>
+                    
+                    <label for="email2">Email</label>
+                    <input type="email" id="email2" required/>
+                    <div class="email"></div>
+                    <label for="pw2">Password</label>
+                    <input type="password" id="pw2" required/>
+                    <div class="passw"></div>
+                    <label for="cpw">Confirm Password</label>
+                    <input type="password" id="cpw" required/>
+                    <div class="cpassw"></div>
+                    <input type="radio" class="agree" id="agree" required/>
+                    <label class="agree" for="agree">Agree your personal information provide</label>
+                    <div class="agree"></div>
+                    <input type="image" src="images/btn_login.png" title="회원가입"/>
+                </fieldset>
+            </form>
+            <div class="line_box">
+                <span></span>
+                <p>Or</p>
+            </div>
+            <footer>
+                <ul class="sns">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                </ul> 
+            </footer>
+        </section>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Wear</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <!-- 상태 바의 색상을 정하는 코드 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- 바로가가ㅣ 아이콘, 아이폰, 안드로이드 둘다 적용 -->
+    <link rel="apple-touch-icon-precomposed" href=".png" />
+    <!-- 인트로 화면을 설정하는 코드 -->
+    <link rel="apple-touch-startup-image" href=".png" />
+    <link rel="stylesheet" type="text/css" href="css/wear.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/total.js"></script>
+</head>
+<body>
+	<div class="wrap">
+	    <div class="fixed"></div>    
+        <div class="top_menu">
+			<p>Wear</p>
+			<a href="#"><img src="images/btn_drawer_open.png" alt="드로워열기" /></a>
+		</div>
+		<div class="reco">
+			<h2>Recommend</h2>
+			<p>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			19<span></span></p>
+			<section class="reco_box">
+				<article class="on">
+				    <span></span>
+					<h3><a href="#">Knit</a></h3>
+					<ul>
+						<li class="on"><a href="#"><img src="images/img_wear_knit1.png" alt="니트1"></a></li>
+						<li><a href="#"><img src="images/img_wear_knit2.png" alt="니트2"></a></li>
+						<li><a href="#"><img src="images/img_wear_knit3.png" alt="니트3"></a></li>
+						<li><a href="#"><img src="images/img_wear_knit4.png" alt="니트4"></a></li>
+						<li><a href="#"><img src="images/img_wear_knit5.png" alt="니트5"></a></li>
+					</ul>
+				</article>
+				
+				<article>
+				    <span></span>
+					<h3><a href="#">Coat</a></h3>
+					<ul>
+						<li class="on"><a href="#"><img src="images/img_wear_coat1.png" alt="코트1"></a></li>
+						<li><a href="#"><img src="images/img_wear_coat2.png" alt="코트2"></a></li>
+						<li><a href="#"><img src="images/img_wear_coat3.png" alt="코트3"></a></li>
+						<li><a href="#"><img src="images/img_wear_coat4.png" alt="코트4"></a></li>
+						<li><a href="#"><img src="images/img_wear_coat5.png" alt="코트5"></a></li>
+					</ul>
+				</article>
+				
+				<article>
+				    <span></span>
+					<h3><a href="#">Another</a></h3>
+					<ul>
+						<li class="on"><a href="#"><img src="images/img_wear_anot1.png" alt="기타1"></a></li>
+						<li><a href="#"><img src="images/img_wear_anot2.png" alt="기타2"></a></li>
+						<li><a href="#"><img src="images/img_wear_anot3.png" alt="기타3"></a></li>
+						<li><a href="#"><img src="images/img_wear_anot4.png" alt="기타4"></a></li>
+						<li><a href="#"><img src="images/img_wear_anot5.png" alt="기타5"></a></li>
+					</ul>
+				</article>
+			</section>
+		</div>	
+		
+		<div class="d_menu">
+			<p><img src="images/btn_search.png" alt="검색" /></p>
+			<form action="/" method="post">
+				<fieldset>
+					<legend class="blind">검색</legend>
+					<input type="text" title="검색어를 입력하세요" />
+					<div class="srch_bg"></div>
+				</fieldset>
+			</form>
+			<section class="d_menu_box">
+				<article>
+					<h3><a href="#">Magazine</a></h3>
+				    <span></span>
+					<ul>
+						<li>
+							<a href="#">
+								<h4>2020 October<span>NEW</span></h4>
+								<img src="images/img_maz2.png" alt="매거진" />
+								<p>It's Autumn<br /><em>Search you Autumn style</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 September<span></span></h4>
+								<img src="images/img_maz1.png" alt="매거진" />
+								<p>Autumn is Coming<br /><em>Prepare for Autumn</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 August<span></span></h4>
+								<img src="images/img_maz8.png" alt="매거진" />
+								<p>Goodbye Summer<br /><em>Last of Summer</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 July<span></span></h4>
+								<img src="images/img_maz9.png" alt="매거진" />
+								<p>Vacation Time<br /><em>Introducing Vacation Item</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 June<span></span></h4>
+								<img src="images/img_maz6.png" alt="매거진" />
+								<p>Hello Summer<br /><em>Summers Styling</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 May<span></span></h4>
+								<img src="images/img_maz4.png" alt="매거진" />
+								<p>Get This T-Shirts<br /><em>Get this T-shirts</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 April<span></span></h4>
+								<img src="images/img_maz3.png" alt="매거진" />
+								<p>Lovely Styling Tips<br /><em>Get styling tips</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 March<span></span></h4>
+								<img src="images/img_maz5.png" alt="매거진" />
+								<p>Spring Time<br /><em>Spring style</em></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h4>2020 February<span></span></h4>
+								<img src="images/img_maz7.png" alt="매거진" />
+								<p>NeW Years Trends<br /><em>Get New year Trends</em></p>
+							</a>
+						</li>
+					</ul>
+				</article>
+					
+				<article class="on">
+					<h3><a href="#">Discovery</a></h3>
+					<span></span>
+					<ul>
+						<li class="fl"><a href="#"><img src="images/img_wear_discv1.png" alt="둘러보기"></a></li>
+						<li><a href="map.html"><img src="images/img_wear_discv2.png" alt="둘러보기"></a></li>
+						<li class="fl"><a href="#"><img src="images/img_wear_discv3.png" alt="둘러보기"></a></li>
+						<li><a href="#"><img src="images/img_wear_discv4.png" alt="둘러보기"></a></li>
+						<li><a href="#"><img src="images/img_wear_discv5.png" alt="둘러보기"></a></li>
+						<li class="fl"><a href="#"><img src="images/img_wear_discv6.png" alt="둘러보기"></a></li>
+						<li><a href="#"><img src="images/img_wear_discv7.png" alt="둘러보기"></a></li>
+					</ul>	
+				</article>
+			</section>
+		</div>
+		<section class="drawer">
+            <div class="my_info">
+                <dl>
+                    <dt class="blind">탑메뉴</dt>
+                    <dd><img src="images/btn_back.png" alt="뒤로가기" /></dd>
+                    <dd><img src="images/btn_alarm.png" alt="알람" /></dd>
+                </dl>
+                <p>
+                    <img src="images/img_profile.png" alt="프로필 이미지" />
+                    <span>Jieun</span><br />
+                    <em>dlwlrma@gmail.com</em>
+                </p>
+                <ul>
+                    <li>
+                        <em>Followers</em>
+                        <strong>11.1M</strong>
+                    </li>
+                    <li>
+                        <em>Follow</em>
+                        <strong>313</strong>
+                    </li>
+                    <li>
+                        <em>Upload</em>
+                        <strong>450</strong>
+                    </li>
+                </ul>  
+            </div>
+            <div class="navi_menu">
+                <nav>
+                   <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/ico_nav_home.png" alt="Home" /></a><span>HOME</span></li>
+                        <li><a href="#"><img src="images/ico_nav_weather.png" alt="weather" /></a><span>WEATHER</span></li>
+                        <li><a href="#"><img src="images/ico_nav_wear.png" alt="Wear" /></a><span>WEAR</span></li>
+                        <li><a href="#"><img src="images/ico_nav_talk.png" alt="Chat" /></a><span>CHAT</span></li>
+                        <li><a href="#"><img src="images/ico_nav_my.png" alt="My" /></a><span>MY</span></li>
+                    </ul>            
+                </nav>
+                <ul class="snb">
+                   <h2>Setting</h2>
+                    <ul>
+                        <li>My Account
+                            <ul>
+                                <li><a href="#">Edit Account<span></span></a></li>
+                                <li><a href="#">Link Email<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>Notification
+                            <ul>
+                                <li><a href="#">Notification<span></span></a></li>
+                                <li><a href="#">Push Notification<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>Application Info
+                            <ul>
+                                <li><a href="#">Notice<span></span></a></li>
+                                <li><a href="#">Contact Us<span></span></a></li>
+                                <li><a href="#">Version<span>1.1.13</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <p><a href="#">Logout</a></p>    
+            </div>    
+        </section>
+        <dl class="tab_menu">
+                    <dt class="blind">탭메뉴</dt>
+                    <dd><a href="main.html">Home</a></dd>
+                    <dd><a href="weather.html">Weather</a></dd>
+                    <dd><a href="wear.html" class="on">Wear</a></dd>
+                    <dd><a href="chat.html">Chat</a></dd>
+                    <dd><a href="#">My</a></dd>
+                </dl>
+	</div>
+</body>
+</html>

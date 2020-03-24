@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <!-- 상태 바의 색상을 정하는 코드 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- 바로가가ㅣ 아이콘, 아이폰, 안드로이드 둘다 적용 -->
+    <link rel="apple-touch-icon-precomposed" href=".png" />
+    <!-- 인트로 화면을 설정하는 코드 -->
+    <link rel="apple-touch-startup-image" href=".png" />
+    <link rel="stylesheet" type="text/css" href="css/chat_list.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/total.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<dl class="top_menu">
+			<dt class="blind">탑메뉴</dt>
+			<dd><a href="#"><img src="images/btn_back.png" alt="뒤로가기" /></a>Chatting</dd>
+			<dd><a href="#"><img src="images/btn_drawer_open.png" alt="드로워 열기" /></a></dd>
+		</dl>
+		<div class="chat_bg"></div>
+		<div class="chat_list">
+				<ul class="chat">
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat3.png" alt="프로필3" />
+								<h2>Sarah</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li><em>5Minutes ago</em></li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat2.png" alt="프로필2" />
+								<h2>James</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li><em>10Minutes ago</em></li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat6.png" alt="프로필6" />
+								<h2>Christin</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li><em>38Minuts ago</em></li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat1.png" alt="프로필1" />
+								<h2>Megan</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li><span>2</span><em>51Minutes ago</em></li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat5.png" alt="프로필5" />
+								<h2>Jeongmin</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li><em>1Hour ago</em></li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat4.png" alt="프로필4" />
+								<h2>Kiyoung</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>Yesterday</li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat7.png" alt="프로필7" />
+								<h2>Cavin</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>Yesterday</li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat8.png" alt="프로필8" />
+								<h2>Lily</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>2days Ago</li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat9.png" alt="프로필9" />
+								<h2>Jane</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>2days Ago</li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat10.png" alt="프로필10" />
+								<h2>Mark</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>2days Ago</li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat11.png" alt="프로필11" />
+								<h2>Maya</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>3days Ago</li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat12.png" alt="프로필12" />
+								<h2>Hyojin</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>3days Ago</li>
+						</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<ul>
+							<li>
+								<img src="images/img_chat13.png" alt="프로필13" />
+								<h2>Emily</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</li>
+							<li>3days Ago</li>
+						</ul>
+						</a>
+					</li>
+				</ul>
+				<ul class="chat_btn">
+					<li><a href="#"></a></li>
+					<li><a href="#"><img src="images/ico_talk_plus.png" alt="채팅 추가하기" /></a></li>
+					<li><a href="#"><img src="images/ico_list_change.png" alt="채팅 위치편집하기" /></a></li>
+				</ul>
+		</div>
+		<div class="chat">
+			<dl class="top_menu">
+				<dt class="blind">탑메뉴</dt>
+				<dd><a href="#"><img src="images/btn_back.png" alt="뒤로가기" /></a>Megan</dd>
+				<dd><a href="#"><img src="images/btn_drawer_open.png" alt="드로워 열기" /></a></dd>
+			</dl>
+		<ul>	
+			<li>
+				<img src="images/img_chat1.png" alt="프로필 사진" />
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+				<p>making it over 2000 years old.</p>
+				<em>20:37</em>
+			</li>
+			<li>
+				<div class="s_box">
+					<span></span>
+					<span></span>
+					<span></span>	
+				</div>
+				<p>There are many variations of passages of Lorem Ipsum available.</p>
+				<p>The standard chunk of Lorem Ipsum used since.</p>
+				<em>20:41</em>
+			</li>
+			<li>
+				<img src="images/img_chat1.png" alt="프로필 사진" />
+				<div class="s_box">
+					<span></span>
+					<span></span>
+					<span></span>	
+				</div>
+				<p>There are many variations of passages of Lorem Ipsum available.</p>
+				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+				<em>20:45</em>
+			</li>
+			<li>
+				<div class="s_box">
+					<span></span>
+					<span></span>
+					<span></span>	
+				</div>
+				<p>There are many variations.</p>
+				<p>The standard chunk of Lorem Ipsum used since below for those interested.</p>
+				<em>20:47</em>
+			</li>
+			<li>
+				<img src="images/img_chat1.png" alt="프로필 사진" />
+				<div class="s_box">
+					<span></span>
+					<span></span>
+					<span></span>	
+				</div>
+				<p>If you are going to use a passage of Lorem Ipsum.</p>
+				<p> All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+				<em>20:51</em>
+			</li>
+		</ul>
+		</div>
+		<dl class="tab_menu">
+            <dt class="blind">탭메뉴</dt>
+            <dd><a href="main.html">Home</a></dd>
+            <dd><a href="weather.html">Weather</a></dd>
+            <dd><a href="wear.html">Wear</a></dd>
+            <dd><a href="chat.html" class="on">Chat</a></dd>
+            <dd><a href="#">My</a></dd>
+        </dl>
+        
+        <div class="fixed"></div>    
+        <section class="drawer">
+            <div class="my_info">
+                <dl>
+                    <dt class="blind">탑메뉴</dt>
+                    <dd><img src="images/btn_back.png" alt="뒤로가기" /></dd>
+                    <dd><img src="images/btn_alarm.png" alt="알람" /></dd>
+                </dl>
+                <p>
+                    <img src="images/img_profile.png" alt="프로필 이미지" />
+                    <span>Jieun</span><br />
+                    <em>dlwlrma@gmail.com</em>
+                </p>
+                <ul>
+                    <li>
+                        <em>Followers</em>
+                        <strong>11.1M</strong>
+                    </li>
+                    <li>
+                        <em>Follow</em>
+                        <strong>313</strong>
+                    </li>
+                    <li>
+                        <em>Upload</em>
+                        <strong>450</strong>
+                    </li>
+                </ul>  
+            </div>
+            <div class="navi_menu">
+                <nav>
+                   <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/ico_nav_home.png" alt="Home" /></a><span>HOME</span></li>
+                        <li><a href="#"><img src="images/ico_nav_weather.png" alt="weather" /></a><span>WEATHER</span></li>
+                        <li><a href="#"><img src="images/ico_nav_wear.png" alt="Wear" /></a><span>WEAR</span></li>
+                        <li><a href="#"><img src="images/ico_nav_talk.png" alt="Chat" /></a><span>CHAT</span></li>
+                        <li><a href="#"><img src="images/ico_nav_my.png" alt="My" /></a><span>MY</span></li>
+                    </ul>            
+                </nav>
+                <ul class="snb">
+                   <h2>Setting</h2>
+                    <ul>
+                        <li>My Account
+                            <ul>
+                                <li><a href="#">Edit Account<span></span></a></li>
+                                <li><a href="#">Link Email<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>Notification
+                            <ul>
+                                <li><a href="#">Notification<span></span></a></li>
+                                <li><a href="#">Push Notification<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>Application Info
+                            <ul>
+                                <li><a href="#">Notice<span></span></a></li>
+                                <li><a href="#">Contact Us<span></span></a></li>
+                                <li><a href="#">Version<span>1.1.13</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <p><a href="#">Logout</a></p>    
+            </div>    
+        </section>
+	</div>	
+</body>
+</html>

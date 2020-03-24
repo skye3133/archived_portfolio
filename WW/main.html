@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <!-- 상태 바의 색상을 정하는 코드 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- 바로가가ㅣ 아이콘, 아이폰, 안드로이드 둘다 적용 -->
+    <link rel="apple-touch-icon-precomposed" href=".png" />
+    <!-- 인트로 화면을 설정하는 코드 -->
+    <link rel="apple-touch-startup-image" href=".png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/total.js"></script>
+</head>
+<body>
+    <div class="wrap">
+       <!-- main -->
+       <section class="main">
+        <dl class="top_menu">
+            <dt class="blind">탑메뉴</dt>
+            <dd><img src="images/btn_search.png" alt="검색" /></dd>
+            <dd><img src="images/btn_drawer_open.png" alt="드로워" /></dd>
+        </dl>
+        <div class="item_box">
+        <div class="bg">
+            <img src="images/img_main1.png" alt="니트" />
+            <img src="images/img_main2.png" alt="코트" />
+            <img src="images/img_main3.png" alt="우산" />
+        </div>
+        <h2>Today Items</h2>
+        <ul class="txt">
+           <li class="on">Knit</li>
+           <li>Coat</li>
+           <li>Umbrella</li>
+        </ul>
+        <div class="roll">
+            <a class="on" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>    
+        </div>
+        <p class="date">날짜</p>
+        
+        <div class="t_W">
+           <a href="weather.html">
+            <h2>Today Weather</h2>
+            <ul>
+            	<li><img src="images/big_weather1.png" alt="Cloudy" /></li>
+            	<li><img src="images/big_weather2.png" alt="Cloudy" /></li>
+            	<li><img src="images/big_weather3.png" alt="Cloudy" /></li>
+            	<li><img src="images/big_weather4.png" alt="Cloudy" /></li>
+            </ul>
+            <em>Cloudy</em>
+            <!--<ol>
+               	<li><span></span></li>
+                <li>
+                <ol class="nb21">
+                		<li>20</li>
+                		<li>21</li>
+                		<li>15</li>
+                		<li>10</li>
+                		<li>14</li>
+                		<li>18</li>
+                		<li>09</li>
+                		<li>21</li>
+                		<li>12</li>
+                		<li>17</li>
+                		<li>07</li>
+                		<li>11</li>
+                </ol>
+                </li>
+                <li><em></em></li>
+                <li><ol class="nb22">
+                		<li>10</li>
+                		<li>11</li>
+                		<li>15</li>
+                		<li>10</li>
+                		<li>14</li>
+                		<li>18</li>
+                		<li>09</li>
+                		<li>01</li>
+                		<li>18</li>
+                		<li>02</li>
+                		<li>00</li>
+                		<li>13</li>
+                	</ol>
+                </li>
+				<li><i></i></li>
+               </ol>	-->
+               <ol class="digits clear">
+				<li class="digit">
+					<span class="cou-item cou-item-anim">
+						<ol class="nb21">
+							<li>2</li>
+							<li>0</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>0</li>
+						</ol>
+					</span>
+				</li>
+				<li class="digit">
+					<span class="cou-item">
+						<ol class="nb22">
+							<li>0<i></i></li>
+							<li>9</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>0</li>
+						</ol>
+					</span></li>
+				</ol>
+           	 <ol class="digits clear">
+           	 	<em></em>
+				<li class="digit">
+					<span class="cou-item cou-item-anim">
+						<ol class="nb23">
+							<li>9<i></i></li>
+							<li>0</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>0</li>
+						</ol>
+					</span>
+				</li>
+				</ol>
+            </a>
+            <div class="location">
+                <p><span>Secho-gu</span><br />
+                <em>Seoul, Korea</em></p>
+                <a href="#"><img src="images/btn_open.png" alt="위치정보 열기" /></a>
+            </div>
+            
+        </div>
+        
+        <div class="t_D">
+            <span>Pointer</span>
+            <ul class="temp">
+                <li>Feels Like</li>
+                <li><img src="images/ico_weather_temp.png" alt="체감기온">15<span></span></li>
+            </ul>
+            <ul class="Humid">
+                <li>Huminity</li>
+                <li><img src="images/ico_weather_mist.png" alt="습도">70<span>%</span></li>
+            </ul>
+            <ul class="wind">
+                <li>Wind</li>
+                <li><img src="images/ico_weather_wind.png" alt="바람">7<span>m/h</span></li>
+            </ul>
+            <ul class="uv">
+                <li>UV</li>
+                <li><img src="images/ico_weather_uv.png" alt="자외선">70<span>%</span></li>
+            </ul>
+            <ul class="dust">
+                <li>Fine Dust</li>
+                <li><img src="images/ico_weather_dust.png" alt="미세먼지">Good</li>
+            </ul>
+        </div>
+        </section>
+        <div class="fixed"></div>    
+        
+        <!-- drawer -->
+        <section class="drawer">
+            <div class="my_info">
+                <dl>
+                    <dt class="blind">탑메뉴</dt>
+                    <dd><img src="images/btn_back.png" alt="뒤로가기" /></dd>
+                    <dd><img src="images/btn_alarm.png" alt="알람" /></dd>
+                </dl>
+                <p>
+                    <img src="images/img_profile.png" alt="프로필 이미지" />
+                    <span>Jieun</span><br />
+                    <em>dlwlrma@gmail.com</em>
+                </p>
+                <ul>
+                    <li>
+                        <em>Followers</em>
+                        <strong>11.1M</strong>
+                    </li>
+                    <li>
+                        <em>Follow</em>
+                        <strong>313</strong>
+                    </li>
+                    <li>
+                        <em>Upload</em>
+                        <strong>450</strong>
+                    </li>
+                </ul>  
+            </div>
+            <div class="navi_menu">
+                <nav>
+                   <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/ico_nav_home.png" alt="Home" /></a><span>HOME</span></li>
+                        <li><a href="#"><img src="images/ico_nav_weather.png" alt="weather" /></a><span>WEATHER</span></li>
+                        <li><a href="#"><img src="images/ico_nav_wear.png" alt="Wear" /></a><span>WEAR</span></li>
+                        <li><a href="#"><img src="images/ico_nav_talk.png" alt="Chat" /></a><span>CHAT</span></li>
+                        <li><a href="#"><img src="images/ico_nav_my.png" alt="My" /></a><span>MY</span></li>
+                    </ul>            
+                </nav>
+           			<div class="snb">
+                   	<h2>Setting</h2>
+                       <ul>
+                        <li><span>My Account</span>
+                            <ul>
+                                <li><a href="#">Edit Account</a></li>
+                                <li><a href="#">Link Emai</a></li>
+                            </ul>
+                        </li>
+						   <li><span>Notification</span>
+                            <ul>
+                                <li><a href="#">Notification<span></span></a></li>
+                                <li><a href="#">Push Notification<span></span></a></li>
+                            </ul>
+                        </li>
+						   <li><span>Application Info</span>
+                            <ul>
+                                <li><a href="#">Notice</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Version<span>1.1.13</span></a></li>
+                            </ul>
+                        </li>
+                       </ul>
+                    </div>
+                <p><a href="#">Logout</a></p>    
+            </div>    
+        </section>
+        
+        <!-- location_p -->
+        <section class="location_p">
+            <div class="off">
+                <p><span>Select</span>Location</p>
+                <a href="#"><img src="images/btn_open.png" alt="닫기" /></a>
+            </div> 
+            <div class="loc_list">
+                <article>
+                    <h3>Secho-gu<br /><span>Seoul, Korea</span></h3>
+                    <img src="images/ico_small_weather3.png" alt="cloud Sunny" />
+                    <p>20<span></span><em>9<span></span></em></p>
+                    <a href="#"><img src="images/ico_change.png" alt="위치편집" /></a>
+                </article>
+                <article>
+                    <h3>Osan-si<br /><span>Kyunggi, Korea</span></h3>
+                    <img src="images/ico_small_weather1.png" alt="cloudy" />
+                    <p>19<span></span><em>7<span></span></em></p>
+                    <a href="#"><img src="images/ico_change.png" alt="위치편집" /></a>
+                </article>
+                <article>
+                    <h3>Taipei<br /><span>Taipei, Taiwan</span></h3>
+                    <img src="images/ico_small_weather2.png" alt="Rainy" />
+                    <p>30<span></span><em>18<span></span></em></p>
+                    <a href="#"><img src="images/ico_change.png" alt="위치편집" /></a>
+                </article>
+                <article>
+                    <h3>Sinlim<br /><span>Seoul, Korea</span></h3>
+                    <img src="images/ico_small_weather3.png" alt="cloud sunny" />
+                    <p>20<span></span><em>8<span></span></em></p>
+                    <a href="#"><img src="images/ico_change.png" alt="위치편집" /></a>
+                </article>
+                <a href="#"><img src="images/ico_plus_lb.png" alt="위치추가" /></a>
+                
+                <dl class="tab_menu">
+                    <dt class="blind">탭메뉴</dt>
+                    <dd><a href="main.html" class="on">Home</a></dd>
+                    <dd><a href="weather.html">Weather</a></dd>
+                    <dd><a href="wear.html">Wear</a></dd>
+                    <dd><a href="chat.html">Chat</a></dd>
+                    <dd><a href="#">My</a></dd>
+                </dl>
+            </div>   
+        </section>
+    </div>    
+</body>
+</html>

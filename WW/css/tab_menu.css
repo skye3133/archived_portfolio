@@ -1,0 +1,11 @@
+/* 탭메뉴 */
+.tab_menu{position:fixed; top: 729px; left: 50%; transform: translateX(-50%); width: 343px; height: 45px; background: #6996fe; border-radius: 45px; box-shadow: 0 3px 6px rgba(0,0,0,0.2); display: flex; justify-content: space-around; align-items: center;}
+.tab_menu dd a{display: block; width: 65px; height: 26px; text-indent: -9999px; overflow: hidden; transition: all 0.3s ease 0s;}
+.tab_menu dd:nth-of-type(1) a{background: url(../images/ico_tabmenu1.png) no-repeat 50% 0;}
+.tab_menu dd:nth-of-type(2) a{background: url(../images/ico_tabmenu2.png) no-repeat 50% 0;}
+.tab_menu dd:nth-of-type(3) a{background: url(../images/ico_tabmenu3.png) no-repeat 50% 0;}
+.tab_menu dd:nth-of-type(4) a{background: url(../images/ico_tabmenu4.png) no-repeat 50% 0;}
+.tab_menu dd:nth-of-type(5) a{background: url(../images/ico_tabmenu5.png) no-repeat 50% 0;}
+
+
+.tab_menu dd a.on{background-position: 50% 100%;}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <!-- 상태 바의 색상을 정하는 코드 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- 바로가가ㅣ 아이콘, 아이폰, 안드로이드 둘다 적용 -->
+    <link rel="apple-touch-icon-precomposed" href=".png" />
+    <!-- 인트로 화면을 설정하는 코드 -->
+    <link rel="apple-touch-startup-image" href=".png" />
+    <link rel="stylesheet" type="text/css" href="css/weather.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/total.js"></script>
+</head>
+<body>
+    <div class="wrap">
+       	<dl class="top_menu">
+            <dt class="blind">탑메뉴</dt>
+            <dd><a href="main.html"><img src="images/ico_back_b.png" alt="뒤로가기" /></a></dd>
+            <dd><a href="#"><img src="images/btn_drawer_open_b.png" alt="드로워 열기" /></a></dd>
+        </dl>
+        <div class="weather">
+            <section class="t_weather">
+                <article>
+                    <p>Seocho-gu</p>
+                    <ul>
+						<li><img src="images/weather_big1.png" alt="Cloudy" /></li>
+						<li><img src="images/weather_big2.png" alt="Cloudy" /></li>
+						<li><img src="images/weather_big3.png" alt="Cloudy" /></li>
+						<li><img src="images/weather_big4.png" alt="Cloudy" /></li>
+            		</ul>
+                    <span>Cloudy</span>
+                    <strong>19<span></span></strong>
+                </article>
+                <article>
+                    <ul>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>13</li>
+                        <li>16</li>
+                        <li>20</li>
+                        <li>19</li>
+                        <li>18</li>
+                        <li>15</li>
+                        <li>14</li>
+                        <li>12</li>
+                    </ul>
+                    <ul>
+                        <li>00</li>
+                        <li>03</li>
+                        <li>06</li>
+                        <li>09</li>
+                        <li>12</li>
+                        <li>15</li>
+                        <li>18</li>
+                        <li>21</li>
+                        <li>24</li>
+                        <li>+1</li>
+                    </ul>
+                    <div class="sun_box">
+                        <span></span>
+                        <em>15:07</em>
+                    </div>
+                    <ul>
+                        <li><em>Sunrise</em><br />05:35</li>
+                        <li><em>Sunset</em><br />18:21</li>
+                    </ul>
+                </article>
+            </section>
+            <div class="t_D">
+                <ul class="temp">
+                <li>Feels Like</li>
+                <li><img src="images/ico_weather_temp.png" alt="체감기온">15<span></span></li>
+                </ul>
+                <ul class="Humid">
+                    <li>Huminity</li>
+                    <li><img src="images/ico_weather_mist.png" alt="습도">70<span>%</span></li>
+                </ul>
+                <ul class="wind">
+                    <li>Wind</li>
+                    <li><img src="images/ico_weather_wind.png" alt="바람">7<span>m/h</span></li>
+                </ul>
+                <ul class="uv">
+                    <li>UV</li>
+                    <li><img src="images/ico_weather_uv.png" alt="자외선">70<span>%</span></li>
+                </ul>
+                <ul class="dust">
+                    <li>Fine Dust</li>
+                    <li><img src="images/ico_weather_dust.png" alt="미세먼지">Good</li>
+                </ul>
+            </div>
+            <section class="d_weather">
+                <span></span>
+                <article class="rain">
+                    <h2>Rain Fall</h2>
+                    <p><em>Heavy<br />Rainy</em><br />
+                    	<em>Rainy</em><br />
+                    	<em>Sunny</em>
+                    </p>
+                    <ul>
+                        <li>
+                            <em>06</em>
+                            <span></span>
+                            <i></i>
+                            <strong>60%</strong>
+                        </li>
+                        <li>
+                            <em>09</em>
+                            <span></span>
+                            <i></i>
+                            <strong>70%</strong>
+                        </li>
+                        <li>
+                            <em>12</em>
+                            <span></span>
+                            <i></i>
+                            <strong>90%</strong>
+                        </li>
+                        <li>
+                            <em>15</em>
+                            <span></span>
+                            <i></i>
+                            <strong>80%</strong>
+                        </li>
+                        <li>
+                            <em>18</em>
+                            <span></span>
+                            <i></i>
+                            <strong>75%</strong>
+                        </li>
+                        <li>
+                            <em>21</em>
+                            <span></span>
+                            <i></i>
+                            <strong>50%</strong>
+                        </li>
+                    </ul>
+                </article>
+                <article class="tom">
+                    <h2>Tomorrow</h2>
+                    <div class="fri">
+                        <p>Friday</p>
+                        <img src="images/ico_small_weather3.png" alt="cloudy" />
+                        <div>
+                            <strong>11<span></span></strong>
+                            <em>20<span></span></em>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>24<span></span></strong>
+                        </div>
+                    </div>
+                    <div class="fri_D">
+                        <dl>
+                            <dt>Rainfall</dt>
+                            <dd>
+                                <dl>
+                                    <dt>20%</dt>
+                                    <dd>
+                                        <img src="images/ico_mor.png" alt="오전" />
+                                        <span></span>
+                                        <em></em>
+                                    </dd>
+                                    <dt>30%</dt>
+                                    <dd>
+                                        <img src="images/ico_night.png" alt="오후" />
+                                        <span></span>
+                                        <em></em>
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <h3>Sun<br />Rise</h3>
+                                <span></span>
+                                <strong>05:43</strong>
+                            </li>
+                            <li>
+                                <h3>Sun<br />Set</h3>
+                                <span></span>
+                                <strong>18:24</strong>
+                            </li>
+                            <li>
+                                <h3>Fine<br />Dust</h3>
+                                <span></span>
+                                <strong>Good</strong>
+                            </li>
+                            <li>
+                                <h3>wind</h3>
+                                <span></span>
+                                <strong>5m/h</strong>
+                            </li>
+                            <li>
+                                <h3>UV</h3>
+                                <span></span>
+                                <strong>Good</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="days">
+                  <h2>Next<strong>7Days</strong></h2>
+                   <span></span>
+                    <article>
+                        <h3>SAT</h3>
+                        <img src="images/ico_mor.png" alt="sunny" />
+                        <div>
+                            <strong>13<span></span></strong>
+                            <em>20<span></span></em>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>26<span></span></strong>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>SUN</h3>
+                        <img src="images/ico_mor.png" alt="sunny" />
+                        <div>
+                            <strong>15<span></span></strong>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>28<span></span></strong>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>MON</h3>
+                        <img src="images/ico_mor.png" alt="sunny" />
+                        <div>
+                            <strong>12<span></span></strong>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>23<span></span></strong>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>TUE</h3>
+                        <img src="images/ico_small_weather1.png" alt="cloudy" />
+                        <div>
+                            <strong>9<span></span></strong>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>21<span></span></strong>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>WED</h3>
+                        <img src="images/ico_small_weather2.png" alt="rainy" />
+                        <div>
+                            <strong>10<span></span></strong>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>20<span></span></strong>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>THU</h3>
+                        <img src="images/ico_small_weather1.png" alt="cludy" />
+                        <div>
+                            <strong>13<span></span></strong>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>24<span></span></strong>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>FRI</h3>
+                        <img src="images/ico_small_weather3.png" alt="sunny" />
+                        <div>
+                            <strong>10<span></span></strong>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <strong>22<span></span></strong>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </div>
+        <section class="drawer">
+            <div class="my_info">
+                <dl>
+                    <dt class="blind">탑메뉴</dt>
+                    <dd><img src="images/btn_back.png" alt="뒤로가기" /></dd>
+                    <dd><img src="images/btn_alarm.png" alt="알람" /></dd>
+                </dl>
+                <p>
+                    <img src="images/img_profile.png" alt="프로필 이미지" />
+                    <span>Jieun</span><br />
+                    <em>dlwlrma@gmail.com</em>
+                </p>
+                <ul>
+                    <li>
+                        <em>Followers</em>
+                        <strong>11.1M</strong>
+                    </li>
+                    <li>
+                        <em>Follow</em>
+                        <strong>313</strong>
+                    </li>
+                    <li>
+                        <em>Upload</em>
+                        <strong>450</strong>
+                    </li>
+                </ul>  
+            </div>
+            <div class="navi_menu">
+                <nav>
+                   <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/ico_nav_home.png" alt="Home" /></a><span>HOME</span></li>
+                        <li><a href="#"><img src="images/ico_nav_weather.png" alt="weather" /></a><span>WEATHER</span></li>
+                        <li><a href="#"><img src="images/ico_nav_wear.png" alt="Wear" /></a><span>WEAR</span></li>
+                        <li><a href="#"><img src="images/ico_nav_talk.png" alt="Chat" /></a><span>CHAT</span></li>
+                        <li><a href="#"><img src="images/ico_nav_my.png" alt="My" /></a><span>MY</span></li>
+                    </ul>            
+                </nav>
+                <ul class="snb">
+                   <h2>Setting</h2>
+                    <ul>
+                        <li>My Account
+                            <ul>
+                                <li><a href="#">Edit Account<span></span></a></li>
+                                <li><a href="#">Link Email<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>Notification
+                            <ul>
+                                <li><a href="#">Notification<span></span></a></li>
+                                <li><a href="#">Push Notification<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>Application Info
+                            <ul>
+                                <li><a href="#">Notice<span></span></a></li>
+                                <li><a href="#">Contact Us<span></span></a></li>
+                                <li><a href="#">Version<span>1.1.13</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <p><a href="#">Logout</a></p>    
+            </div>    
+        </section> 
+        <div class="fixed"></div>   
+    </div>    
+</body>
+</html>

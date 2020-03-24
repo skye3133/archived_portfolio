@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import url(reset.css);
+/* melon.css */
+
+/* conmmon */
+body{font-family: 'Rajdhani';}
+
+.wrap{width: 100vw; height: 100vh;}
+.fixed{position: fixed; right: 0; width: 10.41%; height: 100%; text-align: center; border-left: 2px solid #00cd3c; box-sizing: border-box; padding: 12.5vh 4.3vw; box-sizing: border-box;}
+.fixed>li{font-size: 25px; margin-top: 19.5vh; transform: rotateZ(90deg); text-decoration: underline; font-weight: 600; color: #00cd3c; opacity: 0.3; cursor: pointer;}
+.fixed>li:nth-child(1){margin-top: 0;}
+.fixed>li:hover,.fixed>li.on{opacity: 1;}
+
+.tunning_box{z-index: 3; position: fixed; top: 100%; left: 0; width: 100vw; height: 100vh; background: #00cd3c; opacity: 1;}
+.tunning_box.on{animation: turn 2s ease 0s;}
+@keyframes turn{
+    0%{top: 100%;}
+    50%{top: 0;}
+    60%{top: 0;}
+    99%{top: -100%; opacity: 1;}
+    99.9999%{top: -100%; opacity: 0;}
+    100%{top: 100%; opacity: 0;}
+}
+
+.content{position: absolute; left: 0; top: 0; float: left; width: 89.59%; height: 100%;}
+
+.content>section{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none;}
+.content>section.on{display: block;}
+
+.content>section>.main{width: 100%; height: 100%; padding: 5.28vw; box-sizing: border-box; text-align: center;}
+.content>section>.main>.side{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.content>section>.main>.side>span{font-size: 1.563vw; font-weight: 500; text-decoration: underline; color: #444;}
+.content>section>.main>.side>span:nth-of-type(1){position: absolute; top: 50%; left: 3.28vw; transform: rotateZ(-90deg);}
+.content>section>.main>.side>span:nth-of-type(2){position: absolute; top: 50%; right: -0.5vw; transform: rotateZ(90deg);}
+
+.content>section>.main>.con{width: 100%; height: 100%;}
+.content>section>.main>.con>h1{margin: 18.55vh 0 0;}
+.content>section.landing>.main>.con>h1{margin: 5.55vh 0 0;}
+.content>section>.main>.con>p{margin: 5.55vh 0 4.16vh; font-size: 1.65vw; font-weight: 500; font-family: 'NanumSquare';}
+.content>section>.main>.con>strong{display: block; font-size: 3.08vw; font-weight: 600; color: #00cd3c;}
+.content>section>.main>.con>span{display: block; font-size: 1.65vw; font-weight: 400;}
+
+.content>section>.main>.con>.lan{position: relative; margin-top: 10vh; width: 100%; height: 20%;}
+.content>section>.main>.con>.lan>p{z-index: 2; position: absolute; top: 30%; left: 50%; transform: translateX(-50%); font-size: 4.72vh; font-weight: 700;}
+.content>section.landing>.main>.con>.lan>em{position: absolute; top: 0; left: 50%; transform: translateX(-50%); opacity: 0.4;}
+.content>section.pc>.main>.con>.lan>em{position: absolute; top: 0; left: 42%; opacity: 0.4;}
+.content>section.tablet>.main>.con>.lan>em{position: absolute; top: 0; left: 53.3%; transform: translateX(-50%); opacity: 0.4;}
+.content>section.mobile>.main>.con>.lan>em{position: absolute; top: 0; left: 53.3%; transform: translateX(-50%); opacity: 0.4;}
+
+.content>section>.img_box{position: relative; padding: 10.28vw; width: 100%; box-sizing: border-box;}
+.content>section.pc>.img_box{position: relative; padding: 13.28vw; width: 100%; box-sizing: border-box;}
+.content>section.tablet>.img_box{position: relative; padding: 5.28vw 26.37vw; width: 100%; box-sizing: border-box;}
+.content>section.mobile>.img_box{position: relative; padding: 5.28vw 30.5vw; width: 100%; box-sizing: border-box;}
+
+.content>section.landing>.img_box>.img{width: 100%; height: 300vw; background: url(../images/m_landing.jpg) no-repeat 0 0; background-size: contain;}
+.content>section.pc>.img_box>.img{width: 100%; height: 255vw; background: url(../images/m_pc.jpg) no-repeat 0 0; background-size: contain;}
+.content>section.tablet>.img_box>.img{width: 100%; height: 235vw; background: url(../images/m_tablet.jpg) no-repeat 0 0; background-size: contain;}
+.content>section.mobile>.img_box>.img{width: 100%; height: 215vw; background: url(../images/m_mobile.jpg) no-repeat 0 0; background-size: contain;}
+
+.content>section>.bg_box{width: 100%; height: 28.24vw; background: #00cd3c; cursor: pointer;}
+.content>section>.bg_box>p{font-size: 10.18vw; font-weight: 600; color: #fff; text-align: center; line-height: 28.24vw;}

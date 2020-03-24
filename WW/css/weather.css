@@ -1,0 +1,354 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(tab_menu.css);
+/* weather.css */
+
+/* common */
+body{width: 100%; height: 100%; font-family: Roboto; color: #001F3E;}
+body.on{position: fixed;left: 0; top: 0;}
+div.wrap{position: relative; width: 375px; height: 812px;;}
+a{text-decoration: none; font-family: Roboto;  color: #001F3E;}
+
+div.wrap div.fixed{z-index: -1; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.0);}
+div.wrap.on div.fixed{z-index: 3;  background: rgba(0,0,0,0.7);}
+
+/* 탑메뉴 */
+div.wrap>dl.top_menu{width: 100%; height: 105px; display: flex; justify-content: space-between; align-items: flex-end; padding: 0 16px 26px; box-sizing: border-box;}
+
+/* weather */
+div.weather{z-index: 1; position: absolute; top: 88px; left: 0; width: 100%; height: 1440px; border-radius: 25px 25px 0 0; box-shadow: 0 -3px 7px rgba(0,0,0,0.2)}
+
+section.t_weather{width: 100%; display: flex; flex-direction: column; justify-content: center;}
+
+section.t_weather article:first-child{width: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center; margin-top: 33px;}
+section.t_weather article:first-child p{background: url(../images/ico_location2.png) no-repeat 36% 60%; text-indent: 15px; font-size: 20px;}
+section.t_weather article:first-child>ul{position: relative; margin: 35px 0 20px; height: 120px;}
+section.t_weather article:first-child>ul>li>img{}
+
+section.t_weather article:first-child>ul>li{z-index: 2; position: absolute;}
+section.t_weather article:first-child>ul>li:nth-child(1){width: 92px; height: 93px; left: 50%; top: 0; transform: translateX(-50%);}
+section.t_weather article:first-child>ul>li:nth-child(2){left: 93px; top: 5px; animation: cloud 1.5s linear 0s alternate infinite}
+section.t_weather article:first-child>ul>li:nth-child(3){z-index: 1; left: 177px; top: -9px;  animation: cloud 2.5s linear 0s alternate infinite}
+section.t_weather article:first-child>ul>li:nth-child(4){left: 95px; top: 72px;  animation: cloud2 2s linear 0s alternate infinite}
+
+@keyframes cloud_s{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes cloud{
+	0%{transform: translateX(8px);}
+	100%{transform: translateX(-8px);}
+}
+
+@keyframes cloud2{
+	0%{transform: translateX(-8px);}
+	100%{transform: translateX(8px);}
+}
+
+section.t_weather article:first-child>span{display: block; font-size: 18px; margin-bottom: 25px;}
+section.t_weather article:first-child strong{position: relative; display: block; font-size: 81px; font-weight: 500; margin-top: -10px;}
+section.t_weather article:first-child strong span{position: absolute; top: 0; right: 125px; display: inline-block; width: 14px; height: 14px; background: #001F3E; border-radius: 14px;}
+
+section.t_weather article:last-child{position: relative; width: 100%; height: 266px; background: url(../images/bg_weather.png) no-repeat 50% 0; margin-top: 25px; transform: rotateX(90deg); animation: hei 0.4s linear 0s 1 forwards; transform-origin: bottom;}
+
+@keyframes hei{
+	0%{transform: rotateX(90deg);}
+	50%{transform: rotateX(0deg); transform: scaleY(1.1);}
+	100%{transform: rotateX(0deg); transform: scaleY(1);}
+}
+
+section.t_weather article:last-child ul:first-of-type{position: relative; width: 100%; display: flex; justify-content: space-between; padding: 0 30px; box-sizing: border-box;}
+section.t_weather article:last-child ul:first-of-type li{position: absolute; opacity: 0; animation: txt 1s ease 0.4s 1 forwards}
+section.t_weather article:last-child ul:first-of-type li:nth-child(1){left: 35px; top: 64px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(2){left: 65px;  top: 52px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(3){left: 100px; top: 85px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(4){left: 126px; top: 52px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(5){top: -12px; left: 146px; text-indent: 14px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(5):after{position: absolute; left: 2px; top: 0; content: ""; display: block; width: 100%; height: 100%; background: url(../images/ico_high.png) no-repeat 0% 47%;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(6){left: 194px; top: 3px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(7){left: 225px; top: 20px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(8){left: 257px; top: 63px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(9){left: 289px; top: 74px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(10){position: relative; left: 290px; top: 91px; padding-right: 14px;}
+section.t_weather article:last-child ul:first-of-type li:nth-child(10):after{position: absolute; right: 0; top: 0; content: ""; display: block; width: 100%; height: 100%; background: url(../images/ico_low.png) no-repeat 100% 59%;}
+
+@keyframes txt{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes txt2{
+	0%{opacity: 0;}
+	100%{opacity: 0.5;}
+}
+
+section.t_weather article:last-child ul:nth-of-type(2){position: absolute; top: 125px; width: 100%; display: flex; font-size: 10px; justify-content: space-between; padding: 0 40px; box-sizing: border-box; font-weight: 500; opacity: 0; animation: txt2 3s ease 0.4s 1 forwards}
+
+section.t_weather article:last-child div.sun_box{position: absolute; top: 162px; width: 100%; padding: 0 40px; box-sizing: border-box; animation: txt 1s linear 0.4s 1 forwards; opacity: 0;}
+section.t_weather article:last-child div.sun_box span{position: relative; width: 300px; height: 20px; display: block; background: #001f3e; border-radius: 20px; box-shadow: 0 3px 6px rgba(0,0,0,0.2);}
+section.t_weather article:last-child div.sun_box span:after{position: absolute; left: 50%; margin-left: -71px; top: 50%; margin-top: -11px; content: ""; display: block;  width: 100px; height: 22px; background: #fff; border-radius: 20px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); animation: sun1 ease 2s 0.4s 1 forwards}
+section.t_weather article:last-child div.sun_box span:before{z-index: 2; position: absolute; top: 50%; margin-top: -9px; left: 60%; content: ""; display: block; width: 18px; height: 18px; background: #FF785B; border-radius: 18px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); animation: sun2 linear 2s 0.4s 1 forwards}
+@keyframes sun3{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes sun2{
+	0%{opacity: 0;}
+	25%{opacity: 0;}
+	50%{left: 60%; opacity: 1;}
+	75%{left: 35%; opacity: 1;}
+	100%{left: 55%; opacity: 1;}
+}
+
+@keyframes sun1{
+	0%{width: 100px; left: 70%;}
+	25%{width: 60px; left: 75%;}
+	50%{width: 80px; left: 65%;}
+	75%{width: 142px; left: 55%;}
+	100%{width: 142px; left: 55%;}
+}
+
+section.t_weather article:last-child div.sun_box em{position: absolute; top: -17px; left: 200px; font-size: 6px; font-weight: bold; color: #fff; animation: sun3 0.3s linear 2.4s 1 forwards; opacity: 0;}
+
+
+section.t_weather article:last-child ul:last-of-type{position: absolute; top: 190px; width: 100%; display: flex; justify-content: space-between; padding: 0 37px 0 40px; box-sizing: border-box;  animation: sun3 0.3s linear 2.6s 1 forwards; opacity: 0;}
+section.t_weather article:last-child ul:last-of-type li{color: #fff; font-weight: 500; font-size: 14px;}
+section.t_weather article:last-child ul:last-of-type li:nth-child(2){text-align: right;}
+section.t_weather article:last-child ul:last-of-type li em{font-size: 12px; color: #001f3e; font-weight: 400;}
+
+.t_D{z-index: 2; position: absolute; left: 0; top: 632px; width: 100%; height: 58px; background: #fff; border-radius: 30px; box-shadow: 0 -2px 5px rgba(0,0,0,0.2); box-sizing: border-box; display: flex; align-items: center; justify-content: space-around; padding: 0 14px;}
+
+.t_D>ul{text-align: center; float: left; display: inline-block; width: 70px;}
+.t_D>ul:first-of-type{margin-left: -5px;}
+.t_D>ul>li{float: left; box-sizing: border-box; font-size: 12px;}
+.t_D>ul>li:first-child{width: 100%; margin-bottom: 1px; font-weight: 500;}
+.t_D>ul>li:last-child{position: relative; width: 100%; color: #6996fe; font-size: 17px; font-weight: bold;}
+.t_D>ul>li:last-child img{vertical-align: middle; padding-right: 3px; box-sizing: border-box; margin-bottom: 3px;}
+.t_D>ul>li:last-child span{font-size: 13px;}
+.t_D>ul:first-of-type>li:last-child span{position: absolute; left: 51px; top: 0; display: inline-block; width: 3px; height: 3px; background: #6996fe; border-radius: 3px;}
+
+
+section.d_weather{position: absolute; top: 660px; width: 100%; background: #6996fe; padding: 47px 16px 0; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-sizing: border-box;}
+
+section.d_weather>span{z-index: 2; position: absolute; top: 30px; left: 50%; margin-left: -16px; display: block; width:32px; height: 32px; background: #6996fe; border-radius: 32px;}
+section.d_weather>span:before{position: absolute; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); content: ""; display: block; width: 24px; height: 24px; background: url(../images/ico_detail.png) no-repeat 0 0;}
+
+section.d_weather>article.rain{position: relative; top: 50px; width: 100%; background: #fff; border-radius: 15px; padding: 25px 16px 16px; box-sizing: border-box; opacity: 0;}
+
+section.d_weather.on>article.rain{animation: rain_box 0.5s ease 0s 1 forwards;}
+
+@keyframes rain_box{
+	0%{top: 50px; opacity: 0;}
+	50%{top: -10px; opacity: 1;}
+	100%{top: 0; opacity: 1;}
+}
+
+section.d_weather>article.rain:after{content: ""; display: block; clear: both;}
+section.d_weather>article.rain>h2{font-size: 18px; font-weight: bold;}
+
+section.d_weather>article.rain>p{float: left; font-size: 11px; margin-top: 25px;}
+section.d_weather>article.rain>p>em{display: inline-block; margin-bottom: 12px;}
+
+section.d_weather>article.rain>ul{float: right; width: 262px; display: flex; justify-content:space-between;}
+section.d_weather>article.rain>ul>li{position: relative; top: 5px; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+section.d_weather>article.rain>ul>li>em{font-size: 11px; margin-bottom: 5px; opacity: 0; transition: all 0.7s ease 0.9s;}
+section.d_weather>article.rain>ul>li>span{display: block; width: 0; height: 82px; border-left: 2px dashed #100f3e; opacity: 0; transition: all 0.5s ease 0s;}
+section.d_weather>article.rain>ul>li>strong{opacity: 0; transition: all 0.7s ease 1.2s;}
+
+section.d_weather.on>article.rain>ul>li>em{opacity: 1;}
+section.d_weather.on>article.rain>ul>li>span{opacity: 0.2;}
+section.d_weather.on>article.rain>ul>li>strong{opacity: 1;}
+
+section.d_weather>article.rain>ul>li>i{position: absolute; bottom: 19px; display: block; width: 11px; height: 46px; background: #6996fe; border-radius: 11px;}
+
+section.d_weather>article.rain>ul>li:nth-child(1)>i{height: 0px;}
+section.d_weather>article.rain>ul>li:nth-child(2)>i{height: 0px;}
+section.d_weather>article.rain>ul>li:nth-child(3)>i{height: 0px; background: #100f3e;}
+section.d_weather>article.rain>ul>li:nth-child(4)>i{height: 0px; background: #100f3e;}
+section.d_weather>article.rain>ul>li:nth-child(5)>i{height: 0px; background: #100f3e;}
+section.d_weather>article.rain>ul>li:nth-child(6)>i{height: 0px;}
+
+section.d_weather.on>article.rain>ul>li>i{transition: all 0.7s ease 0.5s;}
+section.d_weather.on>article.rain>ul>li:nth-child(1)>i{height: 46px;}
+section.d_weather.on>article.rain>ul>li:nth-child(2)>i{height: 52px;}
+section.d_weather.on>article.rain>ul>li:nth-child(3)>i{height: 78px; background: #100f3e;}
+section.d_weather.on>article.rain>ul>li:nth-child(4)>i{height: 75px; background: #100f3e;}
+section.d_weather.on>article.rain>ul>li:nth-child(5)>i{height: 57px; background: #100f3e;}
+section.d_weather.on>article.rain>ul>li:nth-child(6)>i{height: 41px;}
+
+
+section.d_weather>article.rain>ul>li>strong{font-size: 12px; margin-top: 5px;}
+
+
+
+section.d_weather>article.tom{position: relative; top: 50px; Width: 100%; background: #fff; border-radius: 15px; padding: 16px; box-sizing: border-box; margin: 20px 0; opacity: 0;}
+
+section.d_weather.on>article.tom{animation: tom_box 0.5s ease 0.3s 1 forwards}
+
+@keyframes tom_box{
+	0%{top: 50px; opacity: 0;}
+	50%{top: -10px; opacity: 1;}
+	100%{top: 0; opacity: 1;}
+}
+
+section.d_weather>article.tom>h2{font-size: 18px; font-weight: bold;}
+
+section.d_weather>article.tom>div.fri{position: relative; display: flex; justify-content: space-between; align-items: center; margin: 20px 0;}
+
+section.d_weather>article.tom>div.fri>p{font-size: 15px;}
+
+section.d_weather>article.tom>div.fri>div{display: flex; align-items: center;}
+section.d_weather>article.tom>div.fri>div>strong{font-size: 20px; opacity: 0.5;}
+section.d_weather>article.tom>div.fri>div>strong>span{position: absolute; display: inline-block; width: 3px; height: 3px; background: #100f3e; border-radius: 3px;}
+section.d_weather>article.tom>div.fri>div>strong:nth-of-type(1){position: relative; margin-right: 10px; transition: all 0.5s ease 2s; opacity: 0;}
+section.d_weather>article.tom>div.fri>div>em{position: absolute; top: -18px; right: 61px; font-size: 10px; font-weight: bold; opacity: 0.5;}
+section.d_weather>article.tom>div.fri>div>em>span{position: absolute; display: inline-block; width: 2px; height: 2px; background: #100f3e; opacity: 0.5;}
+
+section.d_weather>article.tom>div.fri>div>ul>li:nth-child(1){z-index: 2; position: relative; left: 2px; width: 80px; height: 17px;}
+section.d_weather>article.tom>div.fri>div>ul>li:nth-child(1):before{content: ""; display: block; position: absolute; right: 38px; width: 0px; height: 17px; background: #DEE8FF; border-radius: 17px 0 0 17px; transition: all 1s linear 1s;}
+section.d_weather>article.tom>div.fri>div>ul>li:nth-child(1):after{position: absolute; left: 42px; content: ""; display: block; width: 0px; height: 17px; background: #FF785B; border-radius: 0 25px 25px 0; transition: all 1s linear 1s;}
+
+section.d_weather>article.tom>div.fri>div>ul>li:nth-child(1){left: 3px;}
+section.d_weather.on>article.tom>div.fri>div>ul>li:nth-child(1):before{width: 47px;}
+section.d_weather.on>article.tom>div.fri>div>ul>li:nth-child(1):after{width: 25px;}
+
+section.d_weather>article.tom>div.fri>div>ul>li:nth-child(2){position: relative; width: 85px; top: -10px; border-top: 2px dashed #100f3e; opacity: 0.3;}
+section.d_weather>article.tom>div.fri>div>ul>li:nth-child(2):after{position: absolute; top: -15px; left: 53%; content: ""; display: block; height: 28px; border-left: 2px dashed #100f3e;}
+section.d_weather>article.tom>div.fri>div>strong:nth-of-type(2){position: relative; margin-left: 5px; opacity: 0; transition: all 0.5s ease 2s;}
+
+section.d_weather.on>article.tom>div.fri>div>strong:nth-of-type(1){opacity: 0.5;}
+section.d_weather.on>article.tom>div.fri>div>strong:nth-of-type(2){opacity: 1;}
+
+section.d_weather>article.tom>div.fri_D{display: flex; justify-content: space-between;}
+section.d_weather>article.tom>div.fri_D>dl{display: flex; height: 80px; flex-direction: column;}
+section.d_weather>article.tom>div.fri_D>dl>dt{font-size: 12px;}
+
+section.d_weather>article.tom>div.fri_D>dl>dd>dl{display: flex; width: 67px; align-items: flex-end; justify-content: space-between; padding: 0 0 0 7px; box-sizing: border-box; margin-top: 8px; opacity: 0; transition: opacity 0.5s ease 2.5s;}
+section.d_weather>article.tom>div.fri_D>dl>dd>dl>dt{font-size: 8px; margin-left: 3px;}
+section.d_weather>article.tom>div.fri_D>dl>dd>dl>dd{position: relative; display: flex; flex-direction: column; align-items: center;}
+section.d_weather>article.tom>div.fri_D>dl>dd>dl>dd>img{width: 8px; height: 8px; margin-bottom: 3px;}
+section.d_weather>article.tom>div.fri_D>dl>dd>dl>dd>span{height: 45px; border-left: 1px dashed #100f3e; opacity: 0.3;}
+section.d_weather>article.tom>div.fri_D>dl>dd>dl>dd>em{position: absolute; bottom: 0;  width: 12px; height: 21px; background: #dee8ff; border-radius: 12px;}
+section.d_weather>article.tom>div.fri_D>dl>dd>dl>dd:nth-of-type(2)>em{height: 28px;}
+
+section.d_weather>article.tom>div.fri_D>ul{width: 210px; height: 80px; display: flex; justify-content: space-between; align-items: flex-end;}
+section.d_weather>article.tom>div.fri_D>ul>li{display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;}
+section.d_weather>article.tom>div.fri_D>ul>li>h3{font-size: 12px; margin-bottom: 3px;}
+section.d_weather>article.tom>div.fri_D>ul>li>span{height: 27px; border-left: 1px dashed #100f3e; opacity: 0.3;}
+section.d_weather>article.tom>div.fri_D>ul>li>strong{font-size: 12px; font-weight: 500; margin-top: 3px; opacity: 0; transition: opacity 0.5s ease 2.8s;}
+
+section.d_weather.on>article.tom>div.fri_D>dl>dd>dl{opacity: 1;}
+section.d_weather.on>article.tom>div.fri_D>ul>li>strong{opacity: 1;}
+
+section.d_weather>article.days{position: relative; top: 0px; width: 100%; background: #fff; border-radius: 15px; padding: 16px; box-sizing: border-box; margin-bottom: 20px; opacity: 0;}
+
+section.d_weather.on>article.days{animation: days_box 0.5s ease 0.6s 1 forwards}
+
+@keyframes days_box{
+	0%{top: 0px; opacity: 0;}
+	50%{top: -10px; opacity: 1;}
+	100%{top: 0; opacity: 1;}
+}
+
+section.d_weather>article.days>span{position: absolute; top: 48px; right: 87px; display: block; height: 238px; border-right: 1px dashed #100f3e; opacity: 0.3;}
+
+section.d_weather>article.days>h2{width: 100%; font-size: 18px; margin-bottom: 15px;}
+section.d_weather>article.days>h2>strong{font-weight: bold; margin-left: 7px;}
+
+section.d_weather>article.days>article{position: relative; display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 15px 0;}
+section.d_weather>article.days>article:last-of-type{margin: 0;}
+section.d_weather>article.days>article>h3{font-size: 14px;}
+
+section.d_weather>article.days>article:nth-of-type(1)>img{}
+section.d_weather>article.days>article:nth-of-type(2)>img{margin-left: -2.5px;}
+section.d_weather>article.days>article:nth-of-type(3)>img{margin-left: -7px;}
+section.d_weather>article.days>article:nth-of-type(4)>img{margin-left: -11px;}
+section.d_weather>article.days>article:nth-of-type(5)>img{margin-left: -7px;}
+section.d_weather>article.days>article:nth-of-type(6)>img{margin-left: -3px;}
+section.d_weather>article.days>article:nth-of-type(7)>img{margin-left: 4px;}
+
+section.d_weather>article.days>article>div{display: flex;}
+section.d_weather>article.days>article>div>strong{position: relative;}
+section.d_weather>article.days>article>div>strong>span{position: absolute; top: -1px; right: -3px; display: block; width: 3px; height: 3px; background: #100f3e; border-radius: 3px;}
+section.d_weather>article.days>article>div>strong:nth-of-type(1){font-size: 16px; opacity: 0.5;}
+section.d_weather>article.days>article>div>em{position: absolute; top: -17px; right: 66px; font-size: 10px; opacity: 0.5;}
+section.d_weather>article.days>article>div>em>span{position: absolute; display: inline-block; width: 2px; height: 2px; background: #100f3e; opacity: 0.5;}
+
+section.d_weather>article.days>article>div>strong:nth-of-type(2){font-size: 16px;}
+
+section.d_weather>article.days>article>div>ul{position: relative; width: 112px; display: flex; justify-content: center; align-items: center;}
+section.d_weather>article.days>article>div>ul>li:nth-child(2){position: absolute; width: 80px; border-top: 1px dashed #100f3e; opacity: 0.3;}
+
+section.d_weather>article.days>article>div>ul>li:nth-child(1){z-index: 2; position: relative; width: 63px; height: 15px; background: #dee8ff; border-radius: 15px;}
+section.d_weather>article.days>article>div>ul>li:nth-child(1):after{position: absolute; right: 0; content: ""; display: block; width: 30px; height: 15px; background: #ff785b; border-radius: 0 25px 25px 0;}
+
+section.d_weather>article.days>article:nth-of-type(2)>div>ul>li:nth-child(1){z-index: 2; position: relative; left: 7px; width: 60px; height: 15px;}
+section.d_weather>article.days>article:nth-of-type(2)>div>ul>li:nth-child(1):after{position: absolute; right: 0; content: ""; display: block; width: 35px; height: 15px;}
+
+section.d_weather>article.days>article:nth-of-type(3)>div>ul>li:nth-child(1){z-index: 2; position: relative; left: -8px; width: 60px; height: 15px;}
+section.d_weather>article.days>article:nth-of-type(3)>div>ul>li:nth-child(1):after{position: absolute; right: 0; content: ""; display: block; width: 20px; height: 15px;}
+
+section.d_weather>article.days>article:nth-of-type(4)>div>ul>li:nth-child(1){z-index: 2; position: relative; left: -19px; width: 56px; height: 15px;}
+section.d_weather>article.days>article:nth-of-type(4)>div>ul>li:nth-child(1):after{position: absolute; right: 0; content: ""; display: block; width: 7px; height: 15px;}
+
+section.d_weather>article.days>article:nth-of-type(5)>div>ul>li:nth-child(1){z-index: 2; position: relative; left: -20px; width: 47px; height: 15px;}
+section.d_weather>article.days>article:nth-of-type(5)>div>ul>li:nth-child(1):after{position: absolute; right: 0; content: ""; display: block; width: 0; height: 15px;}
+
+section.d_weather>article.days>article:nth-of-type(6)>div>ul>li:nth-child(1){z-index: 2; position: relative; left: -10px; width: 54px; height: 15px;}
+section.d_weather>article.days>article:nth-of-type(6)>div>ul>li:nth-child(1):after{position: absolute; right: 0; content: ""; display: block; width: 15px; height: 15px;}
+
+section.d_weather>article.days>article:nth-of-type(7)>div>ul>li:nth-child(1){z-index: 2; position: relative; left: -16px; width: 56px; height: 15px;}
+section.d_weather>article.days>article:nth-of-type(7)>div>ul>li:nth-child(1):after{position: absolute; right: 0; content: ""; display: block; width: 10px; height: 15px;}
+
+
+.drawer{z-index: 4; position: absolute; right: -260px; top: 0; width: 260px; height: 100%; background: #6996fe; border-radius: 25px 0 25px 0; transition: all 0.3s ease 0s;}
+
+.drawer.on{right: 0;}
+
+.my_info{width: 100%; height: 245px; display: flex; flex-direction: column; justify-content: center;}
+.my_info dl{width: 100%; height: 45px; display: flex; justify-content: space-between; padding: 0 16px; box-sizing: border-box; align-items: center; margin: 45px 0 16px;}
+.my_info dl dd{position: relative; cursor: pointer;}
+.my_info dl dd:last-of-type:after{position: absolute; left: -5px; top: -2px; content: "3"; display: inline-block; width: 11px; height: 11px; background: #FF785B; border-radius: 11px; font-size: 9px; color: #fff; text-align: center; line-height: 11px;}
+
+.my_info p{width: 100%; height: 67px; padding: 0 16px; box-sizing: border-box; color: #fff;;}
+.my_info p img{float:left; margin: 0 14px 0 25px; box-shadow: 0 5px 7px rgba(0,0,0,0.5); border-radius: 33px;}
+.my_info p span{display: inline-block; font-size: 20px; font-weight: bold; margin-top: 30px;}
+.my_info p em{display: inline-block; font-size: 10px; transform: translateY(-5px);}
+
+.my_info ul{width: 100%; display: flex; text-align: center; justify-content: center; align-items: center; box-sizing: border-box; margin: 20px 0 15px;}
+.my_info ul li{display: flex; flex-direction: column; margin: 0 15px;}
+.my_info ul li em{font-size: 11px;}
+.my_info ul li strong{font-size: 21px; font-weight: bold; color: #fff;}
+
+
+.navi_menu{position: relative; width: 100%; height: 567px; background: #fff; border-radius: 25px 0 0 0; display: flex; flex-direction: column; justify-content: space-between; padding: 16px 16px 100px; box-sizing: border-box;}
+.navi_menu h2{font-size: 20px; font-weight: 1000;}
+
+.navi_menu nav ul{display: flex; flex-direction: row; justify-content: center;; padding: 23px 0 34px;}
+.navi_menu nav ul li{font-size: 11px; width: 55px; display: flex; flex-direction: column; justify-content: center; text-align: center;}
+.navi_menu nav ul li img{width: 35px; height: 35px; margin-bottom: 7px;}
+
+.navi_menu p{position: absolute; bottom: 20px; right: 25px; width: 55px; height: 18px; font-size: 11px; background: #dee8ff; text-align: center; line-height: 18px; border-radius: 18px;}
+
+.navi_menu .snb h2{width: 100%; margin-bottom: 15px;}
+
+.navi_menu .snb>ul>li{}
+.navi_menu .snb>ul>li>span{display: block; width:100%; height: 23px; background: #DEE8FF; margin-bottom: 5px; line-height: 23px; border-radius: 25px; font-size: 12px; padding-left: 16px; box-sizing: border-box;}
+
+.navi_menu .snb>ul>li>ul{width: 100%; padding-left: 35px; box-sizing: border-box; margin-top: 10px; margin-bottom: 12px;}
+.navi_menu .snb>ul>li>ul>li>a{display: block; font-size: 15px; padding: 5px 0; box-sizing: border-box; background: url(../images/ico_nav_go.png) no-repeat 90% 50%;}
+
+.navi_menu .snb>ul>li:nth-child(2)>ul>li>a{background: none;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li:first-child span,.navi_menu .snb>ul>li:nth-child(2)>ul>li:last-child span{position: relative; display: inline-block; width: 26px; height: 12px; margin-left: 77px; background: #788091; border-radius: 12px; transition: all 0.3s ease 0s;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li:first-child span:after,.navi_menu .snb>ul>li:nth-child(2)>ul>li:last-child span:after{position: absolute; left: 2px; top: 50%; transform: translateY(-50%); content: ""; display: block; width: 8px; height: 8px; background: #fff; border-radius: 4px; transition: all 0.3s ease 0s;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li:last-child span{margin-left: 39px;}
+
+
+.navi_menu .snb>ul>li:nth-child(2)>ul>li span.on:after{left: 16px;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li span.on{background: #6996fe;}
+
+
+.navi_menu .snb>ul>li:nth-child(3)>ul>li:last-child a{background: none;}
+.navi_menu .snb>ul>li:nth-child(3)>ul>li:last-child span{display: inline-block; margin-left: 85px;}

@@ -1,0 +1,209 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(tab_menu.css);
+/* chat.css */
+
+/* common */
+body{width: 100%; height: 100%; color: #001F3E; font-family: Roboto;}
+a{color: #001f3e; text-decoration: none; font-family: Roboto;}
+
+
+/* wrap */
+div.wrap{position: relative; width: 375px; height: 812px; background: #fff;}
+div.wrap div.fixed{z-index: -1; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7);}
+div.wrap.on div.fixed{z-index: 3;}
+
+/* 탑메뉴 */
+div.wrap>dl.top_menu{position: absolute; left: 0; top: 0; width: 100%; height: 90px; background: #6996fe; border-radius: 0 0 25px 25px; display: flex; justify-content: space-between; padding: 0 16px 10px; box-sizing: border-box; align-items: flex-end; margin-bottom: 20px; transition: all 0.5s ease 0s;}
+div.wrap>dl.top_menu dd:first-of-type{font-size: 20px; font-weight: bold;}
+div.wrap>dl.top_menu dd:first-of-type img{margin-right: 7px;}
+
+div.wrap>dl.top_menu.on{top: -90px;}
+
+div.chat_bg{position: absolute; z-index: 2; left: 0; top: 0; display: none; width: 100%; height: 100%; background: rgba(0,0,0,0);}
+div.chat_bg.on{display: block; background: rgba(0,0,0,0.9);}
+/* 채팅 리스트 */
+div.chat_list ul.chat{position: absolute; left: 0; top: 107px; width: 100%; height: 998px; padding: 0 16px;  box-sizing: border-box; transition: all 0.5s ease 0s;}
+div.chat_list ul.chat.on{top: 17px;}
+div.chat_list ul.chat>li{}
+div.chat_list ul.chat>li>a{display: block; width: 100%; height: 60px; box-sizing: border-box; margin-bottom: 30px;}
+div.chat_list ul.chat>li>a>ul{display: flex; flex-direction: row;}
+div.chat_list ul.chat>li>a>ul>li{}
+div.chat_list ul.chat>li>a>ul>li:first-child{width: 260px;}
+div.chat_list ul.chat>li>a>ul>li:first-child:after{content: ""; display: block; clear: both;}
+div.chat_list ul.chat>li>a>ul>li:first-child img{float: left;}
+div.chat_list ul.chat>li>a>ul>li:first-child h2{float: right; width: 180px; font-size: 19px; font-weight: bold; margin-bottom: 5px;}
+div.chat_list ul.chat>li>a>ul>li:first-child p{float: right; width: 180px; font-size: 10px;}
+
+div.chat_list ul.chat>li>a>ul>li:last-child{position: relative; width: 80px; font-size: 8px; text-align: right; padding-top: 47px; box-sizing: border-box;}
+div.chat_list ul.chat>li>a>ul>li:last-child span{position: absolute; top: 25px; right: 0px; display: inline-block; width: 15px; height: 15px; background: #FF785B; border-radius: 3px; color: #fff; text-align: center; line-height: 15px; opacity: 0;}
+div.chat_list ul.chat>li>a>ul>li:last-child span.on{animation: on_alarm 0.5s linear 0s 1 forwards;}
+
+
+@keyframes on_alarm{
+	0%{opacity: 0; transform: scale(0.5);}
+	50%{opacity: 1; transform: scale(1.5);}
+	100%{opacity: 1; transform: scale(1.0);}
+}
+
+/* 채팅 버튼 */
+.chat_btn{z-index: 1; position: fixed; top: 660px; right: 16px; display: flex; flex-direction: column; cursor: pointer;}
+.chat_btn li:first-child{z-index: 3; width: 53px; height: 53px; position: relative; background: url(../images/ico_plus_b.png) no-repeat 0 0;}
+.chat_btn li:nth-child(2){z-index: 2; width: 53px; height: 53px; position: absolute; bottom: 0; opacity: 0; transition: all 0.3s ease 0s;}
+.chat_btn li:last-child{z-index: 1; width: 53px; height: 53px; position: absolute; bottom: 0; opacity: 0; transition: all 0.3s ease 0s;}
+
+.chat_btn.on li:first-child{background: url(../images/ico_cancle_lw.png) no-repeat 0 0;}
+.chat_btn.on li:nth-child(2){bottom: 45px; opacity: 1;}
+.chat_btn.on li:last-child{bottom: 90px; opacity: 1;}
+
+/* 드로워 */
+.drawer{z-index: 4; position: absolute; right: -260px; top: 0; width: 260px; height: 100%; background: #6996fe; border-radius: 25px 0 25px 0; transition: all 0.3s ease 0s;}
+
+.drawer.on{right: 0;}
+
+.my_info{width: 100%; height: 245px; display: flex; flex-direction: column; justify-content: center;}
+.my_info dl{width: 100%; height: 45px; display: flex; justify-content: space-between; padding: 0 16px; box-sizing: border-box; align-items: center; margin: 45px 0 16px;}
+.my_info dl dd{position: relative; cursor: pointer;}
+.my_info dl dd:last-of-type:after{position: absolute; left: -5px; top: -2px; content: "3"; display: inline-block; width: 11px; height: 11px; background: #FF785B; border-radius: 11px; font-size: 9px; color: #fff; text-align: center; line-height: 11px;}
+
+.my_info p{width: 100%; height: 67px; padding: 0 16px; box-sizing: border-box; color: #fff;;}
+.my_info p img{float:left; margin: 0 14px 0 25px; box-shadow: 0 5px 7px rgba(0,0,0,0.5); border-radius: 33px;}
+.my_info p span{display: inline-block; font-size: 20px; font-weight: bold; margin-top: 30px;}
+.my_info p em{display: inline-block; font-size: 10px; transform: translateY(-5px);}
+
+.my_info ul{width: 100%; display: flex; text-align: center; justify-content: center; align-items: center; box-sizing: border-box; margin: 20px 0 15px;}
+.my_info ul li{display: flex; flex-direction: column; margin: 0 15px;}
+.my_info ul li em{font-size: 11px;}
+.my_info ul li strong{font-size: 21px; font-weight: bold; color: #fff;}
+
+
+.navi_menu{position: relative; width: 100%; height: 567px; background: #fff; border-radius: 25px 0 0 0; display: flex; flex-direction: column; justify-content: space-between; padding: 16px 16px 100px; box-sizing: border-box;}
+.navi_menu h2{font-size: 20px; font-weight: 1000;}
+
+.navi_menu nav ul{display: flex; flex-direction: row; justify-content: center;; padding: 23px 0 34px;}
+.navi_menu nav ul li{font-size: 11px; width: 55px; display: flex; flex-direction: column; justify-content: center; text-align: center;}
+.navi_menu nav ul li img{width: 35px; height: 35px; margin-bottom: 7px;}
+
+.navi_menu p{position: absolute; bottom: 20px; right: 25px; width: 55px; height: 18px; font-size: 11px; background: #dee8ff; text-align: center; line-height: 18px; border-radius: 18px;}
+
+.navi_menu .snb h2{width: 100%; margin-bottom: 15px;}
+
+.navi_menu .snb>ul>li{}
+.navi_menu .snb>ul>li>span{display: block; width:100%; height: 23px; background: #DEE8FF; margin-bottom: 5px; line-height: 23px; border-radius: 25px; font-size: 12px; padding-left: 16px; box-sizing: border-box;}
+
+.navi_menu .snb>ul>li>ul{width: 100%; padding-left: 35px; box-sizing: border-box; margin-top: 10px; margin-bottom: 12px;}
+.navi_menu .snb>ul>li>ul>li>a{display: block; font-size: 15px; padding: 5px 0; box-sizing: border-box; background: url(../images/ico_nav_go.png) no-repeat 90% 50%;}
+
+.navi_menu .snb>ul>li:nth-child(2)>ul>li>a{background: none;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li:first-child span,.navi_menu .snb>ul>li:nth-child(2)>ul>li:last-child span{position: relative; display: inline-block; width: 26px; height: 12px; margin-left: 77px; background: #788091; border-radius: 12px; transition: all 0.3s ease 0s;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li:first-child span:after,.navi_menu .snb>ul>li:nth-child(2)>ul>li:last-child span:after{position: absolute; left: 2px; top: 50%; transform: translateY(-50%); content: ""; display: block; width: 8px; height: 8px; background: #fff; border-radius: 4px; transition: all 0.3s ease 0s;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li:last-child span{margin-left: 39px;}
+
+
+.navi_menu .snb>ul>li:nth-child(2)>ul>li span.on:after{left: 16px;}
+.navi_menu .snb>ul>li:nth-child(2)>ul>li span.on{background: #6996fe;}
+
+
+.navi_menu .snb>ul>li:nth-child(3)>ul>li:last-child a{background: none;}
+.navi_menu .snb>ul>li:nth-child(3)>ul>li:last-child span{display: inline-block; margin-left: 85px;}
+
+/* chat */
+div.chat{opacity: 0; z-index: -1; position: absolute; left: 0; top: 382px; width: 100%; height: 768px; background: #fff; box-sizing: border-box; transition: all 0.7s ease 0s; border-radius: 25px 25px 0 0;}
+div.chat.on{opacity: 1; z-index: 5; top: 44px;}
+
+div.chat>dl.top_menu{width: 100%; height: 77px; background: #6996fe; border-radius: 25px 25px 0 0; display: flex; justify-content: space-between; padding: 10px 16px 0; box-sizing: border-box; align-items: flex-start;}
+div.chat>dl.top_menu dd:first-of-type{font-size: 20px; font-weight: bold;}
+div.chat>dl.top_menu dd:first-of-type img{margin-right: 7px;}
+
+div.chat ul{position: absolute; left: 0; top: 44px; width: 100%; height: 724px; background: #fff; border-radius: 25px 25px 0 0; padding: 0 16px; box-sizing: border-box;}
+div.chat ul li{position: absolute;}
+div.chat ul li img{opacity: 0; width: 43px; height: 43px;  box-shadow: 0 2px 7px rgba(0,0,0,0.3); border-radius: 9px;}
+div.chat ul li:nth-child(1){left: 34px; top: 33px;}
+div.chat ul li:nth-child(2){right: 24px; top: 126px;}
+div.chat ul li:nth-child(3){left: 34px; top: 190px;}
+div.chat ul li:nth-child(4){right: 24px; top: 300px;}
+div.chat ul li:nth-child(5){left: 34px; top: 375px}
+
+div.chat.on ul li:nth-child(1) img{opacity: 0; animation: profile 0.3s ease forwards 1s;}
+div.chat.on ul li:nth-child(3) img{opacity: 0; animation: profile 0.3s ease forwards 7.5s;}
+div.chat.on ul li:nth-child(5) img{opacity: 0; animation: profile 0.3s ease forwards 17.5s;}
+
+div.chat ul li div.s_box{opacity: 0;}
+div.chat.on ul li:nth-child(2) div.s_box{animation: span2 3s linear 2s}
+div.chat.on ul li:nth-child(3) div.s_box{animation: span2 3s linear 7.5s}
+div.chat.on ul li:nth-child(4) div.s_box{animation: span2 3s linear 12.5s}
+div.chat.on ul li:nth-child(5) div.s_box{animation: span2 3s linear 17.5s}
+
+div.chat.on ul li span:first-of-type{animation: span 0.4s linear 0s alternate infinite;}
+div.chat.on ul li span:nth-of-type(2){animation: span 0.4s linear 0.2s alternate infinite;}
+div.chat.on ul li span:last-of-type{animation: span 0.4s linear 0.4s alternate infinite;}
+
+div.chat.on ul li:nth-child(1) p{animation: profile 0.5s ease forwards 1.5s;}
+div.chat.on ul li:nth-child(1) em{animation: profile 0.5s ease forwards 2s;}
+
+div.chat.on ul li:nth-child(2) p{animation: profile 0.5s ease forwards 5s;}
+div.chat.on ul li:nth-child(2) em{animation: profile 0.5s ease forwards 5.5s;}
+
+div.chat.on ul li:nth-child(3) p{animation: profile 0.5s ease forwards 10s;}
+div.chat.on ul li:nth-child(3) em{animation: profile 0.5s ease forwards 10.5s;}
+
+div.chat.on ul li:nth-child(4) p{animation: profile 0.5s ease forwards 15s;}
+div.chat.on ul li:nth-child(4) em{animation: profile 0.5s ease forwards 15.5s;}
+
+div.chat.on ul li:nth-child(5) p{animation: profile 0.5s ease forwards 20s;}
+div.chat.on ul li:nth-child(5) em{animation: profile 0.5s ease forwards 20.5s;}
+
+div.chat ul li p{font-size: 8px; box-shadow: 0 2px 7px rgba(0,0,0,0.3);}
+div.chat ul li em{font-size: 8px;}
+div.chat ul li span:first-of-type{position: absolute; display: block; width: 26px; height: 26px; background: url(../images/ico_chat_load1.png) no-repeat 0 0;}
+div.chat ul li span:nth-of-type(2){position: absolute; display: block; width: 26px; height: 26px; background: url(../images/ico_chat_load2.png) no-repeat 0 0;}
+div.chat ul li span:last-of-type{position: absolute; display: block; width: 26px; height: 26px; background: url(../images/ico_chat_load3.png) no-repeat 0 0;}
+
+div.chat ul li:nth-child(1) p{opacity: 0; position: absolute; top: 19px; left: 60px; width: 190px; height: 26px; background: #DEE8FF; border-radius: 10px 10px 10px 0; padding: 3px 7px; box-sizing: border-box; line-height: 10px;}
+div.chat ul li:nth-child(1) p:nth-of-type(2){top: 50px; width: 150px; height: 15px;}
+div.chat ul li:nth-child(1) em{opacity: 0; display: block; position: absolute; top: 53px; left: 220px;}
+
+div.chat ul li:nth-child(3) span:first-of-type{top: 13px; left: 50px;}
+div.chat ul li:nth-child(3) span:nth-of-type(2){top: 13px; left: 61px;}
+div.chat ul li:nth-child(3) span:last-of-type{top: 13px; left: 72px;}
+div.chat ul li:nth-child(3) p{opacity: 0; position: absolute; top: 19px; left: 60px; width: 190px; height: 26px; background: #DEE8FF; border-radius: 10px 10px 10px 0; padding: 3px 7px; box-sizing: border-box; line-height: 10px; }
+div.chat ul li:nth-child(3) p:nth-of-type(2){top: 50px; width: 200px; height: 35px;}
+div.chat ul li:nth-child(3) em{opacity: 0; display: block; position: absolute; top: 73px; left: 270px}
+
+div.chat ul li:nth-child(5) span:first-of-type{top: 13px; left: 50px;}
+div.chat ul li:nth-child(5) span:nth-of-type(2){top: 13px; left: 61px;}
+div.chat ul li:nth-child(5) span:last-of-type{top: 13px; left: 72px;}
+div.chat ul li:nth-child(5) p{opacity: 0; position: absolute; top: 19px; left: 60px; width: 175px; height: 26px; background: #DEE8FF; border-radius: 10px 10px 10px 0; padding: 3px 7px; box-sizing: border-box; line-height: 10px;}
+div.chat ul li:nth-child(5) p:nth-of-type(2){top: 50px; width: 190px; height: 35px;}
+div.chat ul li:nth-child(5) em{opacity: 0; display: block; position: absolute; top: 73px; left: 260px}
+
+div.chat ul li:nth-child(2) span:first-of-type{top: -6px; right: 13px;}
+div.chat ul li:nth-child(2) span:nth-of-type(2){top: -6px; right: 2px;}
+div.chat ul li:nth-child(2) span:last-of-type{top: -6px; right: -9px;}
+div.chat ul li:nth-child(2) p{opacity: 0; position: absolute; top: 0; right: 0; width: 190px; height: 26px; background: #6996fe; border-radius: 10px 10px 0 10px; padding: 3px 7px; box-sizing: border-box; line-height: 10px;}
+div.chat ul li:nth-child(2) p:nth-of-type(2){top: 32px; width: 230px; height: 15px;}
+div.chat ul li:nth-child(2) em{opacity: 0; display: block; position: absolute; top: 34px; right: 235px;}
+
+div.chat ul li:nth-child(4) span:first-of-type{top: -6px; right: 13px;}
+div.chat ul li:nth-child(4) span:nth-of-type(2){top: -6px; right: 2px;}
+div.chat ul li:nth-child(4) span:last-of-type{top: -6px; right: -9px;}
+div.chat ul li:nth-child(4) p{opacity: 0; position: absolute; top: 0; right: 0; width: 135px; height: 15px; background: #6996fe; border-radius: 10px 10px 0 10px; padding: 3px 7px; box-sizing: border-box; line-height: 10px;}
+div.chat ul li:nth-child(4) p:nth-of-type(2){top: 20px; width: 230px; height: 26px;}
+div.chat ul li:nth-child(4) em{opacity: 0; display: block; position: absolute; top: 34px; right: 237px}
+
+/* 애니매이션 */
+@keyframes span{
+	0%{transform: scale(0); top: 13px; opacity: 0;}
+	100%{transform: scale(1); top: 15px; opacity: 1;}
+}
+
+@keyframes profile{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes span2{
+	0%{opacity: 0;}
+	50%{opacity: 1;}
+	100%{opacity: 0;}
+}
