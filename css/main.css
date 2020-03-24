@@ -1509,7 +1509,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.resume_p>div.skill>dl>dt{width: 100%;}
     main>section.resume_p>div.skill>dl>dd{position: relative; width: 55vw; margin-bottom: 4.302vw;} 
     main>section.resume_p>div.skill>dl>dd:first-of-type{margin-top: 6.302vw;} 
-    main>section.resume_p>div.skill>dl>dd>ul{position: absolute; right: 10.042vw; top: 50%; height: 0.781vw; width: 22.813vw; transform: translateY(-0.125vw);}
+    main>section.resume_p>div.skill>dl>dd>ul{position: absolute; right: 9.942vw; top: 50%; height: 0.781vw; width: 24.813vw; transform: translateY(-0.125vw);}
     main>section.resume_p>div.skill>dl>dd>ul>li{float: right; width: 0.813vw; height: 0.813vw; background: #333333; margin-left: 1.021vw; border-radius: 5vw; border: 1px solid #333333;}
     main>section.resume_p>div.skill>dl>dd>ul>li:first-child{margin-right: 0; background: none; border: 1px solid #333333;}
     main>section.resume_p>div.skill>dl>dd:last-of-type>ul>li:nth-child(2){background: none; border: 1px solid #333333;}

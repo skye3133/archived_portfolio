@@ -70,7 +70,7 @@ $(function(){
 
     $(".w_link").click(function(e){
         e.preventDefault;
-        var url = "ww/index.html";
+        var url = "WW/index.html";
         var option = "resizeble=no,scrollbars=no,status=no,width=375px,height=812px";
         window.open(url,'test',option);
     });
