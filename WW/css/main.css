@@ -29,7 +29,7 @@ div.roll a.on{width: 20px; opacity: 1;}
 /* 이미지 */
 .bg{position: absolute; left: 0; top: 0; display: flex; width: 375px; height: 600px; transition: all 0.3s ease 0s;}
 .bg img:nth-child(2){height: 812px;}
-.bg img:nth-child(3){width: 569px; height: 1232px; max-width: none; margin-top: -406px;}
+.bg img:nth-child(3){position: relative; width: 569px; height: 1232px; max-width: none; margin-top: -407px;}
 
 /* 오늘의 날씨 */
 .t_W{position: absolute; left: 0; top: 520px; width: 100%; height: 291px; background: #fff; border-radius: 25px; padding: 12px 16px; box-sizing: border-box; cursor: pointer;}
@@ -65,16 +65,16 @@ div.roll a.on{width: 20px; opacity: 1;}
 .t_W>a>ol{position: absolute; left: 205px; top: 50px;}
 .t_W>a>ol:first-of-type{display: flex;}
 .t_W>a>ol:first-of-type>li:first-child{}
-.t_W>a>ol:first-of-type>li:first-child>span{position: relative; top: 17px; display: block; width: 42px; height:55px; overflow: hidden;}
+.t_W>a>ol:first-of-type>li:first-child>span{position: relative; top: 17px; display: block; width: 42px; height:60px; overflow: hidden;}
 .t_W>a>ol:first-of-type>li:first-child>span>ol{font-size: 69px; margin-top: -18px; font-weight: bold;}
 
-.t_W>a>ol:first-of-type>li:last-child>span{position: relative; top: 13px; display: block; width: 42px; height:62px; overflow: hidden;}
+.t_W>a>ol:first-of-type>li:last-child>span{position: relative; top: 13px; display: block; width: 42px; height:65px; overflow: hidden;}
 .t_W>a>ol:first-of-type>li:last-child>span>ol{font-size: 69px; margin-top: -14px; font-weight: bold;}
 .t_W>a>ol:first-of-type>li>span>ol>li>i{position: absolute; top: 10px; right: 2px; display: inline-block; width: 8px; height: 8px; background: #001f3e; border-radius: 50%;}
 
 .t_W>a>ol:last-of-type{position: absolute; left: 305px;}
 
-.t_W>a>ol:last-of-type>li>span{position: relative; left: 3px; top: 28px; display: block; width: 38px; height:45px; overflow: hidden;}
+.t_W>a>ol:last-of-type>li>span{position: relative; left: 3px; top: 28px; display: block; width: 38px; height:48px; overflow: hidden;}
 .t_W>a>ol:last-of-type>li>span>ol{font-size: 49px; font-weight: bold; margin-top: -28px; opacity: 0.5;}
 .t_W>a>ol:last-of-type>li>span>ol>li>i{position: absolute; top: 8px; right: 5px; display: inline-block; width: 5px; height: 5px; background: #001f3e; border-radius: 50%;}
 
