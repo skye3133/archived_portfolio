@@ -23,7 +23,7 @@ nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 9.259v
 
 .snb_box{position: fixed; top: 0; width: 10vw; height: 100%; opacity: 0; cursor: normal;}
 .snb{width: 100%; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 9.259vh 0;}
-.snb>li{transform: rotateZ(180deg); text-align: center; font-size: 2.222vh; padding: 1.5rem 0.5rem 1.5rem 0.3rem; -webkit-writing-mode: vertical-lr; -moz-writing-mode: vertical-lr; -o-writing-mode: vertical-lr; -ms-writing-mode: vertical-lr; box-sizing: border-box; border-radius: 50rem; opacity: 0.5;}
+.snb>li{transform: rotateZ(180deg); text-align: center; font-size: 2.222vh; padding: 1.5rem 0.5rem 1.5rem 0.3rem; writing-mode: vertical-lr; box-sizing: border-box; border-radius: 50rem; opacity: 0.5;}
 .snb>li:hover,.snb>li.on{background: #333333; color: #ffffff; opacity: 1;}
 
 /* header */
@@ -133,7 +133,7 @@ main>section.work_p>div.pure_box>.mock_up1{position: absolute; width: 100%; heig
 .lion_eyebrows{position: absolute; left: calc(50% - 3px); top: 90px; width: 6px; height: 6px; border-radius: 50px;}
 .lion_eyebrows:after, .lion_eyebrows:before{content: ""; position: absolute; left: calc(50% - 33px); width: 66px; height: 14px; background: #000; border-radius: 20px;}
 .lion_eyebrows:after{margin-left: -65px;}
-.lion_eyebrows:before{margin-left: 65px; -moz-animation: eyebrow 2s linear 0s infinite;}
+.lion_eyebrows:before{margin-left: 65px; animation: eyebrow 2s linear 0s infinite;}
 
 @keyframes eyebrow{
     25%,75%{transform: rotate(-15deg); transform-origin: right top;}
