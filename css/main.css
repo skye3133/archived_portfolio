@@ -73,7 +73,7 @@ main>section.work_p>.Work_p_inner>a>p{font-size: 0.938vw; opacity: 0.7; transfor
 main>section.work_p>.Work_p_inner>a.sk{width: 55%; border-bottom: 0.208vw solid #333; border-right: 0.208vw solid #333;}
 
 main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 7px solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
 
 main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
 
@@ -82,8 +82,8 @@ main>section.work_p>.Work_p_inner>a.cj{width: 45%; border-bottom: 0.208vw solid 
 main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
 
 main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 7px solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 7px solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
 
 main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
 
@@ -483,7 +483,7 @@ main>section.work_p>.Work_p_inner>a>p{font-size: 0.938vw; opacity: 0.7; transfor
 main>section.work_p>.Work_p_inner>a.sk{width: 55%; border-bottom: 0.208vw solid #333; border-right: 0.208vw solid #333;}
 
 main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 0.365vw solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
 
 main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
 
@@ -492,8 +492,8 @@ main>section.work_p>.Work_p_inner>a.cj{width: 45%; border-bottom: 0.208vw solid 
 main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
 
 main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
 
 main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
 
@@ -903,7 +903,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.sk{}
     
     main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 7px solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
     
     main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
     
@@ -912,8 +912,8 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
     
     main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 7px solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 7px solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
     
@@ -1274,7 +1274,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.sk{}
     
     main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 5px solid #333333; border-radius: 0.7vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
     
     main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
     
@@ -1283,8 +1283,8 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
     
     main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 5px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 5px solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 5px solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
     
@@ -1758,7 +1758,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.sk{width: 55%; border-bottom: 0.208vw solid #333; border-right: 0.208vw solid #333;}
     
     main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 7px solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
     
     main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
     
@@ -1767,8 +1767,8 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
     
     main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 7px solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 7px solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
     
@@ -2085,7 +2085,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.sk{width: 55%; border-bottom: 0.208vw solid #333; border-right: 0.208vw solid #333;}
 
     main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 0.365vw solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
 
     main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
 
@@ -2094,8 +2094,8 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
 
     main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
 
     main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
 
@@ -2505,7 +2505,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.sk{}
     
     main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 0.365vw solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
     
     main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
     
@@ -2514,8 +2514,8 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
     
     main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
     
@@ -2876,7 +2876,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.sk{}
     
     main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 5px solid #333333; border-radius: 0.7vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
     
     main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
     
@@ -2885,8 +2885,8 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
     
     main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 5px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
-    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 5px solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 5px solid #333333; background: url(../images/img_cj_tablet.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
     

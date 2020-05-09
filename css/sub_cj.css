@@ -48,13 +48,13 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 30vw; margin-top: -2.825vw;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_cj_pc.png) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_cj_mobile.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_cj_pc.png) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     main>.detail_p{margin-top: 8.854vw;}
     main>.detail_p>h3{width: 100%;}
