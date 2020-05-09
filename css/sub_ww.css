@@ -11,7 +11,7 @@ a{text-decoration: none; color: #333333;}
 @media (min-width : 1600px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
-        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0;}
+        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; opacity: 0; box-sizing: border-box;}
         main{width: 100%;}
             main>.intro_p{width: 59.375vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
             main>.intro_d_p{width: 100%; background: rgba(105,150,254,0.7); margin-top: 3.646vw;}

@@ -9,10 +9,10 @@ h1, h2, h3, h4{font-family: 'DM Serif Display';}
 a{text-decoration: none; color: #333333;}
 
 
-@media (min-width : 1600px){
-    /* layout */
+@media (min-width : 1601px){
+/* layout */
 nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 9.259vh 0; box-sizing: border-box; opacity: 0;}
-.wrap{float: left; padding: 5.208vw 0 5.208vw 9.896vw; width: 70vw; box-sizing: border-box;}
+.wrap{float: left; padding: 4.167vw 0 5.208vw 9.896vw; width: 70vw; box-sizing: border-box;}
     header{position: relative; width: 100%; height: 50px; opacity: 0;}
     main{width: 100%;}
     footer{width: 100%; height: 3.646vw; clear: both; padding-top: 1.302vw; border-top: 0.208vw solid #333333; font-family: 'DM Serif Display';}
@@ -23,7 +23,7 @@ nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 9.259v
 
 .snb_box{position: fixed; top: 0; width: 10vw; height: 100%; opacity: 0; cursor: normal;}
 .snb{width: 100%; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 9.259vh 0;}
-.snb>li{transform: rotateZ(180deg); text-align: center; font-size: 2.222vh; padding: 1.5rem 0.5rem 1.5rem 0.3rem; writing-mode: vertical-lr; box-sizing: border-box; border-radius: 50rem; opacity: 0.5;}
+.snb>li{transform: rotateZ(180deg); text-align: center; font-size: 2.222vh; padding: 1.5rem 0.5rem 1.5rem 0.3rem; -webkit-writing-mode: vertical-lr; -moz-writing-mode: vertical-lr; -o-writing-mode: vertical-lr; -ms-writing-mode: vertical-lr; box-sizing: border-box; border-radius: 50rem; opacity: 0.5;}
 .snb>li:hover,.snb>li.on{background: #333333; color: #ffffff; opacity: 1;}
 
 /* header */
@@ -52,9 +52,9 @@ main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(3){margin-right: 5%;}
 main>section.main_p>.img_box{width: 19vw; float: right; opacity: 0;}
 main>section.main_p>.img_box>img{max-width: 100%; height: auto;}
 
-main>section.main_p>p{clear: both; font-size: 1.302vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify;}
+main>section.main_p>p{clear: both; font-size: 1.302vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
 main>section.main_p>p:first-of-type{padding: 2.083vw 0 3.906vw;}
-main>section.main_p>p:first-of-type>strong{font-weight: 500;}   
+main>section.main_p>p strong{font-weight: 600;}   
 
 /* work_p */
 main>section.work_p{width: 100%; padding-top: 2.604vw; box-sizing: border-box;}
@@ -133,7 +133,7 @@ main>section.work_p>div.pure_box>.mock_up1{position: absolute; width: 100%; heig
 .lion_eyebrows{position: absolute; left: calc(50% - 3px); top: 90px; width: 6px; height: 6px; border-radius: 50px;}
 .lion_eyebrows:after, .lion_eyebrows:before{content: ""; position: absolute; left: calc(50% - 33px); width: 66px; height: 14px; background: #000; border-radius: 20px;}
 .lion_eyebrows:after{margin-left: -65px;}
-.lion_eyebrows:before{margin-left: 65px; animation: eyebrow 2s linear 0s infinite;}
+.lion_eyebrows:before{margin-left: 65px; -moz-animation: eyebrow 2s linear 0s infinite;}
 
 @keyframes eyebrow{
     25%,75%{transform: rotate(-15deg); transform-origin: right top;}
@@ -419,10 +419,10 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
 
 }/* 1600px - pc */
 
-@media (min-width : 1024px ) and (max-width : 1599px){
+@media (min-width : 1025px ) and (max-width : 1600px){
         /* layout */
 nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 9.259vh 0; box-sizing: border-box; opacity: 0;}
-.wrap{float: left; padding: 5.208vw 0 5.208vw 9.896vw; width: 70vw; box-sizing: border-box;}
+.wrap{float: left; padding: 4.167vw 0 5.208vw 9.896vw; width: 70vw; box-sizing: border-box;}
     header{position: relative; width: 100%; height: 50px; opacity: 0;}
     main{width: 100%;}
     footer{width: 100%; height: 3.646vw; clear: both; padding-top: 1.302vw; border-top: 0.208vw solid #333333; font-family: 'DM Serif Display';}
@@ -462,9 +462,9 @@ main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(3){margin-right: 5%;}
 main>section.main_p>.img_box{width: 19vw; float: right; opacity: 0;}
 main>section.main_p>.img_box>img{max-width: 100%; height: auto;}
 
-main>section.main_p>p{clear: both; font-size: 1.302vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify;}
+main>section.main_p>p{clear: both; font-size: 1.302vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
 main>section.main_p>p:first-of-type{padding: 2.083vw 0 3.906vw;}
-main>section.main_p>p:first-of-type>strong{font-weight: 500;}   
+main>section.main_p>p strong{font-weight: 600;}   
 
 /* work_p */
 main>section.work_p{width: 100%; padding-top: 2.604vw; box-sizing: border-box;}
@@ -828,12 +828,12 @@ footer>p:first-child{float: left; font-size: 2.344vw; transform: translateY(150p
 footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transform: translateY(150px); opacity: 0;}
 }
 
-@media (min-width : 768px) and (max-width: 1023px){
+@media (min-width : 768px) and (max-width: 1024px){
     body.on{overflow: hidden;}
 
     /* layout */
     nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 9.259vh 0; box-sizing: border-box; opacity: 0; display: none;}
-    .wrap{float: left; padding: 5.208vw 9.896vw 5.208vw 9.896vw; width: 100%; box-sizing: border-box;}
+    .wrap{float: left; padding: 4.167vw 9.896vw 5.208vw 9.896vw; width: 100%; box-sizing: border-box;}
         header{position: relative; width: 100%; height: 50px; opacity: 0;}
         main{width: 100%;}
         footer{width: 100%; height: 3.646vw; clear: both; padding-top: 1.302vw; border-top: 0.208vw solid #333333; font-family: 'DM Serif Display';}
@@ -869,7 +869,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
 
     /* main_p */
     main>section.main_p{width: 100%; position: relative; height: 82.67vw;}
-    main>section.main_p>h2{width: 100%; float: left; margin-top: 20.083vw;}
+    main>section.main_p>h2{width: 100%; float: left; margin-top: 23.083vw;}
     main>section.main_p>h2>span{display:block; height: 13.792vw; overflow: hidden;}
     main>section.main_p>h2>span:nth-of-type(2){height: 15.813vw;}
     main>section.main_p>h2>span>i{display: inline-block; height: 100%; margin-top: -2.083vw; font-size: 13.292vw; font-style: normal; transform: translateY(180px);}
@@ -881,9 +881,10 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.main_p>.img_box{position: absolute; right: 0; width: 33vw; float: right; opacity: 0;}
     main>section.main_p>.img_box>img{max-width: 100%; height: auto;}
 
-    main>section.main_p>p{clear: both; font-size: 2.052vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify;}
-    main>section.main_p>p:first-of-type{padding: 2.083vw 0 3.906vw;}
-    main>section.main_p>p:first-of-type>strong{font-weight: 500;}   
+    main>section.main_p>p{clear: both; font-size: 2.5vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
+    main>section.main_p>p:first-of-type{padding: 4.083vw 0 3.906vw;}
+    main>section.main_p>p strong{font-weight: 600;}   
+    main>section.main_p>p:nth-of-type(2) span{display: block;}   
 
     /* work_p */
     main>section.work_p{width: 100%; padding-top: 2.604vw; box-sizing: border-box;}
@@ -1253,7 +1254,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
 
     main>section.main_p>p{clear: both; font-size: 3.152vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
     main>section.main_p>p:first-of-type{padding: 7.083vw 0 3.906vw;}
-    main>section.main_p>p:first-of-type>strong{font-weight: 500;}
+    main>section.main_p>p strong{font-weight: 600;}
     main>section.main_p>p>span{display: block;}  
 
     /* work_p */
@@ -1568,6 +1569,1609 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     footer>p:first-child{font-size: 5.144vw; transform: translateY(150px); opacity: 0;}
     footer>p:last-child{font-size: 1.542vw; line-height: 1.5; transform: translateY(150px); opacity: 0;}    
 }
+
+
+
+
+/* ie animation keyframe */
+
+@keyframes eyebrow{
+    25%,75%{transform: rotate(-15deg); transform-origin: right top;}
+    0%,100%{transform: rotate(0); transform-origin: right top;}
+}
+
+@keyframes eye{
+    25%,78%{height: 3px; width: 30px; top: 2px;}
+    100%,0%{height: 24px; width: 26px; top: -10px;}
+}
+
+@keyframes hands_up{
+    25%{transform: rotate(15deg);}
+    50%{transform: rotate(-15deg) translateY(-10px);}
+    75%,100%{transform: rotate(0deg);}
+}
+
+@keyframes thumb-up{
+    25%{transform: rotate(20deg);}
+    50%,100%{transform: rotate(5deg);}
+}
+
+@keyframes heart_beat{
+    25%{transform: scale(1.1)}
+    75%{transform: scale(0.6)}
+}
+
+@keyframes face_moving{
+    10%{transform: translateY(25px);}
+    20%{transform: translateY(15px);}
+    30%{transform: translateY(15px);}
+    40%{transform: translateY(25px);}
+    50%{transform: translateY(25px);}
+    60%{transform: translateY(0);}
+    70%{transform: translateY(-10px);}
+    80%{transform: translateY(0);}
+    90%{transform: translateY(-10px);}
+}
+
+@keyframes haha_mouth{
+    10%{transform: scale(0.6); top: 45%;}
+    20%{transform: scale(0.8); top: 45%;}
+    30%{transform: scale(0.6); top: 45%;}
+    40%{transform: scale(0.8); top: 45%;}
+    50%{transform: scale(0.6); top: 45%;}
+    60%{transform: scale(1); top: 50%;}
+    70%{transform: scale(1.2); top: 50%;}
+    80%{transform: scale(1); top: 50%;}
+    90%{transform: scale(1.2); top: 50%;}
+}
+
+@keyframes yay{
+    25%{transform: rotate(-15deg)}
+    75%{transform: rotate(15deg)}
+}
+
+@keyframes wow_face{
+    15%,25%{transform: rotate(20deg) translateX(-25px);}
+    45%,65%{transform: rotate(-20deg) translateX(25px);}
+    75%,100%{transform: rotate(0deg) translateX(0);}
+}
+
+@keyframes wow_brow{
+    15%,65%{top: 25px;}            
+    75%,100%, 0%{top: 15px;}              
+}
+
+@keyframes wow_tongue{
+    10%,30%{width: 20px; height: 20px; left: calc(50% - 10px)}
+    50%,70%{width: 30px; height: 40px; left: calc(50% - 15px)}
+    75%,100%{height: 50px;}
+}
+
+@keyframes sad_face{
+    25%,35%{top: -15px;}
+    55%,95%{top: 10px;}
+    100%,0%{top: 0;}
+}
+
+@keyframes sad_tear{
+    0%,100%{display: block; left: 30px; top: 15px; transform: rotate(45deg) scale(0);}
+    25%{display: block; left: 30px; transform: rotate(45deg) scale(2);}
+    49.9%{display: block; left: 30px; top: 65px; transform: rotate(45deg) scale(0);}
+
+    50%{display: block; left: -35px; top: 15px; transform: rotate(45deg) scale(0);}
+    75%{display: block; left: -35px; transform: rotate(45deg) scale(2);}
+    99.9%{display: block; left: -35px; top: 65px; transform: rotate(45deg) scale(0);}
+}
+
+@keyframes sad_mouth{
+    25%,35%{transform: scale(0.85); top: 70px;}
+    55%,100%,0%{transform: scale(1); top: 80px;}
+}
+
+@keyframes angry_face{
+    45%,60%{background-size: 250%;}
+    85%,100%,0%{background-size: 100%;}
+}
+
+@keyframes angry{
+    35%,60%{transform: translateX(0) translateY(10px) scale(0.9)}
+    40%{transform: translateX(-5px) translateY(10px) scale(0.9)}
+    45%{transform: translateX(5px) translateY(10px) scale(0.9)}
+    50{transform: translateX(-5px) translateY(10px) scale(0.9)}
+    55%{transform: translateX(5px) translateY(10px) scale(0.9)}
+}
+
+@keyframes angry_mouth{
+    25%,50%{height: 6px; bottom: 25px;}
+}
+
+/* //ie animation keyframe */
+
+
+
+
+
+
+/* IE */
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width : 1601px) {
+    /* layout */
+    nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 2.759vw 0; box-sizing: border-box; opacity: 0;}
+    .wrap{float: left; padding: 4.167vw 0 5.208vw 9.896vw; width: 70vw; box-sizing: border-box;}
+        header{position: relative; width: 100%; height: 50px; opacity: 0; margin-bottom: 4.427vw;}
+        main{width: 100%;}
+        footer{width: 100%; height: 3.646vw; clear: both; padding-top: 1.302vw; border-top: 0.208vw solid #333333; font-family: 'DM Serif Display';}
+
+    /* nav */
+    .side_text{width: 100%; height: 100%; text-align: left; font-family: 'DM Serif Display';}
+    .side_text>span{display: block; width: 13.425vw; transform: rotateZ(-90deg); margin-left: -8.59vw; transform-origin: right; font-size: 1.45vw;} 
+
+    .snb_box{position: fixed; top: 0; width: 10vw; height: 100%; opacity: 0; cursor: normal;}
+    .snb{width: 100%; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 9.259vh 0; box-sizing: border-box;}
+    .snb>li{transform: rotateZ(-90deg); text-align: center; font-size: 2.222vh; padding: 1.5rem 2.5rem 1rem 2.5rem; box-sizing: border-box; border-radius: 50rem; opacity: 0.5;}
+    .snb>li:hover,.snb>li.on{background: #333333; color: #ffffff; opacity: 1;}
+
+    /* header */
+    h1{font-size: 1.823vw; width: 41.22%; line-height: 5rem;}
+    .gnb{width: 59.77%; position: absolute; right: 0; top: 30%; display: flex; justify-content: space-between;}
+    .gnb>li{float: left; padding: 0.33vw 0.99vw 0.3rem; box-sizing: border-box; cursor: pointer; border-radius: 5rem; font-size: 0.938vw;}
+    .gnb>li:hover,.gnb>li.on{background: #333333; color: #ffffff;}
+
+    .m_gnb{display: none;}
+    .menu_box{display: none;}
+    
+    /* main */
+    main{margin-top: 4.427vw;}
+    
+    /* main_p */
+    main>section.main_p{width: 100%; position: relative; height: 41.667vw;}
+    main>section.main_p>h2{width: 38.542vw; float: left; margin-top: 2.083vw;}
+    main>section.main_p>h2>span{display:block; height: 7.292vw; overflow: hidden;}
+    main>section.main_p>h2>span:nth-of-type(2){height: 7.813vw;}
+    main>section.main_p>h2>span>i{display: inline-block; height: 100%; margin-top: -2.083vw; font-size: 7.292vw; font-style: normal; transform: translateY(180px);}
+    
+    main>section.main_p>h2>span>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(3){margin-right: 5%;}
+    
+    main>section.main_p>.img_box{width: 19vw; float: right; opacity: 0;}
+    main>section.main_p>.img_box>img{max-width: 100%; height: auto;}
+    
+    main>section.main_p>p{clear: both; font-size: 1.302vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
+    main>section.main_p>p:first-of-type{padding: 2.083vw 0 3.906vw;}
+    main>section.main_p>p strong{font-weight: 600;}   
+    
+    /* work_p */
+    main>section.work_p{width: 100%; padding-top: 2.604vw; box-sizing: border-box;}
+    
+    main>section.work_p>h3>{}
+    main>section.work_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.work_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+    
+    main>section.work_p>.Work_p_inner{width: 100%; margin: 3.646vw auto; border: 0.208vw solid #333333; box-sizing: border-box; border-radius: 1.5vw;}
+    main>section.work_p>.Work_p_inner:after{content: ""; display: block; clear: both;}
+    
+    main>section.work_p>.Work_p_inner>a{position: relative; float: left; display: block; box-sizing: border-box; height: 23.438vw; padding: 10px 25px; overflow: hidden;}
+    main>section.work_p>.Work_p_inner>a>h4{font-size: 3.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>.Work_p_inner>a>p{font-size: 0.938vw; opacity: 0.7; transform: translateY(150px); opacity: 0}
+    
+    main>section.work_p>.Work_p_inner>a.sk{width: 55%; border-bottom: 0.208vw solid #333; border-right: 0.208vw solid #333;}
+    
+    main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 7px solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    
+    main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
+    
+    main>section.work_p>.Work_p_inner>a.cj{width: 45%; border-bottom: 0.208vw solid #333;}
+    
+    main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
+    
+    main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 7px solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
+    
+    
+    
+    main>section.work_p>.Work_p_inner>a.ww{width: 40%; border-right: 0.208vw solid #333;}
+    
+    main>section.work_p>.Work_p_inner>a.ww>div{position: absolute; left: 50%; top: 0; width: 80%; height: 100%; transform: translateX(-50%);}
+    
+    main>section.work_p>.Work_p_inner>a.ww>div>span{display: block; border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(1){display: block; position: absolute; bottom: -35%; left: 5%; width: 40%; height: 85%; background: url(../images/img_ww_main.png) no-repeat 50% 0.1%; background-size: contain; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(2){display: block; position: absolute; top: -45%; right: 0%; width: 40%; height: 100%; transform: rotateZ(180deg); border: 7px solid #333333; background: url(../images/img_ww_splash.png) no-repeat 50% 0%; background-size: contain; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.ww:hover>div>span{transform: translate3d(0,-17%,0); opacity: 1;}
+    main>section.work_p>.Work_p_inner>a.ww:hover>div>span:last-of-type{transform: translate3d(0,12%,0) rotate(180deg); opacity: 1;}
+    
+    main>section.work_p>.Work_p_inner>a.melon{width: 60%;}
+    
+    main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+    
+    main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 7px solid #333333; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
+    
+    main>section.work_p>.Work_p_inner>a.anot_pof{width: 100%; border-top: 0.208vw solid #333; display: none;}
+    
+    main>section.work_p>.Work_p_inner>a.anot_pof>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+    main>section.work_p>.Work_p_inner>a.anot_pof>div>span{display: block; border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1); display: block; position: absolute; bottom: -25%; left: 0%; width: 100%; height: 85%; border-radius: 0.5vw; background: url(../images/img_anopf.png) no-repeat 0% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    
+    main>section.work_p>.Work_p_inner>a.anot_pof:hover>div>span{transform: translate3d(0,-6%,0); opacity: 1;}
+    
+    main>section.work_p>h4{font-size: 3.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>div.pure_box{position: relative; margin: 0 auto; height: 25.25vw; width: 100%; /* transform: scale(0.8); */ box-sizing: border-box;} 
+    
+    
+    main>section.work_p>div.pure_box>.mock_up1{position: absolute; width: 100%; height: 50%;box-sizing: border-box;}
+    
+    .lion{position: absolute; top: 7vw; left: 20%; width: 300px; height: 300px; transform: scale(1.1) translateX(-53%);}
+    .lion_face{z-index: 3; position: absolute; left: 50%; top: 50%; width: 300px; height: 300px; margin-left: -150px; margin-top: -150px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear{z-index: 1; position: absolute; left: calc(50% - 45px); top: -50px; width: 90px; height: 90px; border-radius: 70%;}
+    .lion_ear:after, .lion_ear:before{content: ""; position: absolute; left: calc(50% - 45px); top: 40px; width: 90px; height: 90px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear:after{margin-left: -85px;}
+    .lion_ear:before{margin-left: 85px;}
+    
+    .lion_eyebrows{position: absolute; left: calc(50% - 3px); top: 90px; width: 6px; height: 6px; border-radius: 50px;}
+    .lion_eyebrows:after, .lion_eyebrows:before{content: ""; position: absolute; left: calc(50% - 33px); width: 66px; height: 14px; background: #000; border-radius: 20px;}
+    .lion_eyebrows:after{margin-left: -65px;}
+    .lion_eyebrows:before{margin-left: 65px; animation: eyebrow 2s linear 0s infinite;}
+    
+    .lion_eye{position: absolute; left: calc(50% - 3px); top: 135px; width: 6px; height: 6px; border-radius: 100%;}
+    .lion_eye:after,.lion_eye:before{content: ""; position: absolute;; left: calc(50% - 12px); top: -10px;  width: 24px; height: 24px; background: #000; border-radius: 50%;}
+    .lion_eye:after{margin-left: -55px;}
+    .lion_eye:before{margin-left: 55px; animation: eye 2s linear 0s infinite;}
+    
+    
+    .lion_nose{z-index: 5; position: absolute; left: calc(50% - 15px); top: 155px; width: 30px; height: 32px; background: #000; border-radius: 20px; box-shadow: -15px 20px 0 0 #fff, 14px 23px 0 0 #fff}
+    
+    .lion_nose2:after, .lion_nose2:before{content: ""; position: absolute; left: calc(50% - 30px); top: 165px; width: 60px; height: 60px; background: #fff; border: 8px solid #000; border-radius: 50px; box-sizing: border-box;}
+    .lion_nose2:after{margin-left: -23px;}
+    .lion_nose2:before{margin-left: 23px;}
+    
+    
+    main>section.work_p>div.pure_box>.mock_up2{position: absolute; top: 3vw; right: 0vw; width: 60%; height: 30%; box-sizing: border-box;}
+    /* emoji */
+    .emoji{position: absolute; top: 0%; display: inline-block; width: 120px; height: 120px; border-radius: 50%; margin: 15px 1vw 0px; background: #ffda6a; transform: scale(1.1);}
+    .emoji:after{content: "emoji"; position: absolute; bottom: -40px; left: calc(50% - 30px); width: 60px; font-size: 18px; color: #8a8a8a}
+    
+    .emoji:nth-of-type(1){left: 0;}
+    .emoji:nth-of-type(2){left: 25%;}
+    .emoji:nth-of-type(3){left: 50%;}
+    .emoji:nth-of-type(4){left: 75%;}
+    .emoji:nth-of-type(5){left: 11%; top: 150%;}
+    .emoji:nth-of-type(6){left: 38.333%; top: 150%;}
+    .emoji:nth-of-type(7){left: 65%; top: 150%;} 
+    
+    /* 1.emoji_like */
+    .emoji_like{background: #548dff;}
+    .emoji_like:after{content: "like";}
+    .emoji_like .emoji_hand{position: absolute; left: 25px; bottom: 30px; width: 20px; height: 40px; background: #fff; border-radius: 5px; animation: hands_up 2s linear 0s infinite;}
+    
+    
+    .emoji_like .emoji_hand:before{content: ""; position: absolute; left: 25px; bottom: 5px; width: 40px; height: 10px; background: #fff; border-radius: 2px 10px 10px 2px; box-shadow: 1px -9px 0 1px #fff, 2px -19px 0 2px #fff, 3px -29px 0 3px #fff;}
+    
+    .emoji_like .emoji_thumb{position: absolute; right: -25px; top: -25px; z-index: 2; border-bottom: 20px solid #fff; border-left: 20px solid transparent; transform: rotate(5deg); transform-origin: 0 100%; animation: thumb-up 2s linear infinite}
+    
+    .emoji_like .emoji_thumb:before{content: ""; position: absolute; left: -9.6px; top: -9px; width: 10px; height: 12px; background: #fff; border-radius: 50% 50% 0 0; box-shadow: -1px 4px 0 -1px #fff; transform: rotate(-14deg); transform-origin: 100% 100%;} 
+    
+    /* 2.emoji_love */
+    .emoji_love{background: #f55064;}
+    .emoji_love:after{content: "lover";}
+    
+    .emoji_love .emoji_heart{position: absolute; left: 50%; top: 50%; width: 80px; height: 80px; /*transform: translate3d(-50%,-50%,0) */ margin-left: -40px; margin-top: -40px; animation: heart_beat 1s linear infinite alternate;}
+    
+    
+    .emoji_love .emoji_heart:before,.emoji_love .emoji_heart:after{content: ""; position: absolute; left: 50%; top: 50%; width: 40px; height: 64px; margin-left: -20px; margin-top: -32px; background: #fff; border-radius: 20px 20px 0 0;}
+    .emoji_love .emoji_heart:before{transform: translate(20px) rotate(-45deg); transform-origin: 0 100%;}
+    .emoji_love .emoji_heart:after{transform: translate(-20px) rotate(45deg); transform-origin: 100% 100%;}
+    
+    /* position : absolute는 margin: 0 auto 안된다 */
+    /* 
+    중앙에 위치 시키는 방법
+    1. position: absolute; left: calc(50% - 가로 1/2px),top: calc(50% - 세로 1/2px);
+    2. position: absolute; left: 50%; top: 50%; margin-left: -가로 1/2px , margin-top: -세로 1/2px; 
+    3.position: absolutr; left: 50%; top: 50%; transform: translate(-50%, -50%, 0);
+    */
+    
+    /* 3. emoji_haha */
+    .emoji_haha:after{content: "Haha";}
+    .emoji_haha .emoji_face{position: absolute; width: 100%; height: 100%; animation: face_moving 2s linear 0s infinite;}
+    
+    
+    .emoji_haha .emoji_eyes{position: absolute; left: 50%; top: 35px; width: 26px; height: 6px; margin-left: -13px; border-radius: 2px;  box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000; transform: rotate(20deg);}
+    
+    .emoji_haha .emoji_eyes:after{content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 6px; border-radius: 2px; box-shadow: -25px -5px 0 0 #000, 25px 5px 0 0 #000; transform: rotate(-40deg);}
+    
+    .emoji_haha .emoji_mouth{position: absolute; left: 50%; top: 50%; width: 80px; height: 40px; margin-left: -40px; background: #000; border-radius: 0 0 40px 40px; overflow: hidden; animation: haha_mouth 2s linear 0s infinite;}
+    
+    
+    .emoji_haha .emoji_tongue{position: absolute; left: 50%; bottom: -10px; width: 70px; height: 30px; margin-left: -35px; background: #f55064; border-radius: 50%;}
+    
+    /* 4.emoji_yay */
+    .emoji_yay:after{content: "Yay"}
+    .emoji_yay .emoji_face{position: absolute; width: 100%; height: 100%; animation: yay 1s linear 0s infinite alternate;}
+    
+    
+    
+    .emoji_yay .emoji_eyebrows{position: absolute; left: calc(50% - 3px); top: 30px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -6px 0 0 0#000, -36px 0 0 0 #000, 6px 0 0 0 #000, 36px 0 0 0 #000;}
+    .emoji_yay .emoji_eyebrows:before,.emoji_yay .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 18px); bottom: 3px; width: 36px; height: 18px; border: 6px solid black; border-bottom: 0; border-radius: 60px 60px 0 0; box-sizing: border-box;}/* border, padding 값이 실제크기 포함 안됨. 벗 마진은 안됨!*/
+    .emoji_yay .emoji_eyebrows:before{margin-left: -21px;}
+    .emoji_yay .emoji_eyebrows:after{margin-left: 21px;}
+    .emoji_yay .emoji_mouth{position: absolute; left: calc(50% - 3px); top: 60px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -25px 0 0 0 #000, 25px 0 0 0 #000, -35px -2px 30px 10px #d5234c, 35px -2px 30px 10px #d5234c;}
+    .emoji_yay .emoji_mouth:after{content: ""; position: absolute; left: calc(50% - 40px); top: -64px; width: 80px; height: 80px; border-radius: 50%; border: 6px solid #000; box-sizing: border-box; border-left-color: transparent; border-right-color: transparent; border-top-color: transparent;}
+    
+    /* 5. emoji_wow */
+    .emoji_wow:after{content: "wow";}
+    .emoji_wow .emoji_face{position: absolute; width: 100%; height: 100%; animation: wow_face 3s linear 0s infinite; }
+    
+    
+    .emoji_wow .emoji_eyebrows{position: absolute; left: calc(50% - 3px); width: 6px; height: 6px; border-radius: 50%;box-shadow: -18px 0 0 0 #000,-33px 0 0 0 #000, 18px 0 0 0 #000, 33px 0 0 0 #000; animation: wow_brow 3s linear 0s infinite;;}
+    
+
+    
+    .emoji_wow .emoji_eyebrows:before, .emoji_wow .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 12px); top: -3px; width: 24px; height: 20px; border-radius: 50%; border: 6px solid #000; border-bottom-color: transparent; border-right-color: transparent; border-left-color: transparent; box-sizing: border-box;}
+    .emoji_wow .emoji_eyebrows:before{margin-left: -25px;}
+    .emoji_wow .emoji_eyebrows:after{margin-left: 25px;}
+    .emoji_wow .emoji_eyes{position: absolute; left: calc(50% - 8px); top: 35px; width: 16px; height: 24px; border-radius: 50%; box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+    .emoji_wow .emoji_tongue{position: absolute; left: calc(50% - 15px); top: 50%; width: 30px; height: 45px; border-radius: 50%; background: #000; animation: wow_tongue 3s linear 0s infinite}
+    
+     
+    
+    /* 6. emoji_sad */
+    .emoji_sad:after{content: "Sad";}
+    .emoji_sad .emoji_face{position: absolute; width: 100%; height: 100%; animation: sad_face 2s ease-in 0s infinite;}
+    
+    .emoji_sad .emoji_eyebrows{position:absolute; left: calc(50% - 3px); top: 35px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -40px 9px 0 0 #000, -25px 0 0 0 #000, 25px 0 0 0 #000, 40px 9px 0 0 #000;}
+    .emoji_sad .emoji_eyebrows:after, .emoji_sad .emoji_eyebrows:before{content: ""; position: absolute; left: calc(50% - 15px); top: 2px; width: 30px; height: 20px; border: 6px solid #000; box-sizing: border-box; border-radius: 50%; border-bottom-color: transparent; border-right-color: transparent; border-left-color: transparent;}
+    .emoji_sad .emoji_eyebrows:after{margin-left: -30px; transform: rotate(-30deg);}
+    .emoji_sad .emoji_eyebrows:before{margin-left: 30px; transform: rotate(30deg)}
+    .emoji_sad .emoji_eyes{position: absolute; left: calc(50% - 7px); top: 50px; width: 14px; height: 16px; border-radius: 50%; box-shadow: -25px 0 0 0 #000, 25px 0 0 0 #000;}
+    .emoji_sad .emoji_eyes:after{content: ""; position: absolute; width: 12px; height: 12px; background: #548dff; margin-left: 6px; border-radius: 0 100% 40% 60% / 0 50% 40% 100%; transform: rotate(45deg); animation: sad_tear 2s ease-in 0s infinite;}
+    
+    .emoji_sad .emoji_mouth{position: absolute; left: calc(50% - 30px); top: 80px; width: 60px; height: 80px; border: 6px solid #000; box-sizing: border-box;border-radius: 50%; border-bottom-color: transparent; border-left-color: transparent; border-right-color: transparent; animation: sad_mouth 2s ease-in 0s infinite;}
+    
+    .emoji_sad .emoji_mouth:after{content: ""; position: absolute; left: calc(50% - 3px); top: 4px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -18px 0 0 0 #000, 18px 0 0 0 #000;}
+    
+    /* 7. emoji_angry */
+    .emoji_angry{background: linear-gradient(to bottom, #d5234c -10%, #ffda6a 100%); background-size: 100%; animation: angry_face 2s ease-in 0s infinite;}
+    
+    .emoji_angry:after{content: "angry";}
+    .emoji_angry .emoji_face{position: absolute; width: 100%; height: 100%; animation: angry 2s ease-in 0s infinite;}
+    
+    .emoji_angry .emoji_eyebrows{position: absolute; width: 6px; height: 6px; left: calc(50% - 3px); top: 55px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -44px 5px 0 0 #000, -7px 16px 0 0 #000, 7px 16px 0 0 #000, 44px 5px 0 0 #000;}
+    .emoji_angry .emoji_eyebrows:after,.emoji_angry .emoji_eyebrows:before{content: ""; position: absolute; left: calc(50% - 25px); top: 0; width: 50px; height: 20px; border: 6px solid #000; box-sizing: border-box; border-radius: 50%; border-top-color: transparent; border-left-color: transparent; border-right-color: transparent;}
+    .emoji_angry .emoji_eyebrows:after{margin-left: -25px; transform: rotate(16deg);}
+    .emoji_angry .emoji_eyebrows:before{margin-left: 25px; transform: rotate(-17deg);} 
+    
+    .emoji_angry .emoji_eyes{position: absolute; left: calc(50% - 6px); top: 70px; width: 12px; height: 12px; border-radius: 50%;box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+    .emoji_angry .emoji_mouth{position: absolute; left: calc(50% - 18px); bottom: 15px; width: 36px; height: 18px; background: #000; border-radius: 50%; animation: angry_mouth 2s ease-in 0s infinite;}
+    
+    
+    
+    /* resume */
+    main>section.resume_p{width: 100%; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.resume_p>h3>{}
+    main>section.resume_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.resume_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+    
+    main>section.resume_p>div{width: 50%; float: left; margin-top: 3.646vw;}
+    main>section.resume_p>div>h4{font-size: 3.125vw; transform: translateY(150px); opacity: 0;}
+    
+    main>section.resume_p>div>dl{width: 100%; margin-top: 2.604vw; transform: translateY(150px); opacity: 0;}
+    main>section.resume_p>div>dl>dt{font-size: 1.250vw; font-weight: bold; color: #333333;}
+    main>section.resume_p>div>dl>dd{font-size: 0.938vw; color: #333333; opacity: 0.8;}
+    
+    main>section.resume_p>div.edu>dl>dd:first-of-type{margin: 1.081vw 0 3.7vw; opacity: 1;}
+    
+    main>section.resume_p>div.skill>dl>dt{width: 100%;}
+    main>section.resume_p>div.skill>dl>dd{position: relative; width: 19.271vw; margin-bottom: 1.302vw;} 
+    main>section.resume_p>div.skill>dl>dd:first-of-type{margin: 1.302vw 0;} 
+    main>section.resume_p>div.skill>dl>dd>ul{position: absolute; right: 3.042vw; top: 50%; height: 0.781vw; width: 10.813vw; transform: translateY(-0.125vw);}
+    main>section.resume_p>div.skill>dl>dd>ul>li{float: right; width: 0.313vw; height: 0.313vw; background: #333333; margin-left: 0.521vw; border-radius: 5vw; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd>ul>li:first-child{margin-right: 0; background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd:last-of-type>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(3){background: none; border: 1px solid #333333;}
+    
+    main>section.resume_p>div.skill>dl>dd>em{display: block; position: absolute; top: 50%; right: 0; transform: translateY(-35%);}
+    
+    main>section.resume_p>div.license{margin-top: 1.455vw;}
+    main>section.resume_p>div.license>dl{position: relative; width: 23.875vw;}
+    main>section.resume_p>div.license>dl>dt{}
+    main>section.resume_p>div.license>dl>dd:first-of-type{position: absolute; top: 50%; right: 5.325vw; width: 6vw; transform: translateY(-50%);}
+    main>section.resume_p>div.license>dl>dd:last-of-type{position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+    
+    
+    
+    /* about */
+    main>section.about_p{clear: both; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.about_p>h3>{}
+    main>section.about_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.about_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+    
+    main>section.about_p>dl>dt{margin: 7.813vw 0 2.344vw; font-size: 3.125vw;font-family: 'DM Serif Display'; transform: translateY(150px); opacity: 0;}
+    main>section.about_p>dl>dd{font-size: 1.250vw; transform: translateY(150px); opacity: 0; line-height: 1.5;  text-align: justify;}
+    
+    
+    
+    /* contact */
+    main>section.contact_p{clear: both; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.contact_p>h3>{}
+    main>section.contact_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.contact_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+    
+    main>section.contact_p>p{margin-top: 3.646vw; font-size: 1.563vw; line-height: 1.5; transform: translateY(150px); opacity: 0;}
+    main>section.contact_p>dl{width: 40%; float: left; margin: 7.813vw 0 7.813vw 10%; text-align: center; transform: translateY(150px); opacity: 0;}
+    main>section.contact_p>dl:nth-of-type(2){margin: 7.813vw 10% 7.813vw 0;}
+    main>section.contact_p>dl>dt{font-size: 3.125vw; font-family: 'DM Serif Display';}
+    main>section.contact_p>dl>dd{font-size: 1.863vw; margin-top: 1.302vw;}
+    
+    main>section.contact_p>dl>dt>img{width: 3.646vw; height: 3.646vw; margin: -0.521vw 0.781vw 0 0;}
+    main>section.contact_p>dl:first-of-type>dt>img{width: 3.802vw; height: 3.802vw;}
+    
+    
+    
+    /* footer */
+    footer>p:first-child{float: left; font-size: 2.344vw; transform: translateY(150px); opacity: 0;}
+    footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transform: translateY(150px); opacity: 0;}
+    
+    }/* 1600px - pc */
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width : 1025px ) and (max-width : 1600px) {
+    /* layout */
+    nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 2.759vw 0; box-sizing: border-box; opacity: 0;}
+    .wrap{float: left; padding: 4.167vw 0 5.208vw 9.896vw; width: 70vw; box-sizing: border-box;}
+        header{position: relative; width: 100%; height: 50px; opacity: 0; margin-bottom: 4.427vw;}
+        main{width: 100%;}
+        footer{width: 100%; height: 3.646vw; clear: both; padding-top: 1.302vw; border-top: 0.208vw solid #333333; font-family: 'DM Serif Display';}
+
+    /* nav */
+    .side_text{width: 100%; height: 100%; text-align: left; font-family: 'DM Serif Display';}
+    .side_text>span{display: block; width: 13.425vw; transform: rotateZ(-90deg); margin-left: -8.59vw; transform-origin: right; font-size: 1.45vw;} 
+
+    .snb_box{position: fixed; top: 0; width: 10vw; height: 100%; opacity: 0; cursor: normal;}
+    .snb{width: 100%; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 9.259vh 0; box-sizing: border-box;}
+    .snb>li{transform: rotateZ(-90deg); text-align: center; font-size: 2.222vh; padding: 1.5rem 2.5rem 1rem 2.5rem; box-sizing: border-box; border-radius: 50rem; opacity: 0.5;}
+    .snb>li:hover,.snb>li.on{background: #333333; color: #ffffff; opacity: 1;}
+
+    /* header */
+    h1{font-size: 1.823vw; width: 41.22%; line-height: 5rem;}
+    .gnb{width: 59.77%; position: absolute; right: 0; top: 30%; display: flex; justify-content: space-between;}
+    .gnb>li{float: left; padding: 0.33vw 0.99vw 0.3rem; box-sizing: border-box; cursor: pointer; border-radius: 5rem; font-size: 0.938vw;}
+    .gnb>li:hover,.gnb>li.on{background: #333333; color: #ffffff;}
+
+    .m_gnb{display: none;}
+    .menu_box{display: none;}
+
+    /* main */
+    main{margin-top: 4.427vw;}
+
+    /* main_p */
+    main>section.main_p{width: 100%; position: relative; height: 41.667vw;}
+    main>section.main_p>h2{width: 38.542vw; float: left; margin-top: 2.083vw;}
+    main>section.main_p>h2>span{display:block; height: 7.292vw; overflow: hidden;}
+    main>section.main_p>h2>span:nth-of-type(2){height: 7.813vw;}
+    main>section.main_p>h2>span>i{display: inline-block; height: 100%; margin-top: -2.083vw; font-size: 7.292vw; font-style: normal; transform: translateY(180px);}
+
+    main>section.main_p>h2>span>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(3){margin-right: 5%;}
+
+    main>section.main_p>.img_box{width: 19vw; float: right; opacity: 0;}
+    main>section.main_p>.img_box>img{max-width: 100%; height: auto;}
+
+    main>section.main_p>p{clear: both; font-size: 1.302vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
+    main>section.main_p>p:first-of-type{padding: 2.083vw 0 3.906vw;}
+    main>section.main_p>p strong{font-weight: 600;}   
+
+    /* work_p */
+    main>section.work_p{width: 100%; padding-top: 2.604vw; box-sizing: border-box;}
+
+    main>section.work_p>h3>{}
+    main>section.work_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.work_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.work_p>.Work_p_inner{width: 100%; margin: 3.646vw auto; border: 0.208vw solid #333333; box-sizing: border-box; border-radius: 1.5vw;}
+    main>section.work_p>.Work_p_inner:after{content: ""; display: block; clear: both;}
+
+    main>section.work_p>.Work_p_inner>a{position: relative; float: left; display: block; box-sizing: border-box; height: 23.438vw; padding: 0.521vw 1.302vw; overflow: hidden;}
+    main>section.work_p>.Work_p_inner>a>h4{font-size: 3.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>.Work_p_inner>a>p{font-size: 0.938vw; opacity: 0.7; transform: translateY(150px); opacity: 0}
+
+    main>section.work_p>.Work_p_inner>a.sk{width: 55%; border-bottom: 0.208vw solid #333; border-right: 0.208vw solid #333;}
+
+    main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 0.365vw solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+
+    main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
+
+    main>section.work_p>.Work_p_inner>a.cj{width: 45%; border-bottom: 0.208vw solid #333;}
+
+    main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
+
+    main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+
+    main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
+
+
+
+    main>section.work_p>.Work_p_inner>a.ww{width: 40%; border-right: 0.208vw solid #333;}
+
+    main>section.work_p>.Work_p_inner>a.ww>div{position: absolute; left: 50%; top: 0; width: 80%; height: 100%; transform: translateX(-50%);}
+
+    main>section.work_p>.Work_p_inner>a.ww>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(1){display: block; position: absolute; bottom: -35%; left: 5%; width: 40%; height: 85%; background: url(../images/img_ww_main.png) no-repeat 50% 0.1%; background-size: contain; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(2){display: block; position: absolute; top: -45%; right: 0%; width: 40%; height: 100%; transform: rotateZ(180deg); border: 0.365vw solid #333333; background: url(../images/img_ww_splash.png) no-repeat 50% 0%; background-size: contain; transition: all 0.3s ease 0.2s;}
+
+    main>section.work_p>.Work_p_inner>a.ww:hover>div>span{transform: translate3d(0,-17%,0); opacity: 1;}
+    main>section.work_p>.Work_p_inner>a.ww:hover>div>span:last-of-type{transform: translate3d(0,12%,0) rotate(180deg); opacity: 1;}
+
+    main>section.work_p>.Work_p_inner>a.melon{width: 60%;}
+
+    main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+
+    main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+
+    main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
+
+    main>section.work_p>.Work_p_inner>a.anot_pof{width: 100%; border-top: 0.208vw solid #333; display: none;}
+
+    main>section.work_p>.Work_p_inner>a.anot_pof>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+    main>section.work_p>.Work_p_inner>a.anot_pof>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1); display: block; position: absolute; bottom: -25%; left: 0%; width: 100%; height: 85%; border-radius: 0.5vw; background: url(../images/img_anopf.png) no-repeat 0% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+
+    main>section.work_p>.Work_p_inner>a.anot_pof:hover>div>span{transform: translate3d(0,-6%,0); opacity: 1;}
+
+    main>section.work_p>h4{font-size: 3.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>div.pure_box{position: relative; margin: 0 auto; height: 30.25vw; width: 100%; /* transform: scale(0.8); */ box-sizing: border-box;} 
+
+
+    main>section.work_p>div.pure_box>.mock_up1{position: absolute; width: 100%; height: 50%;box-sizing: border-box;}
+
+    .lion{position: absolute; top: 5vw; left: 17%; width: 300px; height: 300px; transform: scale(0.856) translateX(-53%);}
+    .lion_face{z-index: 3; position: absolute; left: 50%; top: 50%; width: 300px; height: 300px; margin-left: -150px; margin-top: -150px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear{z-index: 1; position: absolute; left: calc(50% - 45px); top: -50px; width: 90px; height: 90px; border-radius: 70%;}
+    .lion_ear:after, .lion_ear:before{content: ""; position: absolute; left: calc(50% - 45px); top: 40px; width: 90px; height: 90px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear:after{margin-left: -85px;}
+    .lion_ear:before{margin-left: 85px;}
+
+    .lion_eyebrows{position: absolute; left: calc(50% - 3px); top: 90px; width: 6px; height: 6px; border-radius: 50px;}
+    .lion_eyebrows:after, .lion_eyebrows:before{content: ""; position: absolute; left: calc(50% - 33px); width: 66px; height: 14px; background: #000; border-radius: 20px;}
+    .lion_eyebrows:after{margin-left: -65px;}
+    .lion_eyebrows:before{margin-left: 65px; animation: eyebrow 2s linear 0s infinite;}
+
+    @keyframes eyebrow{
+        25%,75%{transform: rotate(-15deg); transform-origin: right top;}
+        0%,100%{transform: rotate(0); transform-origin: right top;}
+    }
+
+    .lion_eye{position: absolute; left: calc(50% - 3px); top: 135px; width: 6px; height: 6px; border-radius: 100%;}
+    .lion_eye:after,.lion_eye:before{content: ""; position: absolute;; left: calc(50% - 12px); top: -10px;  width: 24px; height: 24px; background: #000; border-radius: 50%;}
+    .lion_eye:after{margin-left: -55px;}
+    .lion_eye:before{margin-left: 55px; animation: eye 2s linear 0s infinite;}
+    @keyframes eye{
+        25%,78%{height: 3px; width: 30px; top: 2px;}
+        100%,0%{height: 24px; width: 26px; top: -10px;}
+    }
+
+    .lion_nose{z-index: 5; position: absolute; left: calc(50% - 15px); top: 155px; width: 30px; height: 32px; background: #000; border-radius: 20px; box-shadow: -15px 20px 0 0 #fff, 14px 23px 0 0 #fff}
+
+    .lion_nose2:after, .lion_nose2:before{content: ""; position: absolute; left: calc(50% - 30px); top: 165px; width: 60px; height: 60px; background: #fff; border: 8px solid #000; border-radius: 50px; box-sizing: border-box;}
+    .lion_nose2:after{margin-left: -23px;}
+    .lion_nose2:before{margin-left: 23px;}
+
+
+    main>section.work_p>div.pure_box>.mock_up2{position: absolute; top: 4vw; right: -1vw; width: 65%; height: 30%; box-sizing: border-box;}
+    /* emoji */
+    .emoji{position: absolute; top: 0%; display: inline-block; width: 120px; height: 120px; border-radius: 50%; margin: 15px 1vw 0px; background: #ffda6a; transform: scale(0.8);}
+    .emoji:after{content: "emoji"; position: absolute; bottom: -40px; left: calc(50% - 30px); width: 60px; font-size: 18px; color: #8a8a8a}
+
+    .emoji:nth-of-type(1){left: 0;}
+    .emoji:nth-of-type(2){left: 25%;}
+    .emoji:nth-of-type(3){left: 50%;}
+    .emoji:nth-of-type(4){left: 75%;}
+    .emoji:nth-of-type(5){left: 11%; top: 150%;}
+    .emoji:nth-of-type(6){left: 38.333%; top: 150%;}
+    .emoji:nth-of-type(7){left: 65%; top: 150%;} 
+
+    /* 1.emoji_like */
+    .emoji_like{background: #548dff;}
+    .emoji_like:after{content: "like";}
+    .emoji_like .emoji_hand{position: absolute; left: 25px; bottom: 30px; width: 20px; height: 40px; background: #fff; border-radius: 5px; animation: hands_up 2s linear 0s infinite;}
+
+    @keyframes hands_up{
+        25%{transform: rotate(15deg);}
+        50%{transform: rotate(-15deg) translateY(-10px);}
+        75%,100%{transform: rotate(0deg);}
+    }
+    .emoji_like .emoji_hand:before{content: ""; position: absolute; left: 25px; bottom: 5px; width: 40px; height: 10px; background: #fff; border-radius: 2px 10px 10px 2px; box-shadow: 1px -9px 0 1px #fff, 2px -19px 0 2px #fff, 3px -29px 0 3px #fff;}
+
+    .emoji_like .emoji_thumb{position: absolute; right: -25px; top: -25px; z-index: 2; border-bottom: 20px solid #fff; border-left: 20px solid transparent; transform: rotate(5deg); transform-origin: 0 100%; animation: thumb-up 2s linear infinite}
+
+    @keyframes thumb-up{
+        25%{transform: rotate(20deg);}
+        50%,100%{transform: rotate(5deg);}
+    }
+    .emoji_like .emoji_thumb:before{content: ""; position: absolute; left: -9.6px; top: -9px; width: 10px; height: 12px; background: #fff; border-radius: 50% 50% 0 0; box-shadow: -1px 4px 0 -1px #fff; transform: rotate(-14deg); transform-origin: 100% 100%;} 
+
+    /* 2.emoji_love */
+    .emoji_love{background: #f55064;}
+    .emoji_love:after{content: "lover";}
+
+    .emoji_love .emoji_heart{position: absolute; left: 50%; top: 50%; width: 80px; height: 80px; /*transform: translate3d(-50%,-50%,0) */ margin-left: -40px; margin-top: -40px; animation: heart_beat 1s linear infinite alternate;}
+
+    @keyframes heart_beat{
+        25%{transform: scale(1.1)}
+        75%{transform: scale(0.6)}
+    }
+
+    .emoji_love .emoji_heart:before,.emoji_love .emoji_heart:after{content: ""; position: absolute; left: 50%; top: 50%; width: 40px; height: 64px; margin-left: -20px; margin-top: -32px; background: #fff; border-radius: 20px 20px 0 0;}
+    .emoji_love .emoji_heart:before{transform: translate(20px) rotate(-45deg); transform-origin: 0 100%;}
+    .emoji_love .emoji_heart:after{transform: translate(-20px) rotate(45deg); transform-origin: 100% 100%;}
+
+    /* position : absolute는 margin: 0 auto 안된다 */
+    /* 
+    중앙에 위치 시키는 방법
+    1. position: absolute; left: calc(50% - 가로 1/2px),top: calc(50% - 세로 1/2px);
+    2. position: absolute; left: 50%; top: 50%; margin-left: -가로 1/2px , margin-top: -세로 1/2px; 
+    3.position: absolutr; left: 50%; top: 50%; transform: translate(-50%, -50%, 0);
+    */
+
+    /* 3. emoji_haha */
+    .emoji_haha:after{content: "Haha";}
+    .emoji_haha .emoji_face{position: absolute; width: 100%; height: 100%; animation: face_moving 2s linear 0s infinite;}
+
+    @keyframes face_moving{
+        10%{transform: translateY(25px);}
+        20%{transform: translateY(15px);}
+        30%{transform: translateY(15px);}
+        40%{transform: translateY(25px);}
+        50%{transform: translateY(25px);}
+        60%{transform: translateY(0);}
+        70%{transform: translateY(-10px);}
+        80%{transform: translateY(0);}
+        90%{transform: translateY(-10px);}
+
+    }
+    .emoji_haha .emoji_eyes{position: absolute; left: 50%; top: 35px; width: 26px; height: 6px; margin-left: -13px; border-radius: 2px;  box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000; transform: rotate(20deg);}
+
+    .emoji_haha .emoji_eyes:after{content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 6px; border-radius: 2px; box-shadow: -25px -5px 0 0 #000, 25px 5px 0 0 #000; transform: rotate(-40deg);}
+
+    .emoji_haha .emoji_mouth{position: absolute; left: 50%; top: 50%; width: 80px; height: 40px; margin-left: -40px; background: #000; border-radius: 0 0 40px 40px; overflow: hidden; animation: haha_mouth 2s linear 0s infinite;}
+
+    @keyframes haha_mouth{
+        10%{transform: scale(0.6); top: 45%;}
+        20%{transform: scale(0.8); top: 45%;}
+        30%{transform: scale(0.6); top: 45%;}
+        40%{transform: scale(0.8); top: 45%;}
+        50%{transform: scale(0.6); top: 45%;}
+        60%{transform: scale(1); top: 50%;}
+        70%{transform: scale(1.2); top: 50%;}
+        80%{transform: scale(1); top: 50%;}
+        90%{transform: scale(1.2); top: 50%;}
+    }
+    .emoji_haha .emoji_tongue{position: absolute; left: 50%; bottom: -10px; width: 70px; height: 30px; margin-left: -35px; background: #f55064; border-radius: 50%;}
+
+    /* 4.emoji_yay */
+    .emoji_yay:after{content: "Yay"}
+    .emoji_yay .emoji_face{position: absolute; width: 100%; height: 100%; animation: yay 1s linear 0s infinite alternate;}
+
+    @keyframes yay{
+        25%{transform: rotate(-15deg)}
+        75%{transform: rotate(15deg)}
+    }
+
+    .emoji_yay .emoji_eyebrows{position: absolute; left: calc(50% - 3px); top: 30px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -6px 0 0 0#000, -36px 0 0 0 #000, 6px 0 0 0 #000, 36px 0 0 0 #000;}
+    .emoji_yay .emoji_eyebrows:before,.emoji_yay .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 18px); bottom: 3px; width: 36px; height: 18px; border: 6px solid black; border-bottom: 0; border-radius: 60px 60px 0 0; box-sizing: border-box;}/* border, padding 값이 실제크기 포함 안됨. 벗 마진은 안됨!*/
+    .emoji_yay .emoji_eyebrows:before{margin-left: -21px;}
+    .emoji_yay .emoji_eyebrows:after{margin-left: 21px;}
+    .emoji_yay .emoji_mouth{position: absolute; left: calc(50% - 3px); top: 60px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -25px 0 0 0 #000, 25px 0 0 0 #000, -35px -2px 30px 10px #d5234c, 35px -2px 30px 10px #d5234c;}
+    .emoji_yay .emoji_mouth:after{content: ""; position: absolute; left: calc(50% - 40px); top: -64px; width: 80px; height: 80px; border-radius: 50%; border: 6px solid #000; box-sizing: border-box; border-left-color: transparent; border-right-color: transparent; border-top-color: transparent;}
+
+    /* 5. emoji_wow */
+    .emoji_wow:after{content: "wow";}
+    .emoji_wow .emoji_face{position: absolute; width: 100%; height: 100%; animation: wow_face 3s linear 0s infinite; }
+
+    @keyframes wow_face{
+        15%,25%{transform: rotate(20deg) translateX(-25px);}
+        45%,65%{transform: rotate(-20deg) translateX(25px);}
+        75%,100%{transform: rotate(0deg) translateX(0);}
+
+    }
+    .emoji_wow .emoji_eyebrows{position: absolute; left: calc(50% - 3px); width: 6px; height: 6px; border-radius: 50%;box-shadow: -18px 0 0 0 #000,-33px 0 0 0 #000, 18px 0 0 0 #000, 33px 0 0 0 #000; animation: wow_brow 3s linear 0s infinite;;}
+
+    @keyframes wow_brow{
+        15%,65%{top: 25px;}            
+        75%,100%, 0%{top: 15px;}              
+    }
+
+    .emoji_wow .emoji_eyebrows:before, .emoji_wow .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 12px); top: -3px; width: 24px; height: 20px; border-radius: 50%; border: 6px solid #000; border-bottom-color: transparent; border-right-color: transparent; border-left-color: transparent; box-sizing: border-box;}
+    .emoji_wow .emoji_eyebrows:before{margin-left: -25px;}
+    .emoji_wow .emoji_eyebrows:after{margin-left: 25px;}
+    .emoji_wow .emoji_eyes{position: absolute; left: calc(50% - 8px); top: 35px; width: 16px; height: 24px; border-radius: 50%; box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+    .emoji_wow .emoji_tongue{position: absolute; left: calc(50% - 15px); top: 50%; width: 30px; height: 45px; border-radius: 50%; background: #000; animation: wow_tongue 3s linear 0s infinite}
+
+    @keyframes wow_tongue{
+        10%,30%{width: 20px; height: 20px; left: calc(50% - 10px)}
+        50%,70%{width: 30px; height: 40px; left: calc(50% - 15px)}
+        75%,100%{height: 50px;}
+    } 
+
+    /* 6. emoji_sad */
+    .emoji_sad:after{content: "Sad";}
+    .emoji_sad .emoji_face{position: absolute; width: 100%; height: 100%; animation: sad_face 2s ease-in 0s infinite;}
+    @keyframes sad_face{
+        25%,35%{top: -15px;}
+        55%,95%{top: 10px;}
+        100%,0%{top: 0;}
+    }
+    .emoji_sad .emoji_eyebrows{position:absolute; left: calc(50% - 3px); top: 35px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -40px 9px 0 0 #000, -25px 0 0 0 #000, 25px 0 0 0 #000, 40px 9px 0 0 #000;}
+    .emoji_sad .emoji_eyebrows:after, .emoji_sad .emoji_eyebrows:before{content: ""; position: absolute; left: calc(50% - 15px); top: 2px; width: 30px; height: 20px; border: 6px solid #000; box-sizing: border-box; border-radius: 50%; border-bottom-color: transparent; border-right-color: transparent; border-left-color: transparent;}
+    .emoji_sad .emoji_eyebrows:after{margin-left: -30px; transform: rotate(-30deg);}
+    .emoji_sad .emoji_eyebrows:before{margin-left: 30px; transform: rotate(30deg)}
+    .emoji_sad .emoji_eyes{position: absolute; left: calc(50% - 7px); top: 50px; width: 14px; height: 16px; border-radius: 50%; box-shadow: -25px 0 0 0 #000, 25px 0 0 0 #000;}
+    .emoji_sad .emoji_eyes:after{content: ""; position: absolute; width: 12px; height: 12px; background: #548dff; margin-left: 6px; border-radius: 0 100% 40% 60% / 0 50% 40% 100%; transform: rotate(45deg); animation: sad_tear 2s ease-in 0s infinite;}
+    @keyframes sad_tear{
+        0%,100%{display: block; left: 30px; top: 15px; transform: rotate(45deg) scale(0);}
+        25%{display: block; left: 30px; transform: rotate(45deg) scale(2);}
+        49.9%{display: block; left: 30px; top: 65px; transform: rotate(45deg) scale(0);}
+
+        50%{display: block; left: -35px; top: 15px; transform: rotate(45deg) scale(0);}
+        75%{display: block; left: -35px; transform: rotate(45deg) scale(2);}
+        99.9%{display: block; left: -35px; top: 65px; transform: rotate(45deg) scale(0);}
+    }
+    .emoji_sad .emoji_mouth{position: absolute; left: calc(50% - 30px); top: 80px; width: 60px; height: 80px; border: 6px solid #000; box-sizing: border-box;border-radius: 50%; border-bottom-color: transparent; border-left-color: transparent; border-right-color: transparent; animation: sad_mouth 2s ease-in 0s infinite;}
+    @keyframes sad_mouth{
+        25%,35%{transform: scale(0.85); top: 70px;}
+        55%,100%,0%{transform: scale(1); top: 80px;}
+    }
+    .emoji_sad .emoji_mouth:after{content: ""; position: absolute; left: calc(50% - 3px); top: 4px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -18px 0 0 0 #000, 18px 0 0 0 #000;}
+
+    /* 7. emoji_angry */
+    .emoji_angry{background: linear-gradient(to bottom, #d5234c -10%, #ffda6a 100%); background-size: 100%; animation: angry_face 2s ease-in 0s infinite;}
+    @keyframes angry_face{
+        45%,60%{background-size: 250%;}
+        85%,100%,0%{background-size: 100%;}
+    }
+    .emoji_angry:after{content: "angry";}
+    .emoji_angry .emoji_face{position: absolute; width: 100%; height: 100%; animation: angry 2s ease-in 0s infinite;}
+    @keyframes angry{
+        35%,60%{transform: translateX(0) translateY(10px) scale(0.9)}
+        40%{transform: translateX(-5px) translateY(10px) scale(0.9)}
+        45%{transform: translateX(5px) translateY(10px) scale(0.9)}
+        50{transform: translateX(-5px) translateY(10px) scale(0.9)}
+        55%{transform: translateX(5px) translateY(10px) scale(0.9)}
+    }
+    .emoji_angry .emoji_eyebrows{position: absolute; width: 6px; height: 6px; left: calc(50% - 3px); top: 55px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -44px 5px 0 0 #000, -7px 16px 0 0 #000, 7px 16px 0 0 #000, 44px 5px 0 0 #000;}
+    .emoji_angry .emoji_eyebrows:after,.emoji_angry .emoji_eyebrows:before{content: ""; position: absolute; left: calc(50% - 25px); top: 0; width: 50px; height: 20px; border: 6px solid #000; box-sizing: border-box; border-radius: 50%; border-top-color: transparent; border-left-color: transparent; border-right-color: transparent;}
+    .emoji_angry .emoji_eyebrows:after{margin-left: -25px; transform: rotate(16deg);}
+    .emoji_angry .emoji_eyebrows:before{margin-left: 25px; transform: rotate(-17deg);} 
+
+    .emoji_angry .emoji_eyes{position: absolute; left: calc(50% - 6px); top: 70px; width: 12px; height: 12px; border-radius: 50%;box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+    .emoji_angry .emoji_mouth{position: absolute; left: calc(50% - 18px); bottom: 15px; width: 36px; height: 18px; background: #000; border-radius: 50%; animation: angry_mouth 2s ease-in 0s infinite;}
+    @keyframes angry_mouth{
+        25%,50%{height: 6px; bottom: 25px;}
+    }
+
+
+
+    /* resume */
+    main>section.resume_p{width: 100%; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.resume_p>h3>{}
+    main>section.resume_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.resume_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.resume_p>div{width: 50%; float: left; margin-top: 3.646vw;}
+    main>section.resume_p>div>h4{font-size: 3.125vw; transform: translateY(150px); opacity: 0;}
+
+    main>section.resume_p>div>dl{width: 100%; margin-top: 2.604vw; transform: translateY(150px); opacity: 0;}
+    main>section.resume_p>div>dl>dt{font-size: 1.550vw; font-weight: bold; color: #333333;}
+    main>section.resume_p>div>dl>dd{font-size: 1.138vw; color: #333333; opacity: 0.8;}
+
+    main>section.resume_p>div.edu>dl>dd:first-of-type{margin: 1.081vw 0 3.7vw; opacity: 1;}
+
+    main>section.resume_p>div.skill>dl>dt{width: 100%;}
+    main>section.resume_p>div.skill>dl>dd{position: relative; width: 20.271vw; margin-bottom: 1.302vw;} 
+    main>section.resume_p>div.skill>dl>dd:first-of-type{margin: 1.302vw 0;} 
+    main>section.resume_p>div.skill>dl>dd>ul{position: absolute; right: 3.042vw; top: 50%; height: 0.781vw; width: 10.813vw; transform: translateY(-0.125vw);}
+    main>section.resume_p>div.skill>dl>dd>ul>li{float: right; width: 0.313vw; height: 0.313vw; background: #333333; margin-left: 0.521vw; border-radius: 5vw; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd>ul>li:first-child{margin-right: 0; background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd:last-of-type>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(3){background: none; border: 1px solid #333333;}
+
+    main>section.resume_p>div.skill>dl>dd>em{display: block; position: absolute; top: 50%; right: 0; transform: translateY(-35%);}
+
+    main>section.resume_p>div.license{margin-top: 1.455vw;}
+    main>section.resume_p>div.license>dl{position: relative; width: 25.875vw;}
+    main>section.resume_p>div.license>dl>dt{}
+    main>section.resume_p>div.license>dl>dd:first-of-type{position: absolute; top: 50%; right: 5.325vw; width: 8vw; transform: translateY(-50%);}
+    main>section.resume_p>div.license>dl>dd:last-of-type{position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+
+
+
+    /* about */
+    main>section.about_p{clear: both; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.about_p>h3>{}
+    main>section.about_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.about_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.about_p>dl>dt{margin: 7.813vw 0 2.344vw; font-size: 3.125vw;font-family: 'DM Serif Display'; transform: translateY(150px); opacity: 0;}
+    main>section.about_p>dl>dd{font-size: 1.250vw; transform: translateY(150px); opacity: 0; line-height: 1.5;  text-align: justify;}
+
+
+
+    /* contact */
+    main>section.contact_p{clear: both; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.contact_p>h3>{}
+    main>section.contact_p>h3>span{display: inline-block; height: 6vw; overflow: hidden;}
+    main>section.contact_p>h3>span>i{display: inline-block; font-size: 7.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.contact_p>p{margin-top: 3.646vw; font-size: 1.563vw; line-height: 1.5; transform: translateY(150px); opacity: 0;}
+    main>section.contact_p>dl{width: 40%; float: left; margin: 7.813vw 0 7.813vw 10%; text-align: center; transform: translateY(150px); opacity: 0;}
+    main>section.contact_p>dl:nth-of-type(2){margin: 7.813vw 10% 7.813vw 0;}
+    main>section.contact_p>dl>dt{font-size: 3.125vw; font-family: 'DM Serif Display';}
+    main>section.contact_p>dl>dd{font-size: 1.863vw; margin-top: 1.802vw;}
+
+    main>section.contact_p>dl>dt>img{width: 3.646vw; height: 3.646vw; margin: -0.521vw 0.781vw 0 0;}
+    main>section.contact_p>dl:first-of-type>dt>img{width: 3.802vw; height: 3.802vw;}
+
+
+
+    /* footer */
+    footer>p:first-child{float: left; font-size: 2.344vw; transform: translateY(150px); opacity: 0;}
+    footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transform: translateY(150px); opacity: 0;}
+}
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width : 768px) and (max-width: 1024px) {
+    body.on{overflow: hidden;}
+
+    /* layout */
+    nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 9.259vh 0; box-sizing: border-box; opacity: 0; display: none;}
+    .wrap{float: left; padding: 4.167vw 9.896vw 5.208vw 9.896vw; width: 100%; box-sizing: border-box;}
+        header{position: relative; width: 100%; height: 50px; opacity: 0; margin-bottom: 8.427vw;}
+        main{width: 100%;}
+        footer{width: 100%; height: 3.646vw; clear: both; padding-top: 1.302vw; border-top: 0.208vw solid #333333; font-family: 'DM Serif Display';}
+
+    /* header */
+    h1{font-size: 2.823vw; width: 41.22%; line-height: 5rem;}
+    .gnb{display: none;}
+    
+    .m_gnb{z-index: 3; position: fixed; right: 8%; top: 6.55vw; padding: 15px 12px 10px; display: block; transform: translateY(-40%) translateZ(0); cursor: pointer;}
+
+    .m_gnb.on{background: #333333; border-radius: 50%; box-sizing: border-box;}
+    .m_gnb.on>li{background:#ffffff}
+    .m_gnb.on:hover{opacity: 1;}
+
+    .m_gnb>li{width: 30px; height: 4px; background: #333333; margin-bottom: 5px; transition: all 0.3s ease 0s;} 
+
+    .m_gnb>li.on{background: #ffffff;}
+    .m_gnb>li.on:nth-child(1){transform: translateY(9px) rotateZ(-135deg);}
+    .m_gnb>li.on:nth-child(2){opacity: 0;}
+    .m_gnb>li.on:nth-child(3){transform: translateY(-9.5px) rotateZ(-45deg);}
+    
+    .menu_box{z-index: 2; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.93); transform: translateX(100vw); opacity: 0; transition: all 0.5s ease 0s;} 
+
+    .menu_box>ul{position: absolute; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); text-align: center;}
+    .menu_box>ul>li{margin: 5vw; font-size: 7.813vw; font-family: 'DM Serif Display'; color: #ffffff; opacity: 0.3; cursor: pointer; transition: all 0.3s ease 0s;}
+
+    .menu_box>ul>li:hover{opacity: 1; transform: rotateZ(-10deg);}
+
+    .menu_box.on{transform: translateX(0); opacity: 1;}
+
+    /* main */
+    main{margin-top: 5.427vw;}
+
+    /* main_p */
+    main>section.main_p{width: 100%; position: relative; height: 82.67vw;}
+    main>section.main_p>h2{width: 100%; float: left; margin-top: 23.083vw;}
+    main>section.main_p>h2>span{display:block; height: 13.792vw; overflow: hidden;}
+    main>section.main_p>h2>span:nth-of-type(2){height: 15.813vw;}
+    main>section.main_p>h2>span>i{display: inline-block; height: 100%; margin-top: -2.083vw; font-size: 13.292vw; font-style: normal; transform: translateY(180px);}
+
+    main>section.main_p>h2>span>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(3){margin-right: 5%;}
+
+    main>section.main_p>.img_box{position: absolute; right: 0; width: 33vw; float: right; opacity: 0;}
+    main>section.main_p>.img_box>img{max-width: 100%; height: auto;}
+
+    main>section.main_p>p{clear: both; font-size: 2.5vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
+    main>section.main_p>p:first-of-type{padding: 4.083vw 0 3.906vw;}
+    main>section.main_p>p strong{font-weight: 600;}   
+    main>section.main_p>p:nth-of-type(2) span{display: block;}   
+
+    /* work_p */
+    main>section.work_p{width: 100%; padding-top: 2.604vw; box-sizing: border-box;}
+
+    main>section.work_p>h3>{}
+    main>section.work_p>h3>span{display: inline-block; height: 9vw; overflow: hidden;}
+    main>section.work_p>h3>span>i{display: inline-block; font-size: 10.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.work_p>.Work_p_inner{width: 100%; margin: 3.646vw auto; border: 0.508vw solid #333333; box-sizing: border-box; border-radius: 1.5vw;}
+    main>section.work_p>.Work_p_inner:after{content: ""; display: block; clear: both;}
+
+    main>section.work_p>.Work_p_inner>a{position: relative; float: left; display: block; width: 100%; height: 40.438vw; padding: 10px 25px; overflow: hidden; border-bottom: 0.508vw solid #333; box-sizing: border-box; }
+    main>section.work_p>.Work_p_inner>a>h4{font-size: 5.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>.Work_p_inner>a>p{font-size: 1.938vw; opacity: 0.7; transform: translateY(150px); opacity: 0}
+    
+    main>section.work_p>.Work_p_inner>a.sk{}
+    
+    main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 0.365vw solid #333333; border-radius: 0.5vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    
+    main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
+    
+    main>section.work_p>.Work_p_inner>a.cj{}
+    
+    main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
+    
+    main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
+    
+    
+    
+    main>section.work_p>.Work_p_inner>a.ww{}
+    
+    main>section.work_p>.Work_p_inner>a.ww>div{position: absolute; left: 50%; top: 0; width: 80%; height: 100%; transform: translateX(-50%);}
+    
+    main>section.work_p>.Work_p_inner>a.ww>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1.5vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(1){display: block; position: absolute; bottom: -35%; left: 5%; width: 40%; height: 85%; background: url(../images/img_ww_main.png) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(2){display: block; position: absolute; top: 35%; right: 2.5%; width: 40%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_ww_splash.png) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.ww:hover>div>span{transform: translate3d(0,-17%,0); opacity: 1;}
+    
+    
+    main>section.work_p>.Work_p_inner>a.melon{border-bottom: none;}
+    
+    main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+    
+    main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1.5vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
+    
+
+
+    main>section.work_p>.Work_p_inner>a.anot_pof{border-bottom: none; display: none;}
+    
+    main>section.work_p>.Work_p_inner>a.anot_pof>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+    main>section.work_p>.Work_p_inner>a.anot_pof>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1); display: block; position: absolute; bottom: -25%; left: 0%; width: 100%; height: 85%; border-radius: 0.5vw; background: url(../images/img_anopf.png) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
+    
+    main>section.work_p>.Work_p_inner>a.anot_pof:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
+
+    
+
+    main>section.work_p>h4{font-size: 5.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>div.pure_box{position: relative; margin: 0 auto; height: 60.25vw; width: 100%; /* transform: scale(0.8); */ box-sizing: border-box;} 
+
+
+    main>section.work_p>div.pure_box>.mock_up1{position: absolute; width: 100%; height: 50%;box-sizing: border-box;}
+
+    .lion{position: absolute; top: 5vw; left: 50%; width: 300px; height: 300px; transform: scale(0.9) translateX(-53%);}
+    .lion_face{z-index: 3; position: absolute; left: 50%; top: 50%; width: 300px; height: 300px; margin-left: -150px; margin-top: -150px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear{z-index: 1; position: absolute; left: calc(50% - 45px); top: -50px; width: 90px; height: 90px; border-radius: 70%;}
+    .lion_ear:after, .lion_ear:before{content: ""; position: absolute; left: calc(50% - 45px); top: 40px; width: 90px; height: 90px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear:after{margin-left: -85px;}
+    .lion_ear:before{margin-left: 85px;}
+
+    .lion_eyebrows{position: absolute; left: calc(50% - 3px); top: 90px; width: 6px; height: 6px; border-radius: 50px;}
+    .lion_eyebrows:after, .lion_eyebrows:before{content: ""; position: absolute; left: calc(50% - 33px); width: 66px; height: 14px; background: #000; border-radius: 20px;}
+    .lion_eyebrows:after{margin-left: -65px;}
+    .lion_eyebrows:before{margin-left: 65px; animation: eyebrow 2s linear 0s infinite;}
+
+    @keyframes eyebrow{
+        25%,75%{transform: rotate(-15deg); transform-origin: right top;}
+        0%,100%{transform: rotate(0); transform-origin: right top;}
+    }
+
+    .lion_eye{position: absolute; left: calc(50% - 3px); top: 135px; width: 6px; height: 6px; border-radius: 100%;}
+    .lion_eye:after,.lion_eye:before{content: ""; position: absolute;; left: calc(50% - 12px); top: -10px;  width: 24px; height: 24px; background: #000; border-radius: 50%;}
+    .lion_eye:after{margin-left: -55px;}
+    .lion_eye:before{margin-left: 55px; animation: eye 2s linear 0s infinite;}
+    @keyframes eye{
+        25%,78%{height: 3px; width: 30px; top: 2px;}
+        100%,0%{height: 24px; width: 26px; top: -10px;}
+    }
+
+    .lion_nose{z-index: 5; position: absolute; left: calc(50% - 15px); top: 155px; width: 30px; height: 32px; background: #000; border-radius: 20px; box-shadow: -15px 20px 0 0 #fff, 14px 23px 0 0 #fff}
+
+    .lion_nose2:after, .lion_nose2:before{content: ""; position: absolute; left: calc(50% - 30px); top: 165px; width: 60px; height: 60px; background: #fff; border: 8px solid #000; border-radius: 50px; box-sizing: border-box;}
+    .lion_nose2:after{margin-left: -23px;}
+    .lion_nose2:before{margin-left: 23px;}
+
+
+    main>section.work_p>div.pure_box>.mock_up2{position: absolute; top: 43vw; left: 0; width: 100%; height: 30%; box-sizing: border-box;}
+    /* emoji */
+    .emoji{position: absolute; top: 0%; display: inline-block; width: 120px; height: 120px; border-radius: 50%; margin: 15px 1vw 0px; background: #ffda6a; transform: scale(0.9);}
+    .emoji:after{content: "emoji"; position: absolute; bottom: -40px; left: calc(50% - 30px); width: 60px; font-size: 18px; color: #8a8a8a}
+
+    .emoji:nth-of-type(1){left: 0;}
+    .emoji:nth-of-type(2){left: 20%;}
+    .emoji:nth-of-type(3){left: 40%;}
+    .emoji:nth-of-type(4){left: 60%;}
+    .emoji:nth-of-type(5){left: 80%;}
+
+    /* 1.emoji_like */
+    .emoji_like{background: #548dff;}
+    .emoji_like:after{content: "like";}
+    .emoji_like .emoji_hand{position: absolute; left: 25px; bottom: 30px; width: 20px; height: 40px; background: #fff; border-radius: 5px; animation: hands_up 2s linear 0s infinite;}
+
+    @keyframes hands_up{
+        25%{transform: rotate(15deg);}
+        50%{transform: rotate(-15deg) translateY(-10px);}
+        75%,100%{transform: rotate(0deg);}
+    }
+    .emoji_like .emoji_hand:before{content: ""; position: absolute; left: 25px; bottom: 5px; width: 40px; height: 10px; background: #fff; border-radius: 2px 10px 10px 2px; box-shadow: 1px -9px 0 1px #fff, 2px -19px 0 2px #fff, 3px -29px 0 3px #fff;}
+
+    .emoji_like .emoji_thumb{position: absolute; right: -25px; top: -25px; z-index: 2; border-bottom: 20px solid #fff; border-left: 20px solid transparent; transform: rotate(5deg); transform-origin: 0 100%; animation: thumb-up 2s linear infinite}
+
+    @keyframes thumb-up{
+        25%{transform: rotate(20deg);}
+        50%,100%{transform: rotate(5deg);}
+    }
+    .emoji_like .emoji_thumb:before{content: ""; position: absolute; left: -9.6px; top: -9px; width: 10px; height: 12px; background: #fff; border-radius: 50% 50% 0 0; box-shadow: -1px 4px 0 -1px #fff; transform: rotate(-14deg); transform-origin: 100% 100%;} 
+
+    /* 2.emoji_love */
+    .emoji_love{background: #f55064;}
+    .emoji_love:after{content: "lover";}
+
+    .emoji_love .emoji_heart{position: absolute; left: 50%; top: 50%; width: 80px; height: 80px; /*transform: translate3d(-50%,-50%,0) */ margin-left: -40px; margin-top: -40px; animation: heart_beat 1s linear infinite alternate;}
+
+    @keyframes heart_beat{
+        25%{transform: scale(1.1)}
+        75%{transform: scale(0.6)}
+    }
+
+    .emoji_love .emoji_heart:before,.emoji_love .emoji_heart:after{content: ""; position: absolute; left: 50%; top: 50%; width: 40px; height: 64px; margin-left: -20px; margin-top: -32px; background: #fff; border-radius: 20px 20px 0 0;}
+    .emoji_love .emoji_heart:before{transform: translate(20px) rotate(-45deg); transform-origin: 0 100%;}
+    .emoji_love .emoji_heart:after{transform: translate(-20px) rotate(45deg); transform-origin: 100% 100%;}
+
+    /* position : absolute는 margin: 0 auto 안된다 */
+    /* 
+    중앙에 위치 시키는 방법
+    1. position: absolute; left: calc(50% - 가로 1/2px),top: calc(50% - 세로 1/2px);
+    2. position: absolute; left: 50%; top: 50%; margin-left: -가로 1/2px , margin-top: -세로 1/2px; 
+    3.position: absolutr; left: 50%; top: 50%; transform: translate(-50%, -50%, 0);
+    */
+
+    /* 3. emoji_haha */
+    .emoji_haha:after{content: "Haha";}
+    .emoji_haha .emoji_face{position: absolute; width: 100%; height: 100%; animation: face_moving 2s linear 0s infinite;}
+
+    @keyframes face_moving{
+        10%{transform: translateY(25px);}
+        20%{transform: translateY(15px);}
+        30%{transform: translateY(15px);}
+        40%{transform: translateY(25px);}
+        50%{transform: translateY(25px);}
+        60%{transform: translateY(0);}
+        70%{transform: translateY(-10px);}
+        80%{transform: translateY(0);}
+        90%{transform: translateY(-10px);}
+
+    }
+    .emoji_haha .emoji_eyes{position: absolute; left: 50%; top: 35px; width: 26px; height: 6px; margin-left: -13px; border-radius: 2px;  box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000; transform: rotate(20deg);}
+
+    .emoji_haha .emoji_eyes:after{content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 6px; border-radius: 2px; box-shadow: -25px -5px 0 0 #000, 25px 5px 0 0 #000; transform: rotate(-40deg);}
+
+    .emoji_haha .emoji_mouth{position: absolute; left: 50%; top: 50%; width: 80px; height: 40px; margin-left: -40px; background: #000; border-radius: 0 0 40px 40px; overflow: hidden; animation: haha_mouth 2s linear 0s infinite;}
+
+    @keyframes haha_mouth{
+        10%{transform: scale(0.6); top: 45%;}
+        20%{transform: scale(0.8); top: 45%;}
+        30%{transform: scale(0.6); top: 45%;}
+        40%{transform: scale(0.8); top: 45%;}
+        50%{transform: scale(0.6); top: 45%;}
+        60%{transform: scale(1); top: 50%;}
+        70%{transform: scale(1.2); top: 50%;}
+        80%{transform: scale(1); top: 50%;}
+        90%{transform: scale(1.2); top: 50%;}
+    }
+    .emoji_haha .emoji_tongue{position: absolute; left: 50%; bottom: -10px; width: 70px; height: 30px; margin-left: -35px; background: #f55064; border-radius: 50%;}
+
+    /* 4.emoji_yay */
+    .emoji_yay:after{content: "Yay"}
+    .emoji_yay .emoji_face{position: absolute; width: 100%; height: 100%; animation: yay 1s linear 0s infinite alternate;}
+
+    @keyframes yay{
+        25%{transform: rotate(-15deg)}
+        75%{transform: rotate(15deg)}
+    }
+
+    .emoji_yay .emoji_eyebrows{position: absolute; left: calc(50% - 3px); top: 30px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -6px 0 0 0#000, -36px 0 0 0 #000, 6px 0 0 0 #000, 36px 0 0 0 #000;}
+    .emoji_yay .emoji_eyebrows:before,.emoji_yay .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 18px); bottom: 3px; width: 36px; height: 18px; border: 6px solid black; border-bottom: 0; border-radius: 60px 60px 0 0; box-sizing: border-box;}/* border, padding 값이 실제크기 포함 안됨. 벗 마진은 안됨!*/
+    .emoji_yay .emoji_eyebrows:before{margin-left: -21px;}
+    .emoji_yay .emoji_eyebrows:after{margin-left: 21px;}
+    .emoji_yay .emoji_mouth{position: absolute; left: calc(50% - 3px); top: 60px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -25px 0 0 0 #000, 25px 0 0 0 #000, -35px -2px 30px 10px #d5234c, 35px -2px 30px 10px #d5234c;}
+    .emoji_yay .emoji_mouth:after{content: ""; position: absolute; left: calc(50% - 40px); top: -64px; width: 80px; height: 80px; border-radius: 50%; border: 6px solid #000; box-sizing: border-box; border-left-color: transparent; border-right-color: transparent; border-top-color: transparent;}
+
+    /* 5. emoji_wow */
+    .emoji_wow:after{content: "wow";}
+    .emoji_wow .emoji_face{position: absolute; width: 100%; height: 100%; animation: wow_face 3s linear 0s infinite; }
+
+    @keyframes wow_face{
+        15%,25%{transform: rotate(20deg) translateX(-25px);}
+        45%,65%{transform: rotate(-20deg) translateX(25px);}
+        75%,100%{transform: rotate(0deg) translateX(0);}
+
+    }
+    .emoji_wow .emoji_eyebrows{position: absolute; left: calc(50% - 3px); width: 6px; height: 6px; border-radius: 50%;box-shadow: -18px 0 0 0 #000,-33px 0 0 0 #000, 18px 0 0 0 #000, 33px 0 0 0 #000; animation: wow_brow 3s linear 0s infinite;;}
+
+    @keyframes wow_brow{
+        15%,65%{top: 25px;}            
+        75%,100%, 0%{top: 15px;}              
+    }
+
+    .emoji_wow .emoji_eyebrows:before, .emoji_wow .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 12px); top: -3px; width: 24px; height: 20px; border-radius: 50%; border: 6px solid #000; border-bottom-color: transparent; border-right-color: transparent; border-left-color: transparent; box-sizing: border-box;}
+    .emoji_wow .emoji_eyebrows:before{margin-left: -25px;}
+    .emoji_wow .emoji_eyebrows:after{margin-left: 25px;}
+    .emoji_wow .emoji_eyes{position: absolute; left: calc(50% - 8px); top: 35px; width: 16px; height: 24px; border-radius: 50%; box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+    .emoji_wow .emoji_tongue{position: absolute; left: calc(50% - 15px); top: 50%; width: 30px; height: 45px; border-radius: 50%; background: #000; animation: wow_tongue 3s linear 0s infinite}
+
+    @keyframes wow_tongue{
+        10%,30%{width: 20px; height: 20px; left: calc(50% - 10px)}
+        50%,70%{width: 30px; height: 40px; left: calc(50% - 15px)}
+        75%,100%{height: 50px;}
+    }    
+
+
+    .emoji_sad{display: none;}
+    .emoji_angry{display: none;}
+
+
+    /* resume */
+    main>section.resume_p{width: 100%; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.resume_p>h3>{}
+    main>section.resume_p>h3>span{display: inline-block;  height: 9vw; overflow: hidden;}
+    main>section.resume_p>h3>span>i{display: inline-block; font-size: 10.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.resume_p>div{width: 50%; float: left; margin-top: 6.646vw;}
+    main>section.resume_p>div>h4{font-size: 3.125vw; transform: translateY(150px); opacity: 0;}
+
+    main>section.resume_p>div>dl{width: 100%; margin-top: 4.604vw; transform: translateY(150px); opacity: 0;}
+    main>section.resume_p>div>dl>dt{font-size:  1.938vw; font-weight: bold; color: #333333;}
+    main>section.resume_p>div>dl>dd{font-size: 1.538vw; color: #333333; opacity: 0.8;}
+
+    main>section.resume_p>div.edu>dl>dd:first-of-type{margin: 2.181vw 0 4.7vw; opacity: 1;}
+    main>section.resume_p>div.edu>dl:first-of-type{margin: 4.804vw 0 0; opacity: 1;}
+    main>section.resume_p>div.edu>dl:last-of-type{margin: 6.504vw 0 0; opacity: 1;}
+
+    main>section.resume_p>div.skill>dl>dt{width: 100%;}
+    main>section.resume_p>div.skill>dl>dd{position: relative; width: 30.271vw; margin-bottom: 2.302vw;} 
+    main>section.resume_p>div.skill>dl>dd:first-of-type{margin: 2.302vw 0;} 
+    main>section.resume_p>div.skill>dl>dd>ul{position: absolute; right: 5.042vw; top: 50%; height: 0.781vw; width: 17.813vw; transform: translateY(-0.125vw);}
+    main>section.resume_p>div.skill>dl>dd>ul>li{float: right; width: 0.513vw; height: 0.513vw; background: #333333; margin-left: 0.721vw; border-radius: 5vw; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd>ul>li:first-child{margin-right: 0; background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd:last-of-type>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(3){background: none; border: 1px solid #333333;}
+
+    main>section.resume_p>div.skill>dl>dd>em{display: block; position: absolute; top: 50%; right: 0; transform: translateY(-35%);}
+
+    main>section.resume_p>div.license{width: 100%; margin-top: 5.455vw;}
+    main>section.resume_p>div.license>dl{position: relative; width: 40.875vw;}
+    main>section.resume_p>div.license>dl>dt{}
+    main>section.resume_p>div.license>dl>dd:first-of-type{position: absolute; top: 50%; right: 7.325vw; width: 12vw; transform: translateY(-50%);}
+    main>section.resume_p>div.license>dl>dd:last-of-type{position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+
+
+
+    /* about */
+    main>section.about_p{clear: both; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.about_p>h3>{}
+    main>section.about_p>h3>span{display: inline-block; height: 9vw; overflow: hidden;}
+    main>section.about_p>h3>span>i{display: inline-block; font-size: 10.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.about_p>dl>dt{margin: 7.813vw 0 2.344vw; font-size: 4.025vw; font-family: 'DM Serif Display'; transform: translateY(150px); opacity: 0;}
+    main>section.about_p>dl>dd{font-size: 1.938vw; transform: translateY(150px); opacity: 0; line-height: 1.5; text-align: justify;}
+
+
+
+    /* contact */
+    main>section.contact_p{clear: both; padding-top: 10.471vw; margin-top: 5.455vw; box-sizing: border-box;}
+    main>section.contact_p>h3>{}
+    main>section.contact_p>h3>span{display: inline-block; height: 9vw; overflow: hidden;}
+    main>section.contact_p>h3>span>i{display: inline-block; font-size: 10.292vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.contact_p>p{margin-top: 3.646vw; font-size: 1.938vw; line-height: 1.5; transform: translateY(150px); opacity: 0;}
+    main>section.contact_p>dl{width: 40%; float: left; margin: 7.813vw 0 7.813vw 10%; text-align: center; transform: translateY(150px); opacity: 0;}
+    main>section.contact_p>dl:nth-of-type(2){margin: 7.813vw 10% 7.813vw 0; box-sizing: border-box;}
+    main>section.contact_p>dl>dt{font-size: 3.425vw; font-family: 'DM Serif Display';}
+    main>section.contact_p>dl>dd{font-size: 2.163vw; margin-top: 1.85vw;}
+
+    main>section.contact_p>dl>dt>img{width: 4.246vw; height: 4.246vw; margin: -0.521vw 0.781vw 0 0;}
+    main>section.contact_p>dl:first-of-type>dt>img{width: 4.602vw; height: 4.602vw;}
+
+
+
+    /* footer */
+    footer>p:first-child{float: left; font-size: 3.144vw; transform: translateY(150px); opacity: 0;}
+    footer>p:last-child{float: right; font-size: 1.542vw; line-height: 3.2; transform: translateY(150px); opacity: 0;}
+}
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 767px){
+    body.on{overflow: hidden;}
+
+    /* layout */
+    nav{position: relative; float: left; width: 10vw; height: 100vh; padding: 9.259vh 0; box-sizing: border-box; opacity: 0; display: none;}
+    .wrap{float: left; padding: 5.208vw 9.896vw 5.208vw 9.896vw; width: 100%; box-sizing: border-box;}
+        header{position: relative; width: 100%; height: 50px; opacity: 0; margin-bottom: 10.427vw;}
+        main{width: 100%;}
+        footer{width: 100%; height: 3.646vw; clear: both; padding-top: 1.302vw; border-top: 0.208vw solid #333333; font-family: 'DM Serif Display'; margin-bottom: 5vw;}
+
+    /* header */
+    h1{font-size: 3.823vw; width: 41.22%; line-height: 5rem;}
+    .gnb{display: none;}
+    
+    .m_gnb{z-index: 3; position: fixed; right: 8%; top: 9.05vw; padding: 15px 12px 10px;  display: block; transform: translateY(-40%) translateZ(0) scale(0.9); cursor: pointer;}
+
+    .m_gnb.on{background: #333333; border-radius: 50%; box-sizing: border-box;}
+    .m_gnb.on>li{background:#ffffff}
+    .m_gnb.on:hover{opacity: 1;}
+
+    .m_gnb>li{width: 30px; height: 4px; background: #333333; margin-bottom: 5px; transition: all 0.3s ease 0s;} 
+
+    .m_gnb>li.on{background: #ffffff;}
+    .m_gnb>li.on:nth-child(1){transform: translateY(9px) rotateZ(-135deg);}
+    .m_gnb>li.on:nth-child(2){opacity: 0;}
+    .m_gnb>li.on:nth-child(3){transform: translateY(-9.5px) rotateZ(-45deg);}
+    
+    .menu_box{z-index: 2; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.93); transform: translateX(100vw); opacity: 0; transition: all 0.5s ease 0s;} 
+
+    .menu_box>ul{position: absolute; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); text-align: center;}
+    .menu_box>ul>li{margin: 5vw; font-size: 10.813vw; font-family: 'DM Serif Display'; color: #ffffff; opacity: 0.3; cursor: pointer; transition: all 0.3s ease 0s;}
+
+    .menu_box>ul>li:hover{opacity: 1; transform: rotateZ(-10deg);}
+
+    .menu_box.on{transform: translateX(0); opacity: 1;}
+
+    /* main */
+    main{margin-top: 15.427vw;}
+
+    /* main_p */
+    main>section.main_p{width: 100%; position: relative; height: 125.67vw;}
+    main>section.main_p>h2{width: 100%; float: left; margin-top: 50.083vw;}
+    main>section.main_p>h2>span{display:block; height: 16.592vw; overflow: hidden;}
+    main>section.main_p>h2>span:nth-of-type(2){height: 18.113vw;}
+    main>section.main_p>h2>span>i{display: inline-block; height: 100%; margin-top: -2.083vw; font-size:15.792vw; font-style: normal; transform: translateY(180px);}
+
+    main>section.main_p>h2>span>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(1){margin-left: 0;}
+    main>section.main_p>h2>span:nth-of-type(2)>i:nth-of-type(3){margin-right: 5%;}
+
+    main>section.main_p>.img_box{position: absolute; right: 0; width: 50vw; float: right; opacity: 0;}
+    main>section.main_p>.img_box>img{max-width: 100%; height: auto;}
+
+    main>section.main_p>p{clear: both; font-size: 3.152vw; font-weight: 300; transform: translateY(150px); opacity: 0; text-align: justify; line-height: 1.5;}
+    main>section.main_p>p:first-of-type{padding: 7.083vw 0 3.906vw;}
+    main>section.main_p>p strong{font-weight: 600;}
+    main>section.main_p>p>span{display: block;}  
+
+    /* work_p */
+    main>section.work_p{width: 100%; padding-top: 25.604vw; box-sizing: border-box;}
+
+    main>section.work_p>h3>{}
+    main>section.work_p>h3>span{display: inline-block; height: 16vw; overflow: hidden;}
+    main>section.work_p>h3>span>i{display: inline-block; font-size: 15.92vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.work_p>.Work_p_inner{width: 100%; margin: 3.646vw auto; border: 0.508vw solid #333333; box-sizing: border-box; border-radius: 1.5vw;}
+    main>section.work_p>.Work_p_inner:after{content: ""; display: block; clear: both;}
+
+    main>section.work_p>.Work_p_inner>a{position: relative; float: left; display: block; width: 100%; height: 50.438vw; padding: 10px 25px; overflow: hidden;  border-bottom: 0.508vw solid #333; box-sizing: border-box; }
+    main>section.work_p>.Work_p_inner>a>h4{font-size: 5.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>.Work_p_inner>a>p{font-size: 2.538vw; opacity: 0.7; transform: translateY(150px); opacity: 0}
+    
+    main>section.work_p>.Work_p_inner>a.sk{}
+    
+    main>section.work_p>.Work_p_inner>a.sk>div{position: absolute; left: 50%; bottom: -5%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0); border: 5px solid #333333; border-radius: 0.7vw; opacity: 0.8; transition: all 0.3s ease 0s; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.sk>div>span{display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden; background: url(../images/img_sk_main.png) no-repeat 50% 0.2%; background-size: cover; border-radius: 0.2vw;}
+    
+    main>section.work_p>.Work_p_inner>a.sk:hover>div{transform: translate3d(-50%,0,0); opacity: 1;}
+    
+    main>section.work_p>.Work_p_inner>a.cj{}
+    
+    main>section.work_p>.Work_p_inner>a.cj>div{position: absolute; left: 50%; bottom: -10%; width: 80%; height: 70%; transform: translate3d(-50%,7%,0);}
+    
+    main>section.work_p>.Work_p_inner>a.cj>div>span{display: block;  border: 5px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(1){display: block; position: absolute; bottom: 0%; left: 0%; width: 30%; height: 85%; background: url(../images/img_cj_mobile.png) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.cj>div>span:nth-child(2){display: block; position: absolute; bottom: 0; right: 0%; width: 60%; height: 100%; border: 5px solid #333333; background: url(../images/img_cj_tablet.png) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.cj:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
+    
+    
+    
+    main>section.work_p>.Work_p_inner>a.ww{}
+    
+    main>section.work_p>.Work_p_inner>a.ww>div{position: absolute; left: 50%; top: 0; width: 80%; height: 100%; transform: translateX(-50%);}
+    
+    main>section.work_p>.Work_p_inner>a.ww>div>span{display: block; border: 5px solid #333333; border-radius: 3vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(1){display: block; position: absolute; bottom: -35%; left: 2.5%; width: 40%; height: 85%; background: url(../images/img_ww_main.png) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.ww>div>span:nth-child(2){display: block; position: absolute; top: 25%; right: 2.5%; width: 40%; height: 100%; border: 5px solid #333333; background: url(../images/img_ww_splash.png) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.ww:hover>div>span{transform: translate3d(0,-12%,0); opacity: 1;}
+    
+    main>section.work_p>.Work_p_inner>a.melon{border-bottom: none;}
+    
+    main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+    
+    main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 5px solid #333333; border-radius: 1.5vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -30%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -60%; right: 0%; width: 22%; height: 100%; border: 5px solid #333333; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; transition: all 0.3s ease 0.2s;}
+    
+    main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
+    
+
+
+    main>section.work_p>.Work_p_inner>a.anot_pof{border-bottom: none; display: none;}
+    
+    main>section.work_p>.Work_p_inner>a.anot_pof>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
+    main>section.work_p>.Work_p_inner>a.anot_pof>div>span{display: block; border: 5px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1); display: block; position: absolute; bottom: -30%; left: 0%; width: 100%; height: 85%; border-radius: 0.5vw; background: url(../images/img_anopf.png) no-repeat 50% 0%; background-size: 120%; transition: all 0.3s ease 0s;}
+    
+    main>section.work_p>.Work_p_inner>a.anot_pof:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
+
+    
+
+    main>section.work_p>h4{font-size: 5.125vw; transform: translateY(150px); opacity: 0;}
+    main>section.work_p>div.pure_box{position: relative; margin: 0 auto; height: 60.25vw; width: 100%; /* transform: scale(0.8); */ box-sizing: border-box;} 
+
+
+    main>section.work_p>div.pure_box>.mock_up1{position: absolute; top: 10vw; width: 100%; height: 50%;box-sizing: border-box;}
+
+    .lion{position: absolute; top: 0; left: 50%; width: 300px; height: 300px; transform: scale(0.8) translateX(-60%);}
+    .lion_face{z-index: 3; position: absolute; left: 50%; top: 50%; width: 300px; height: 300px; margin-left: -150px; margin-top: -150px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear{z-index: 1; position: absolute; left: calc(50% - 45px); top: -50px; width: 90px; height: 90px; border-radius: 70%;}
+    .lion_ear:after, .lion_ear:before{content: ""; position: absolute; left: calc(50% - 45px); top: 40px; width: 90px; height: 90px; background: #D59729; border-radius: 100%; border: 8px solid #000; box-sizing: border-box;}
+    .lion_ear:after{margin-left: -85px;}
+    .lion_ear:before{margin-left: 85px;}
+
+    .lion_eyebrows{position: absolute; left: calc(50% - 3px); top: 90px; width: 6px; height: 6px; border-radius: 50px;}
+    .lion_eyebrows:after, .lion_eyebrows:before{content: ""; position: absolute; left: calc(50% - 33px); width: 66px; height: 14px; background: #000; border-radius: 20px;}
+    .lion_eyebrows:after{margin-left: -65px;}
+    .lion_eyebrows:before{margin-left: 65px; animation: eyebrow 2s linear 0s infinite;}
+
+    @keyframes eyebrow{
+        25%,75%{transform: rotate(-15deg); transform-origin: right top;}
+        0%,100%{transform: rotate(0); transform-origin: right top;}
+    }
+
+    .lion_eye{position: absolute; left: calc(50% - 3px); top: 135px; width: 6px; height: 6px; border-radius: 100%;}
+    .lion_eye:after,.lion_eye:before{content: ""; position: absolute;; left: calc(50% - 12px); top: -10px;  width: 24px; height: 24px; background: #000; border-radius: 50%;}
+    .lion_eye:after{margin-left: -55px;}
+    .lion_eye:before{margin-left: 55px; animation: eye 2s linear 0s infinite;}
+    @keyframes eye{
+        25%,78%{height: 3px; width: 30px; top: 2px;}
+        100%,0%{height: 24px; width: 26px; top: -10px;}
+    }
+
+    .lion_nose{z-index: 5; position: absolute; left: calc(50% - 15px); top: 155px; width: 30px; height: 32px; background: #000; border-radius: 20px; box-shadow: -15px 20px 0 0 #fff, 14px 23px 0 0 #fff}
+
+    .lion_nose2:after, .lion_nose2:before{content: ""; position: absolute; left: calc(50% - 30px); top: 165px; width: 60px; height: 60px; background: #fff; border: 8px solid #000; border-radius: 50px; box-sizing: border-box;}
+    .lion_nose2:after{margin-left: -23px;}
+    .lion_nose2:before{margin-left: 23px;}
+
+
+    main>section.work_p>div.pure_box>.mock_up2{display: none; position: absolute; top: 43vw; left: 0; width: 100%; height: 30%; box-sizing: border-box; }
+    /* emoji */
+    .emoji{position: absolute; top: 0%; display: inline-block; width: 120px; height: 120px; border-radius: 50%; margin: 15px 1vw 0px; background: #ffda6a; transform: scale(0.7);}
+    .emoji:after{content: "emoji"; position: absolute; bottom: -40px; left: calc(50% - 30px); width: 60px; font-size: 18px; color: #8a8a8a}
+
+    .emoji:nth-of-type(1){left: 0;}
+    .emoji:nth-of-type(2){left: 20%;}
+    .emoji:nth-of-type(3){left: 40%;}
+    .emoji:nth-of-type(4){left: 60%;}
+    .emoji:nth-of-type(5){left: 80%;}
+
+    /* 1.emoji_like */
+    .emoji_like{background: #548dff;}
+    .emoji_like:after{content: "like";}
+    .emoji_like .emoji_hand{position: absolute; left: 25px; bottom: 30px; width: 20px; height: 40px; background: #fff; border-radius: 5px; animation: hands_up 2s linear 0s infinite;}
+
+    @keyframes hands_up{
+        25%{transform: rotate(15deg);}
+        50%{transform: rotate(-15deg) translateY(-10px);}
+        75%,100%{transform: rotate(0deg);}
+    }
+    .emoji_like .emoji_hand:before{content: ""; position: absolute; left: 25px; bottom: 5px; width: 40px; height: 10px; background: #fff; border-radius: 2px 10px 10px 2px; box-shadow: 1px -9px 0 1px #fff, 2px -19px 0 2px #fff, 3px -29px 0 3px #fff;}
+
+    .emoji_like .emoji_thumb{position: absolute; right: -25px; top: -25px; z-index: 2; border-bottom: 20px solid #fff; border-left: 20px solid transparent; transform: rotate(5deg); transform-origin: 0 100%; animation: thumb-up 2s linear infinite}
+
+    @keyframes thumb-up{
+        25%{transform: rotate(20deg);}
+        50%,100%{transform: rotate(5deg);}
+    }
+    .emoji_like .emoji_thumb:before{content: ""; position: absolute; left: -9.6px; top: -9px; width: 10px; height: 12px; background: #fff; border-radius: 50% 50% 0 0; box-shadow: -1px 4px 0 -1px #fff; transform: rotate(-14deg); transform-origin: 100% 100%;} 
+
+    /* 2.emoji_love */
+    .emoji_love{background: #f55064;}
+    .emoji_love:after{content: "lover";}
+
+    .emoji_love .emoji_heart{position: absolute; left: 50%; top: 50%; width: 80px; height: 80px; /*transform: translate3d(-50%,-50%,0) */ margin-left: -40px; margin-top: -40px; animation: heart_beat 1s linear infinite alternate;}
+
+    @keyframes heart_beat{
+        25%{transform: scale(1.1)}
+        75%{transform: scale(0.6)}
+    }
+
+    .emoji_love .emoji_heart:before,.emoji_love .emoji_heart:after{content: ""; position: absolute; left: 50%; top: 50%; width: 40px; height: 64px; margin-left: -20px; margin-top: -32px; background: #fff; border-radius: 20px 20px 0 0;}
+    .emoji_love .emoji_heart:before{transform: translate(20px) rotate(-45deg); transform-origin: 0 100%;}
+    .emoji_love .emoji_heart:after{transform: translate(-20px) rotate(45deg); transform-origin: 100% 100%;}
+
+    /* position : absolute는 margin: 0 auto 안된다 */
+    /* 
+    중앙에 위치 시키는 방법
+    1. position: absolute; left: calc(50% - 가로 1/2px),top: calc(50% - 세로 1/2px);
+    2. position: absolute; left: 50%; top: 50%; margin-left: -가로 1/2px , margin-top: -세로 1/2px; 
+    3.position: absolutr; left: 50%; top: 50%; transform: translate(-50%, -50%, 0);
+    */
+
+    /* 3. emoji_haha */
+    .emoji_haha:after{content: "Haha";}
+    .emoji_haha .emoji_face{position: absolute; width: 100%; height: 100%; animation: face_moving 2s linear 0s infinite;}
+
+    @keyframes face_moving{
+        10%{transform: translateY(25px);}
+        20%{transform: translateY(15px);}
+        30%{transform: translateY(15px);}
+        40%{transform: translateY(25px);}
+        50%{transform: translateY(25px);}
+        60%{transform: translateY(0);}
+        70%{transform: translateY(-10px);}
+        80%{transform: translateY(0);}
+        90%{transform: translateY(-10px);}
+
+    }
+    .emoji_haha .emoji_eyes{position: absolute; left: 50%; top: 35px; width: 26px; height: 6px; margin-left: -13px; border-radius: 2px;  box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000; transform: rotate(20deg);}
+
+    .emoji_haha .emoji_eyes:after{content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 6px; border-radius: 2px; box-shadow: -25px -5px 0 0 #000, 25px 5px 0 0 #000; transform: rotate(-40deg);}
+
+    .emoji_haha .emoji_mouth{position: absolute; left: 50%; top: 50%; width: 80px; height: 40px; margin-left: -40px; background: #000; border-radius: 0 0 40px 40px; overflow: hidden; animation: haha_mouth 2s linear 0s infinite;}
+
+    @keyframes haha_mouth{
+        10%{transform: scale(0.6); top: 45%;}
+        20%{transform: scale(0.8); top: 45%;}
+        30%{transform: scale(0.6); top: 45%;}
+        40%{transform: scale(0.8); top: 45%;}
+        50%{transform: scale(0.6); top: 45%;}
+        60%{transform: scale(1); top: 50%;}
+        70%{transform: scale(1.2); top: 50%;}
+        80%{transform: scale(1); top: 50%;}
+        90%{transform: scale(1.2); top: 50%;}
+    }
+    .emoji_haha .emoji_tongue{position: absolute; left: 50%; bottom: -10px; width: 70px; height: 30px; margin-left: -35px; background: #f55064; border-radius: 50%;}
+
+    /* 4.emoji_yay */
+    .emoji_yay:after{content: "Yay"}
+    .emoji_yay .emoji_face{position: absolute; width: 100%; height: 100%; animation: yay 1s linear 0s infinite alternate;}
+
+    @keyframes yay{
+        25%{transform: rotate(-15deg)}
+        75%{transform: rotate(15deg)}
+    }
+
+    .emoji_yay .emoji_eyebrows{position: absolute; left: calc(50% - 3px); top: 30px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -6px 0 0 0#000, -36px 0 0 0 #000, 6px 0 0 0 #000, 36px 0 0 0 #000;}
+    .emoji_yay .emoji_eyebrows:before,.emoji_yay .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 18px); bottom: 3px; width: 36px; height: 18px; border: 6px solid black; border-bottom: 0; border-radius: 60px 60px 0 0; box-sizing: border-box;}/* border, padding 값이 실제크기 포함 안됨. 벗 마진은 안됨!*/
+    .emoji_yay .emoji_eyebrows:before{margin-left: -21px;}
+    .emoji_yay .emoji_eyebrows:after{margin-left: 21px;}
+    .emoji_yay .emoji_mouth{position: absolute; left: calc(50% - 3px); top: 60px; width: 6px; height: 6px; border-radius: 50%; box-shadow: -25px 0 0 0 #000, 25px 0 0 0 #000, -35px -2px 30px 10px #d5234c, 35px -2px 30px 10px #d5234c;}
+    .emoji_yay .emoji_mouth:after{content: ""; position: absolute; left: calc(50% - 40px); top: -64px; width: 80px; height: 80px; border-radius: 50%; border: 6px solid #000; box-sizing: border-box; border-left-color: transparent; border-right-color: transparent; border-top-color: transparent;}
+
+    /* 5. emoji_wow */
+    .emoji_wow:after{content: "wow";}
+    .emoji_wow .emoji_face{position: absolute; width: 100%; height: 100%; animation: wow_face 3s linear 0s infinite; }
+
+    @keyframes wow_face{
+        15%,25%{transform: rotate(20deg) translateX(-25px);}
+        45%,65%{transform: rotate(-20deg) translateX(25px);}
+        75%,100%{transform: rotate(0deg) translateX(0);}
+
+    }
+    .emoji_wow .emoji_eyebrows{position: absolute; left: calc(50% - 3px); width: 6px; height: 6px; border-radius: 50%;box-shadow: -18px 0 0 0 #000,-33px 0 0 0 #000, 18px 0 0 0 #000, 33px 0 0 0 #000; animation: wow_brow 3s linear 0s infinite;;}
+
+    @keyframes wow_brow{
+        15%,65%{top: 25px;}            
+        75%,100%, 0%{top: 15px;}              
+    }
+
+    .emoji_wow .emoji_eyebrows:before, .emoji_wow .emoji_eyebrows:after{content: ""; position: absolute; left: calc(50% - 12px); top: -3px; width: 24px; height: 20px; border-radius: 50%; border: 6px solid #000; border-bottom-color: transparent; border-right-color: transparent; border-left-color: transparent; box-sizing: border-box;}
+    .emoji_wow .emoji_eyebrows:before{margin-left: -25px;}
+    .emoji_wow .emoji_eyebrows:after{margin-left: 25px;}
+    .emoji_wow .emoji_eyes{position: absolute; left: calc(50% - 8px); top: 35px; width: 16px; height: 24px; border-radius: 50%; box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;}
+    .emoji_wow .emoji_tongue{position: absolute; left: calc(50% - 15px); top: 50%; width: 30px; height: 45px; border-radius: 50%; background: #000; animation: wow_tongue 3s linear 0s infinite}
+
+    @keyframes wow_tongue{
+        10%,30%{width: 20px; height: 20px; left: calc(50% - 10px)}
+        50%,70%{width: 30px; height: 40px; left: calc(50% - 15px)}
+        75%,100%{height: 50px;}
+    }    
+
+
+    .emoji_sad{display: none;}
+    .emoji_angry{display: none;}
+
+
+    /* resume */
+    main>section.resume_p{width: 100%; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.resume_p>h3>{}
+    main>section.resume_p>h3>span{display: inline-block;  height: 16.792vw; overflow: hidden;}
+    main>section.resume_p>h3>span>i{display: inline-block; font-size: 18.113vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.resume_p>div{width: 100%; float: left; margin-top: 8.646vw;}
+    main>section.resume_p>div>h4{font-size: 7.125vw; transform: translateY(150px); opacity: 0;}
+
+    main>section.resume_p>div>dl{width: 100%; margin-top: 4.604vw; transform: translateY(150px); opacity: 0;}
+    main>section.resume_p>div>dl>dt{font-size:  4.238vw; font-weight: bold; color: #333333;}
+    main>section.resume_p>div>dl>dd{font-size: 3.138vw; color: #333333; opacity: 0.8;}
+
+    main>section.resume_p>div.edu>dl>dd:first-of-type{margin: 4.181vw 0 10.7vw; opacity: 1;}
+    main>section.resume_p>div.edu>dl:first-of-type{margin: 7.804vw 0 0; opacity: 1;}
+    main>section.resume_p>div.edu>dl:last-of-type{margin: 10.504vw 0 0; opacity: 1;}
+
+    main>section.resume_p>div.skill>dl>dt{width: 100%;}
+    main>section.resume_p>div.skill>dl>dd{position: relative; width: 55vw; margin-bottom: 4.302vw;} 
+    main>section.resume_p>div.skill>dl>dd:first-of-type{margin-top: 6.302vw;} 
+    main>section.resume_p>div.skill>dl>dd>ul{position: absolute; right: 9.942vw; top: 50%; height: 0.781vw; width: 24.813vw; transform: translateY(-0.125vw);}
+    main>section.resume_p>div.skill>dl>dd>ul>li{float: right; width: 0.813vw; height: 0.813vw; background: #333333; margin-left: 1.021vw; border-radius: 5vw; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd>ul>li:first-child{margin-right: 0; background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl>dd:last-of-type>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(2){background: none; border: 1px solid #333333;}
+    main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(3){background: none; border: 1px solid #333333;}
+
+    main>section.resume_p>div.skill>dl>dd>em{display: block; position: absolute; top: 50%; right: 0; transform: translateY(-35%);}
+
+    main>section.resume_p>div.license{width: 100%; margin-top: 5.455vw;}
+    main>section.resume_p>div.license>dl{position: relative; width: 70.875vw;}
+    main>section.resume_p>div.license>dl>dt{}
+    main>section.resume_p>div.license>dl>dd:first-of-type{position: absolute; top: 50%; right: 17.325vw; width: 20vw; transform: translateY(-50%);}
+    main>section.resume_p>div.license>dl>dd:last-of-type{position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+
+
+
+    /* about */
+    main>section.about_p{clear: both; padding-top: 10.471vw; box-sizing: border-box;}
+    main>section.about_p>h3>{}
+    main>section.about_p>h3>span{display: inline-block; height: 17.292vw; overflow: hidden;}
+    main>section.about_p>h3>span>i{display: inline-block; font-size: 18.113vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.about_p>dl>dt{margin: 7.813vw 0 2.344vw; font-size: 7.025vw; font-family: 'DM Serif Display'; transform: translateY(150px); opacity: 0;}
+    main>section.about_p>dl>dd{font-size: 2.938vw; transform: translateY(150px); opacity: 0; line-height: 1.5; text-align: justify;}
+
+
+
+    /* contact */
+    main>section.contact_p{clear: both; padding-top: 10.471vw; margin-top: 5.455vw; box-sizing: border-box;}
+    main>section.contact_p>h3>{}
+    main>section.contact_p>h3>span{display: inline-block; height: 17.592vw; overflow: hidden;}
+    main>section.contact_p>h3>span>i{display: inline-block; font-size: 18.113vw; font-style: normal; margin-top: -2.083vw; transform: translateY(140px);}
+
+    main>section.contact_p>p{margin-top: 3.846vw; font-size: 2.938vw; line-height: 1.5; transform: translateY(150px); opacity: 0; text-align: justify;}
+    main>section.contact_p>p>span{display: block;}
+    main>section.contact_p>dl{width: 40%; float: left; margin: 7.813vw 0 7.813vw 10%; text-align: center; transform: translateY(150px); opacity: 0;}
+    main>section.contact_p>dl:nth-of-type(2){margin: 7.813vw 10% 7.813vw 0;}
+    main>section.contact_p>dl>dt{font-size: 4.125vw; font-family: 'DM Serif Display';}
+    main>section.contact_p>dl>dd{font-size: 2.563vw; margin-top: 1.85vw;}
+
+    main>section.contact_p>dl>dt>img{width: 4.946vw; height: 4.946vw; margin: -0.521vw 0.781vw 0 0;}
+    main>section.contact_p>dl:first-of-type>dt>img{width: 5.202vw; height: 5.202vw;}
+
+
+
+    /* footer */
+    footer>p:first-child{font-size: 5.144vw; transform: translateY(150px); opacity: 0;}
+    footer>p:last-child{font-size: 1.542vw; line-height: 1.5; transform: translateY(150px); opacity: 0;}    
+}
+
 
 
 
