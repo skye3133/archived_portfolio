@@ -105,7 +105,7 @@ main>section.work_p>.Work_p_inner>a.melon{width: 60%;}
 main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
 
 main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
 main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 7px solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
 
 main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
@@ -515,7 +515,7 @@ main>section.work_p>.Work_p_inner>a.melon{width: 60%;}
 main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
 
 main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
 main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
 
 main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
@@ -935,7 +935,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
     
     main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 7px solid #333333; border-radius: 1.5vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
     main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 7px solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
@@ -1305,7 +1305,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
     
     main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 5px solid #333333; border-radius: 1.5vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -30%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -30%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
     main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -60%; right: 0%; width: 22%; height: 100%; border: 5px solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
@@ -1790,7 +1790,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
     
     main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 7px solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
     main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 7px solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
@@ -2117,7 +2117,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
 
     main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
     main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
 
     main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
@@ -2537,7 +2537,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
     
     main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 0.365vw solid #333333; border-radius: 1.5vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -25%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
     main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -55%; right: 0%; width: 22%; height: 100%; border: 0.365vw solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
@@ -2907,7 +2907,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
     main>section.work_p>.Work_p_inner>a.melon>div{position: absolute; left: 50%; top: 0; width: 85%; height: 100%; transform: translateX(-50%);}
     
     main>section.work_p>.Work_p_inner>a.melon>div>span{display: block; border: 5px solid #333333; border-radius: 1.5vw; text-indent: -9999px; overflow: hidden; opacity: 0.8; box-shadow: 15px -15px 20px rgba(0,0,0,0.1);}
-    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -30%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: cover; transition: all 0.3s ease 0s;}
+    main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(1){display: block; position: absolute; bottom: -30%; left: 0%; width: 70%; height: 85%; border-radius: 0.5vw; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0.1%; background-size: 100%; transition: all 0.3s ease 0s;}
     main>section.work_p>.Work_p_inner>a.melon>div>span:nth-child(2){display: block; position: absolute; bottom: -60%; right: 0%; width: 22%; height: 100%; border: 5px solid #333333; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: 100%; transition: all 0.3s ease 0.2s;}
     
     main>section.work_p>.Work_p_inner>a.melon:hover>div>span{transform: translate3d(0,-7%,0); opacity: 1;}
