@@ -52,10 +52,10 @@ body{font-family: 'Rajdhani';}
 .content>section.tablet>.img_box{position: relative; padding: 5.28vw 26.37vw; width: 100%; box-sizing: border-box;}
 .content>section.mobile>.img_box{position: relative; padding: 5.28vw 30.5vw; width: 100%; box-sizing: border-box;}
 
-.content>section.landing>.img_box>.img{width: 100%; height: 300vw; background: url(../images/m_landing.jpg) no-repeat 0 0; background-size: contain;}
-.content>section.pc>.img_box>.img{width: 100%; height: 255vw; background: url(../images/m_pc.jpg) no-repeat 0 0; background-size: contain;}
-.content>section.tablet>.img_box>.img{width: 100%; height: 235vw; background: url(../images/m_tablet.jpg) no-repeat 0 0; background-size: contain;}
-.content>section.mobile>.img_box>.img{width: 100%; height: 215vw; background: url(../images/m_mobile.jpg) no-repeat 0 0; background-size: contain;}
+.content>section.landing>.img_box>.img{width: 100%; height: 300vw; background: url(../images/img_melon_landing.jpg) no-repeat 0 0; background-size: contain;}
+.content>section.pc>.img_box>.img{width: 100%; height: 255vw; background: url(../images/img_melon_pc.png) no-repeat 0 0; background-size: contain;}
+.content>section.tablet>.img_box>.img{width: 100%; height: 235vw; background: url(../images/img_melon_tablet.png) no-repeat 0 0; background-size: contain;}
+.content>section.mobile>.img_box>.img{width: 100%; height: 215vw; background: url(../images/img_melon_mobile.png) no-repeat 0 0; background-size: contain;}
 
 .content>section>.bg_box{width: 100%; height: 28.24vw; background: #00cd3c; cursor: pointer;}
 .content>section>.bg_box>p{font-size: 10.18vw; font-weight: 600; color: #fff; text-align: center; line-height: 28.24vw;}

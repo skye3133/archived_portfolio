@@ -11,7 +11,7 @@ a{text-decoration: none; color: #333333;}
 @media (min-width : 1600px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
-        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; opacity: 0; box-sizing: border-box;}
+        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; box-sizing: border-box;}
         main{width: 100%;}
             main>.intro_p{width: 59.375vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
             main>.intro_d_p{width: 100%; background: rgba(231,50,53,0.7); margin-top: 3.646vw;}
@@ -48,7 +48,7 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 30vw; margin-top: -2.825vw;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; bottom: -19%; width: 100%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_sk_main.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_sk_main.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     main>.detail_p{margin-top: 8.854vw;}
     main>.detail_p>h3{width: 100%;}
@@ -101,7 +101,7 @@ a{text-decoration: none; color: #333333;}
 @media (min-width: 1024px) and (max-width: 1599px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
-        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0;}
+        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; padding: 0 2.083vw; opacity: 0; box-sizing: border-box;}
         main{width: 100%;}
             main>.intro_p{width: 59.375vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
             main>.intro_d_p{width: 100%; background: rgba(231,50,53,0.7); margin-top: 3.646vw;}
@@ -138,7 +138,7 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 30vw; margin-top: -2.825vw;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; bottom: -19%; width: 100%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_sk_main.png) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_sk_main.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     main>.detail_p{margin-top: 8.854vw;}
     main>.detail_p>h3{width: 100%;}
@@ -190,7 +190,7 @@ a{text-decoration: none; color: #333333;}
 @media (min-width: 768px) and (max-width: 1023px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
-        header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0;}
+        header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; padding: 0 2.083vw; opacity: 0; box-sizing: border-box;}
         main{width: 100%;}
             main>.intro_p{width: 80vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
             main>.intro_d_p{width: 100%; background: rgba(231,50,53,0.7); margin-top: 3.646vw;}
@@ -227,7 +227,7 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 42vw; margin-top: -4.825vw;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; bottom: -23%; width: 100%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_sk_main.png) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_sk_main.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     main>.detail_p{margin-top: 12.854vw;}
     main>.detail_p>h3{width: 100%;}
@@ -279,7 +279,7 @@ a{text-decoration: none; color: #333333;}
 @media (max-width: 767px){
 /* layout */
 .wrap{width: 100%; margin: 0 auto;}
-header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0;}
+header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; padding: 0 2.083vw; opacity: 0; box-sizing: border-box;}
 main{width: 100%;}
     main>.intro_p{width: 80vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
     main>.intro_d_p{width: 100%; background: rgba(231,50,53,0.7); margin-top: 9.646vw;}
@@ -320,7 +320,7 @@ main>.intro_d_p>.intro_d_p_inner>.i_detail>dl:first-of-type>dd{margin-top: 1.013
 
 main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 42vw; margin-top: -12.825vw;}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; bottom: -35%; width: 100%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_sk_main.png) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_sk_main.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
 main>.detail_p{margin-top: 17.854vw;}
 main>.detail_p>h3{width: 100%;}

@@ -37,6 +37,16 @@ $(function(){
             window.location.href = target;
         },1000);
 	});
+
+	$(".drawer>.navi_menu>ul>li>a").click(function(e){
+		e.preventDefault();
+		
+        target = $(this).attr('href');
+        
+        var timer = setTimeout(function(){
+            window.location.href = target;
+        },0);
+	});
 	
 	
 	//weather 

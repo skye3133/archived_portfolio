@@ -11,7 +11,7 @@ a{text-decoration: none; color: #333333;}
 @media (min-width : 1600px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
-        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; opacity: 0; box-sizing: border-box;}
+        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; box-sizing: border-box;}
         main{width: 100%;}
             main>.intro_p{width: 59.375vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
             main>.intro_d_p{width: 100%; background: rgba(0,205,60,0.7); margin-top: 3.646vw;}
@@ -48,51 +48,13 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 30vw; margin-top: -2.825vw;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
-
-    main>.detail_p{margin-top: 8.854vw;}
-    main>.detail_p>h3{width: 100%;}
-    main>.detail_p>h3>span{display: inline-block; height: 5.990vw; overflow: hidden;}
-    main>.detail_p>h3>span>i{display: inline-block; margin-top: -2.344vw; font-size: 7.292vw; font-style: normal; transform: translateY(150px);}
-
-    main>.detail_p>div{position: relative; width: 100%; margin-top: 7.813vw; transform: translateY(150px); opacity: 0;}
-    main>.detail_p>div>h4{font-size: 4.167vw;}
-    main>.detail_p>div>p:first-of-type{font-size: 1.563vw; font-weight: bold;}
-    main>.detail_p>div>p:last-of-type{font-size: 1.302vw; line-height: 1.5;}
-    main>.detail_p>div>.img_box{position: absolute; right: 0; top: 0; width: 50%;}
-
-    main>.detail_p>div.w3c>span{float: left; display: block; width: 9.375vw; height: 3.385vw; margin: 3.906vw 0; background: url(../images/img_w3c_html.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.w3c>span:nth-of-type(2){margin-left: 2.344vw; background: url(../images/img_w3c_css.png) no-repeat 0 0; background-size: cover;}
-
-    main>.detail_p>div.w3c>p:last-of-type{clear: both;}
-
-    main>.detail_p>div.w3c>.img_box>span{display: block; width: 100%; height: 10.417vw; background: url(../images/img_w3c_check_html.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: cover;}
-    main>.detail_p>div.w3c>.img_box>span:nth-of-type(2){height: 13.021vw; margin-top: 40px; background: url(../images/img_w3c_check_css.png) no-repeat 0 0; background-size: cover;}
-
-
-    main>.detail_p>div.web_access{margin-top: 11.979vw;}
-    main>.detail_p>div.web_access>h4{line-height: 0.9;}
-    main>.detail_p>div.web_access>p:first-of-type{margin-top: 1.042vw;}
-    main>.detail_p>div.web_access>p:last-of-type{margin-top: 10.417vw;}
-
-    main>.detail_p>div.web_access>.img_box>span{display: block; width: 100%; height: 31.250vw; margin-top: -1.563vw; background: url(../images/img_weba.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: contain;}
-
-
-    main>.detail_p>div.cross{margin-top: 11.979vw;}
-    main>.detail_p>div.cross>ul{width: 100%; margin: 5.208vw 0;}
-    main>.detail_p>div.cross>ul:after{content: ""; display: block; clear: both;}
-    main>.detail_p>div.cross>ul>li{float: left; width: 9.375vw; height: 9.375vw; margin-right: 2.083vw; background: url(../images/logo_ie.png) no-repeat 0 0; background-size: cover;}
-
-    main>.detail_p>div.cross>ul>li:nth-child(2){background: url(../images/logo_ch.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(3){background: url(../images/logo_ff.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(4){background: url(../images/logo_op.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(5){background: url(../images/logo_sf.png) no-repeat 0 0; background-size: cover; margin-right: 0;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 
     /* footer */
@@ -108,7 +70,7 @@ a{text-decoration: none; color: #333333;}
 @media (min-width: 1024px) and (max-width: 1599px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
-        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0;}
+        header{width: 59.375vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; box-sizing: border-box;}
         main{width: 100%;}
             main>.intro_p{width: 59.375vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
             main>.intro_d_p{width: 100%;  background: rgba(0,205,60,0.7); margin-top: 3.646vw;}
@@ -125,7 +87,6 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_p>h2{margin: 4.746vw 0 1.904vw;}
     main>.intro_p>h2>span{display: inline-block; height: 8.138vw; overflow: hidden;}
-    main>.intro_p>h2>span:nth-of-type(2){margin-right: 3.385vw;}
     main>.intro_p>h2>span>i{display: inline-block; font-size: 11.458vw; font-style: normal; margin-top: -3.906vw; transform: translateY(370px);}
 
     main>.intro_p>dl{position: relative; width: 100%;}
@@ -146,52 +107,13 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 30vw; margin-top: -2.825vw;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
-
-    main>.detail_p{margin-top: 8.854vw;}
-    main>.detail_p>h3{width: 100%;}
-    main>.detail_p>h3>span{display: inline-block; height: 5.990vw; overflow: hidden;}
-    main>.detail_p>h3>span>i{display: inline-block; margin-top: -2.344vw; font-size: 7.292vw; font-style: normal; transform: translateY(150px);}
-
-    main>.detail_p>div{position: relative; width: 100%; margin-top: 7.813vw; transform: translateY(150px); opacity: 0;}
-    main>.detail_p>div>h4{font-size: 4.167vw;}
-    main>.detail_p>div>p:first-of-type{font-size: 1.563vw; font-weight: bold;}
-    main>.detail_p>div>p:last-of-type{font-size: 1.302vw; line-height: 1.5;}
-    main>.detail_p>div>.img_box{position: absolute; right: 0; top: 0; width: 50%;}
-
-    main>.detail_p>div.w3c>span{float: left; display: block; width: 9.375vw; height: 3.385vw; margin: 3.906vw 0; background: url(../images/img_w3c_html.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.w3c>span:nth-of-type(2){margin-left: 2.344vw; background: url(../images/img_w3c_css.png) no-repeat 0 0; background-size: cover;}
-
-    main>.detail_p>div.w3c>p:last-of-type{clear: both;}
-
-    main>.detail_p>div.w3c>.img_box>span{display: block; width: 100%; height: 10.417vw; background: url(../images/img_w3c_check_html.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: cover;}
-    main>.detail_p>div.w3c>.img_box>span:nth-of-type(2){height: 13.021vw; margin-top: 40px; background: url(../images/img_w3c_check_css.png) no-repeat 0 0; background-size: cover;}
-
-
-    main>.detail_p>div.web_access{margin-top: 11.979vw;}
-    main>.detail_p>div.web_access>h4{line-height: 0.9;}
-    main>.detail_p>div.web_access>p:first-of-type{margin-top: 1.042vw;}
-    main>.detail_p>div.web_access>p:last-of-type{margin-top: 10.417vw;}
-
-    main>.detail_p>div.web_access>.img_box>span{display: block; width: 100%; height: 31.250vw; margin-top: -1.563vw; background: url(../images/img_weba.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: contain;}
-
-
-    main>.detail_p>div.cross{margin-top: 11.979vw;}
-    main>.detail_p>div.cross>ul{width: 100%; margin: 5.208vw 0;}
-    main>.detail_p>div.cross>ul:after{content: ""; display: block; clear: both;}
-    main>.detail_p>div.cross>ul>li{float: left; width: 9.375vw; height: 9.375vw; margin-right: 2.083vw; background: url(../images/logo_ie.png) no-repeat 0 0; background-size: cover;}
-
-    main>.detail_p>div.cross>ul>li:nth-child(2){background: url(../images/logo_ch.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(3){background: url(../images/logo_ff.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(4){background: url(../images/logo_op.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(5){background: url(../images/logo_sf.png) no-repeat 0 0; background-size: cover; margin-right: 0;}
-
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     /* footer */
     footer>p{font-size: 3.125vw; font-family: "DM Serif Display"; opacity: 0.5; transition: all 0.3s ease 0s; cursor: pointer;}
@@ -205,7 +127,7 @@ a{text-decoration: none; color: #333333;}
 @media (min-width: 768px) and (max-width: 1023px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
-        header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0;}
+        header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; box-sizing: border-box;}
         main{width: 100%;}
             main>.intro_p{width: 80vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
             main>.intro_d_p{width: 100%;  background: rgba(0,205,60,0.7); margin-top: 3.646vw;}
@@ -222,7 +144,6 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_p>h2{margin: 10.746vw 0 4.904vw;}
     main>.intro_p>h2>span{display: inline-block; height: 14.138vw; overflow: hidden;}
-    main>.intro_p>h2>span:nth-of-type(2){margin-right: 3.385vw;}
     main>.intro_p>h2>span>i{display: inline-block; font-size: 15.458vw; font-style: normal; margin-top: -3.906vw; transform: translateY(370px);}
 
     main>.intro_p>dl{position: relative; width: 100%;}
@@ -243,51 +164,13 @@ a{text-decoration: none; color: #333333;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 42vw; margin-top: -3.825vw;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
-
-    main>.detail_p{margin-top: 12.854vw;}
-    main>.detail_p>h3{width: 100%;}
-    main>.detail_p>h3>span{display: inline-block; height: 7.990vw; overflow: hidden;}
-    main>.detail_p>h3>span>i{display: inline-block; margin-top: -2.344vw; font-size: 9.292vw; font-style: normal; transform: translateY(150px);}
-
-    main>.detail_p>div{position: relative; width: 100%; margin-top: 8.813vw; transform: translateY(150px); opacity: 0;}
-    main>.detail_p>div>h4{font-size: 6.167vw;}
-    main>.detail_p>div>p:first-of-type{font-size: 2.563vw; font-weight: bold;}
-    main>.detail_p>div>p:last-of-type{font-size: 1.802vw; line-height: 1.5;}
-    main>.detail_p>div>.img_box{position: absolute; right: 0; top: 0; width: 50%;}
-
-    main>.detail_p>div.w3c>span{float: left; display: block; width: 12.375vw; height: 4.385vw; margin: 3.906vw 0; background: url(../images/img_w3c_html.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.w3c>span:nth-of-type(2){margin-left: 2.344vw; background: url(../images/img_w3c_css.png) no-repeat 0 0; background-size: cover;}
-
-    main>.detail_p>div.w3c>p:last-of-type{clear: both;}
-
-    main>.detail_p>div.w3c>.img_box>span{display: block; width: 100%; height: 15.417vw; background: url(../images/img_w3c_check_html.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: cover;}
-    main>.detail_p>div.w3c>.img_box>span:nth-of-type(2){height: 20.021vw; margin-top: 2.083vw; background: url(../images/img_w3c_check_css.png) no-repeat 0 0; background-size: cover;}
-
-
-    main>.detail_p>div.web_access{margin-top: 18.979vw;}
-    main>.detail_p>div.web_access>h4{line-height: 0.9;}
-    main>.detail_p>div.web_access>p:first-of-type{margin-top: 1.042vw;}
-    main>.detail_p>div.web_access>p:last-of-type{margin-top: 10.417vw;}
-
-    main>.detail_p>div.web_access>.img_box>span{display: block; width: 100%; height: 44.250vw; margin-top: -3.563vw; background: url(../images/img_weba.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: contain;}
-
-
-    main>.detail_p>div.cross{margin-top: 15.979vw;}
-    main>.detail_p>div.cross>ul{width: 100%; margin: 5.208vw 0;}
-    main>.detail_p>div.cross>ul:after{content: ""; display: block; clear: both;}
-    main>.detail_p>div.cross>ul>li{float: left; width: 12.375vw; height: 12.375vw; margin-right: 3.483vw; background: url(../images/logo_ie.png) no-repeat 0 0; background-size: cover;}
-
-    main>.detail_p>div.cross>ul>li:nth-child(2){background: url(../images/logo_ch.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(3){background: url(../images/logo_ff.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(4){background: url(../images/logo_op.png) no-repeat 0 0; background-size: cover;}
-    main>.detail_p>div.cross>ul>li:nth-child(5){background: url(../images/logo_sf.png) no-repeat 0 0; background-size: cover; margin-right: 0;}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 
     /* footer */
@@ -302,7 +185,7 @@ a{text-decoration: none; color: #333333;}
 @media (max-width: 767px){
 /* layout */
 .wrap{width: 100%; margin: 0 auto;}
-header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0;}
+header{width: 80vw; height: 2.604vw; margin: 2.604vw auto 0; opacity: 0; padding: 0 2.083vw; box-sizing: border-box;}
 main{width: 100%;}
     main>.intro_p{width: 80vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
     main>.intro_d_p{width: 100%;  background: rgba(0,205,60,0.7); margin-top: 9.646vw;}
@@ -319,7 +202,6 @@ main .up_ani{transform: translateY(150px); opacity: 0;}
 
 main>.intro_p>h2{margin: 10.746vw 0 4.904vw;}
 main>.intro_p>h2>span{display: inline-block; height: 21.038vw; overflow: hidden;}
-main>.intro_p>h2>span:nth-of-type(2){margin-right: 3.385vw;}
 main>.intro_p>h2>span>i{display: inline-block; font-size: 20.458vw; font-style: normal; margin-top: -3.906vw; transform: translateY(370px);}
 
 main>.intro_p>dl{position: relative; width: 100%;}
@@ -343,51 +225,13 @@ main>.intro_d_p>.intro_d_p_inner>.i_detail>dl:first-of-type>dd{margin-top: 1.013
 
 main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; height: 42vw; margin-top: -10.825vw;}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -30%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
-
-main>.detail_p{margin-top: 17.854vw;}
-main>.detail_p>h3{width: 100%;}
-main>.detail_p>h3>span{display: inline-block; height: 11.990vw; overflow: hidden;}
-main>.detail_p>h3>span>i{display: inline-block; margin-top: -2.344vw; font-size: 13.292vw; font-style: normal; transform: translateY(150px);}
-
-main>.detail_p>div{position: relative; width: 100%; margin-top: 8.813vw; transform: translateY(150px); opacity: 0;}
-main>.detail_p>div>h4{font-size: 7.167vw;}
-main>.detail_p>div>p:first-of-type{font-size: 3.563vw; font-weight: bold;}
-main>.detail_p>div>p:last-of-type{font-size: 3.002vw; line-height: 1.5;}
-main>.detail_p>div>.img_box{width: 95%; margin: 10.55vw auto 0;}
-
-main>.detail_p>div.w3c>span{float: left; display: block; width: 23.375vw; height: 8.385vw; margin: 7.906vw 0; background: url(../images/img_w3c_html.png) no-repeat 0 0; background-size: cover;}
-main>.detail_p>div.w3c>span:nth-of-type(2){margin-left: 2.344vw; background: url(../images/img_w3c_css.png) no-repeat 0 0; background-size: cover;}
-
-main>.detail_p>div.w3c>p:last-of-type{clear: both;}
-
-main>.detail_p>div.w3c>.img_box>span{display: block; width: 100%; height: 30.417vw; background: url(../images/img_w3c_check_html.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: cover;}
-main>.detail_p>div.w3c>.img_box>span:nth-of-type(2){height: 35.021vw; margin-top: 2.083vw; background: url(../images/img_w3c_check_css.png) no-repeat 0 0; background-size: cover;}
-
-
-main>.detail_p>div.web_access{margin-top: 18.979vw;}
-main>.detail_p>div.web_access>h4{line-height: 0.9;}
-main>.detail_p>div.web_access>p:first-of-type{margin-top: 2.242vw;}
-main>.detail_p>div.web_access>p:last-of-type{margin-top: 12.417vw;}
-
-main>.detail_p>div.web_access>.img_box>span{display: block; width: 100%; height: 85.250vw; margin-top: -3.563vw; background: url(../images/img_weba.png) no-repeat 0 0; background-size: 100%; box-shadow: 12px 12px 17px rgba(0,0,0,0.2); background-size: contain;}
-
-
-main>.detail_p>div.cross{margin-top: 15.979vw;}
-main>.detail_p>div.cross>ul{width: 100%; margin: 10.208vw 0;}
-main>.detail_p>div.cross>ul:after{content: ""; display: block; clear: both;}
-main>.detail_p>div.cross>ul>li{float: left; width: 12.375vw; height: 12.375vw; margin-right: 3.483vw; background: url(../images/logo_ie.png) no-repeat 0 0; background-size: cover;}
-
-main>.detail_p>div.cross>ul>li:nth-child(2){background: url(../images/logo_ch.png) no-repeat 0 0; background-size: cover;}
-main>.detail_p>div.cross>ul>li:nth-child(3){background: url(../images/logo_ff.png) no-repeat 0 0; background-size: cover;}
-main>.detail_p>div.cross>ul>li:nth-child(4){background: url(../images/logo_op.png) no-repeat 0 0; background-size: cover;}
-main>.detail_p>div.cross>ul>li:nth-child(5){background: url(../images/logo_sf.png) no-repeat 0 0; background-size: cover; margin-right: 0;}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 
 /* footer */
