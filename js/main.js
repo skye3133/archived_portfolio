@@ -121,7 +121,7 @@ window.onload = function(){
 
 
     let btnDarkMode = document.querySelector(".dark_mode_btn");
-    console.log(btnDarkMode);
+    
     let imgMe = document.querySelector(".me");
     let imgGihub = document.querySelector(".github");
     let imgMail = document.querySelector(".mail");
@@ -173,10 +173,8 @@ window.onload = function(){
 
     function loadClassName(){
         const className = localStorage.getItem("mode");
-
         const parsedClassName = JSON.parse(className);
         const mode = parsedClassName.className;
-        console.log(mode);
 
         if(mode === "dark"){
             body.classList.add("dark")
@@ -193,15 +191,13 @@ window.onload = function(){
             imgMail.src = "../images/mail_logo.png";
             btnDarkMode.title = "Dark Mode";
         }
+        
     }
 
     function init(){
         loadClassName();
         btnDarkMode.addEventListener("click", currentCLassName);
-        /* btnDarkMode.attachEvent("onevent", currentCLassName); */
     }
 
     init();
 }
-
-

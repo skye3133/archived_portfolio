@@ -885,7 +885,7 @@ footer>p:last-child{float: right; font-size: 1.042vw; line-height: 3.5; transfor
 
     
     /* dark mode */
-    .wrap>.dark_mode_btn{position: fixed; bottom: 7vw; right: 7vw; width: 5.865vw; height: 5.865vw; border-radius: 50%; text-indent: -9999px; overflow: hidden; border: 0.3vw solid #000; background: #fff; box-shadow: 0.156vw 0.156vw 0.313vw rgba(0,0,0,0.3); cursor: pointer; transition: all 0.3s ease 0s;}
+    .wrap>.dark_mode_btn{z-index: 5; position: fixed; bottom: 7vw; right: 7vw; width: 5.865vw; height: 5.865vw; border-radius: 50%; text-indent: -9999px; overflow: hidden; border: 0.3vw solid #000; background: #fff; box-shadow: 0.156vw 0.156vw 0.313vw rgba(0,0,0,0.3); cursor: pointer; transition: all 0.3s ease 0s;}
 
     .wrap>.dark_mode_btn:hover{background: #000000;}
 
