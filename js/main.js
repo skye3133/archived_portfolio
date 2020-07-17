@@ -173,23 +173,29 @@ window.onload = function(){
 
     function loadClassName(){
         const className = localStorage.getItem("mode");
-        const parsedClassName = JSON.parse(className);
-        const mode = parsedClassName.className;
+        
+        if(className !== null){
 
-        if(mode === "dark"){
-            body.classList.add("dark")
-            btnDarkMode.classList.add("on");
-            imgMe.src = "../images/img_me_dark.png";
-            imgGihub.src = "../images/github_logo_white.png";
-            imgMail.src = "../images/mail_logo_white.png";
-            btnDarkMode.title = "White Mode";
+            const parsedClassName = JSON.parse(className);
+            const mode = parsedClassName.className;
+    
+            if(mode === "dark"){
+                body.classList.add("dark")
+                btnDarkMode.classList.add("on");
+                imgMe.src = "../images/img_me_dark.png";
+                imgGihub.src = "../images/github_logo_white.png";
+                imgMail.src = "../images/mail_logo_white.png";
+                btnDarkMode.title = "White Mode";
+            }else{
+                body.classList.remove("dark")
+                btnDarkMode.classList.remove("on");
+                imgMe.src = "../images/img_me.png";
+                imgGihub.src = "../images/github_logo.png";
+                imgMail.src = "../images/mail_logo.png";
+                btnDarkMode.title = "Dark Mode";
+            }
         }else{
-            body.classList.remove("dark")
-            btnDarkMode.classList.remove("on");
-            imgMe.src = "../images/img_me.png";
-            imgGihub.src = "../images/github_logo.png";
-            imgMail.src = "../images/mail_logo.png";
-            btnDarkMode.title = "Dark Mode";
+            return false;
         }
         
     }
