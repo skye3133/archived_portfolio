@@ -8,7 +8,7 @@ body{font-size: 1rem; font-family: "NanumBarunGothic"; color: #333333;}
 h1, h2, h3, h4, dt{font-family: "DM Serif Display";}
 a{text-decoration: none; color: #333333;}
 body.dark{background: #244A6C; color: #ffffff;}
-body.dark a{color: #ffffff;}
+body.dark a{color: #fff;}
 @media (min-width : 1600px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
