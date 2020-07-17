@@ -8,6 +8,9 @@ body{font-size: 1rem; font-family: "NanumBarunGothic"; color: #333333;}
 h1, h2, h3, h4, dt{font-family: "DM Serif Display";}
 a{text-decoration: none; color: #333333;}
 
+body.dark{background: #680002; color: #ffffff;}
+body.dark a{color: #ffffff;}
+
 @media (min-width : 1600px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
@@ -95,6 +98,13 @@ a{text-decoration: none; color: #333333;}
     footer>p:last-of-type{float: right;}
 
     footer>p:hover{opacity: 1;}  
+
+
+    /* dark */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #680002;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #680002;}
+    footer{border-top-color:#fff;} 
 
 }/* 1600px ~ - pc */
 
@@ -185,6 +195,13 @@ a{text-decoration: none; color: #333333;}
     footer>p:last-of-type{float: right;}
 
     footer>p:hover{opacity: 1;}
+
+    /* dark */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #680002;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #680002;}
+    footer{border-top-color:#fff;}    
+
 }/* 1024px ~ 1599px - laptop */
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -273,7 +290,14 @@ a{text-decoration: none; color: #333333;}
     footer>p:first-of-type{float: left;}
     footer>p:last-of-type{float: right;}
 
-    footer>p:hover{opacity: 1;}   
+    footer>p:hover{opacity: 1;} 
+    
+    /* dark */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #680002;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #680002;}
+    footer{border-top-color:#fff;}    
+
 }/* 768px ~ 1023px - tablet */
 
 @media (max-width: 767px){
@@ -366,5 +390,12 @@ footer>p{font-size: 7.125vw; font-family: "DM Serif Display"; opacity: 0.5; tran
 footer>p:first-of-type{float: left;}
 footer>p:last-of-type{float: right;}
 
-footer>p:hover{opacity: 1;}      
+footer>p:hover{opacity: 1;} 
+
+/* dark */
+body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #680002;}
+body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #680002;}
+footer{border-top-color:#fff;}    
+
 }/* ~ 767px - mobile */

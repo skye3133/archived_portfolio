@@ -8,6 +8,9 @@ body{font-size: 1rem; font-family: "NanumBarunGothic"; color: #333333;}
 h1, h2, h3, h4, dt{font-family: "DM Serif Display";}
 a{text-decoration: none; color: #333333;}
 
+body.dark{background: #111; color: #ffffff;}
+body.dark a{color: #ffffff;}
+
 @media (min-width : 1600px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
@@ -17,7 +20,7 @@ a{text-decoration: none; color: #333333;}
             main>.intro_d_p{width: 100%; background: rgba(51,51,51,0.7); margin-top: 3.646vw;}
                 main>.intro_d_p>.intro_d_p_inner{width: 59.375vw; margin: 0 auto; padding: 2.083vw; box-sizing: border-box;}
             main>.detail_p{width: 59.375vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
-        footer{width: 59.375vw; height: 5.208vw; margin: 7.813vw auto 5.208vw; border-top: 0.260vw solid #333333; padding: 1.823vw 2.083vw 0; box-sizing: border-box; transform: translateY(150px); opacity: 0;}
+        footer{width: 59.375vw; height: 5.208vw; margin: 13.813vw auto 5.208vw; border-top: 0.260vw solid #333333; padding: 1.823vw 2.083vw 0; box-sizing: border-box; transform: translateY(150px); opacity: 0;}
         footer:after{content: ""; display: block; clear: both;}
 
     /* header */
@@ -50,10 +53,10 @@ a{text-decoration: none; color: #333333;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_mobile.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     /* footer */
@@ -63,6 +66,14 @@ a{text-decoration: none; color: #333333;}
     footer>p:last-of-type{float: right;}
 
     footer>p:hover{opacity: 1;}  
+
+    /* dark */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #111;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #ddd;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border: 0.469vw solid #ddd;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border: 0.469vw solid #ddd;}
+    body.dark footer{border-top-color:#fff;}
 
 }/* 1600px ~ - pc */
 
@@ -75,7 +86,7 @@ a{text-decoration: none; color: #333333;}
             main>.intro_d_p{width: 100%; background: rgba(51,51,51,0.7); margin-top: 3.646vw;}
                 main>.intro_d_p>.intro_d_p_inner{width: 59.375vw; margin: 0 auto; padding: 2.083vw; box-sizing: border-box;}
             main>.detail_p{width: 59.375vw; margin: 0 auto; padding: 0 2.083vw; box-sizing: border-box;}
-        footer{width: 59.375vw; height: 5.208vw; margin: 7.813vw auto 5.208vw; border-top: 0.260vw solid #333333; padding: 1.823vw 2.083vw 0; box-sizing: border-box; transform: translateY(150px); opacity: 0;}
+        footer{width: 59.375vw; height: 5.208vw; margin: 12.813vw auto 5.208vw; border-top: 0.260vw solid #333333; padding: 1.823vw 2.083vw 0; box-sizing: border-box; transform: translateY(150px); opacity: 0;}
         footer:after{content: ""; display: block; clear: both;}
 
     /* header */
@@ -108,19 +119,28 @@ a{text-decoration: none; color: #333333;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_mobile.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     /* footer */
     footer>p{font-size: 3.125vw; font-family: "DM Serif Display"; opacity: 0.5; transition: all 0.3s ease 0s; cursor: pointer;}
     footer>p:first-of-type{float: left;}
-    footer>p:nth-of-type(2){margin-left: 17.188vw; float: left;}
+    footer>p:nth-of-type(2){margin-left: 16.188vw; float: left;}
     footer>p:last-of-type{float: right;}
 
     footer>p:hover{opacity: 1;}
+
+    /* dark */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #111;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #ddd;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border: 0.469vw solid #ddd;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border: 0.469vw solid #ddd;}
+    body.dark footer{border-top-color:#fff;}
+
 }/* 1024px ~ 1599px - laptop */
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -165,10 +185,10 @@ a{text-decoration: none; color: #333333;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_mobile.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
     /* footer */
@@ -177,7 +197,16 @@ a{text-decoration: none; color: #333333;}
     footer>p:nth-of-type(2){margin-left: 17.188vw; float: left;}
     footer>p:last-of-type{float: right;}
 
-    footer>p:hover{opacity: 1;}   
+    footer>p:hover{opacity: 1;} 
+    
+    /* dark */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #111;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #ddd;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border: 0.469vw solid #ddd;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border: 0.469vw solid #ddd;}
+    body.dark footer{border-top-color:#fff;}
+    
 }/* 768px ~ 1023px - tablet */
 
 @media (max-width: 767px){
@@ -226,10 +255,10 @@ main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; he
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -30%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -45%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_mobile.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -45%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_cj_pc.jpg) no-repeat 50% 0.5%; background-size: cover; border-radius: 1.094vw;}
 
 /* footer */
@@ -238,5 +267,14 @@ footer>p:first-of-type{float: left;}
 footer>p:nth-of-type(2){margin-left: 10.188vw; float: left;}
 footer>p:last-of-type{float: right;}
 
-footer>p:hover{opacity: 1;}      
+footer>p:hover{opacity: 1;}   
+
+/* dark */
+body.dark main>.intro_p>dl>dd:last-of-type>a{border-color: #fff;}
+body.dark main>.intro_p>dl>dd:last-of-type:hover>a{background: #fff; color: #111;}
+body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border: 0.469vw solid #ddd;}
+body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border: 0.469vw solid #ddd;}
+body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border: 0.469vw solid #ddd;}
+body.dark footer{border-top-color:#fff;}
+
 }/* ~ 767px - mobile */

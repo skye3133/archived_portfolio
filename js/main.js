@@ -119,5 +119,89 @@ window.onload = function(){
     .setTween(tween5)
     .addTo(controller5);
 
+
+    let btnDarkMode = document.querySelector(".dark_mode_btn");
+    console.log(btnDarkMode);
+    let imgMe = document.querySelector(".me");
+    let imgGihub = document.querySelector(".github");
+    let imgMail = document.querySelector(".mail");
+
+    let body = document.querySelector("body");
+
+
+    function saveClassName(mode){
+        localStorage.removeItem("mode");
+        localStorage.setItem("mode", JSON.stringify(mode));
+    }
+
+
+
+    function currentCLassName(){
+ 
+        let currentClass = btnDarkMode.classList;
+        console.log(currentClass);
+
+        if(currentClass.contains("on")){
+            
+            btnDarkMode.classList.remove("on");
+            body.classList.remove("dark");
+            imgMe.src = "../images/img_me.png";
+            imgGihub.src = "../images/github_logo.png";
+            imgMail.src = "../images/mail_logo.png";
+
+            const whiteObj ={
+                className : "white"
+            }
+            saveClassName(whiteObj);
+            btnDarkMode.title = "Dark Mode";
+
+        }else{
+            btnDarkMode.classList.add("on");
+            body.classList.add("dark");
+            imgMe.src = "../images/img_me_dark.png";
+            imgGihub.src = "../images/github_logo_white.png";
+            imgMail.src = "../images/mail_logo_white.png";
+
+            const darkObj ={
+                className : "dark"
+            }
+            
+            saveClassName(darkObj);
+            btnDarkMode.title = "White Mode";
+        } 
+    }
+
+    function loadClassName(){
+        const className = localStorage.getItem("mode");
+
+        const parsedClassName = JSON.parse(className);
+        const mode = parsedClassName.className;
+        console.log(mode);
+
+        if(mode === "dark"){
+            body.classList.add("dark")
+            btnDarkMode.classList.add("on");
+            imgMe.src = "../images/img_me_dark.png";
+            imgGihub.src = "../images/github_logo_white.png";
+            imgMail.src = "../images/mail_logo_white.png";
+            btnDarkMode.title = "White Mode";
+        }else{
+            body.classList.remove("dark")
+            btnDarkMode.classList.remove("on");
+            imgMe.src = "../images/img_me.png";
+            imgGihub.src = "../images/github_logo.png";
+            imgMail.src = "../images/mail_logo.png";
+            btnDarkMode.title = "Dark Mode";
+        }
+    }
+
+    function init(){
+        loadClassName();
+        btnDarkMode.addEventListener("click", currentCLassName);
+        /* btnDarkMode.attachEvent("onevent", currentCLassName); */
+    }
+
+    init();
 }
+
 

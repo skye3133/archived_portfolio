@@ -2,7 +2,7 @@ $(function(){
         
         var w_width = $(window).width();
 
-        $('body,html').animate({scrollTop: 0},1500,'swing');
+        /* $('body,html').animate({scrollTop: 0},1500,'swing'); */
 
         var work_top = $(".work_p").offset().top;
         var resume_top = $(".resume_p").offset().top;
@@ -17,7 +17,6 @@ $(function(){
         console.log(about_top);
         console.log(contact_top);
 
-        
 
         $(window).scroll(function(){
 

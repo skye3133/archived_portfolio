@@ -1,0 +1,27 @@
+/* common */
+
+body.dark{background: #333333;}
+body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark p,body.dark span,body.dark a,body.dark i,body.dark li,body.dark dd, body.dark dt{color: #ffffff;}
+
+/* layout */
+body.dark footer{border-top-color:#ffffff;}
+body.dark .snb>li:hover,body.dark .snb>li.on{background: #fff; color: #333;}
+body.dark .gnb>li:hover,body.dark .gnb>li.on{background: #fff; color: #333;}
+body.dark main>section.work_p>.Work_p_inner{border-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.sk{border-bottom-color:#fff; border-right-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.sk>div{border-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.cj{border-bottom-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a>div>span{ border-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.cj>div>span{border-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.ww>div>span{ border-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.melon>div>span{ border-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.ww{border-right-color:#fff;}
+body.dark main>section.work_p>.Work_p_inner>a.lecreuset{border-top-color: #fff;}
+body.dark main>section.work_p>.Work_p_inner>a.warcraft{border-top-color: #fff; border-left-color: #fff;}
+body.dark main>section.resume_p>div>dl>dt{color: #fff;}
+body.dark main>section.resume_p>div>dl>dd{color: #fff;}
+body.dark main>section.resume_p>div.skill>dl>dd>ul>li{background: #fff; border-color: #fff;}
+body.dark main>section.resume_p>div.skill>dl>dd>ul>li:first-child{background: none; border-color:#fff;}
+body.dark main>section.resume_p>div.skill>dl>dd:last-of-type>ul>li:nth-child(2){background: none; border-color: #fff;}
+body.dark main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(2){background: none; border-color: #fff;}
+body.dark main>section.resume_p>div.skill>dl:last-of-type>dd:nth-last-of-type(2)>ul>li:nth-child(3){background: none; border-color: #fff;}

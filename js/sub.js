@@ -58,6 +58,26 @@ window.onload = function(){
     .addTo(controller2);
 
 
+    let body = document.querySelector("body");
+
+    function loadClassName(){
+        const className = localStorage.getItem("mode");
+
+        const parsedClassName = JSON.parse(className);
+        const mode = parsedClassName.className;
+        console.log(mode);
+
+        if(mode === "dark"){
+            body.classList.add("dark")
+        }else{
+            body.classList.remove("dark")
+        }
+    }
+
+    function init(){
+        loadClassName();
+    }
+    init();
 }
 
 $(function(){

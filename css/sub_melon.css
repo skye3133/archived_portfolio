@@ -8,6 +8,9 @@ body{font-size: 1rem; font-family: "NanumBarunGothic"; color: #333333;}
 h1, h2, h3, h4, dt{font-family: "DM Serif Display";}
 a{text-decoration: none; color: #333333;}
 
+body.dark{background: #0c4d1f; color: #ffffff;}
+body.dark a{color: #ffffff;}
+
 @media (min-width : 1600px){
     /* layout */
     .wrap{width: 100%; margin: 0 auto;}
@@ -50,20 +53,28 @@ a{text-decoration: none; color: #333333;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 
     /* footer */
     footer>p{font-size: 3.125vw; font-family: "DM Serif Display"; opacity: 0.5; transition: all 0.3s ease 0s; cursor: pointer;}
     footer>p:first-of-type{float: left;}
-    footer>p:nth-of-type(2){margin-left: 17.188vw; float: left;}
+    footer>p:nth-of-type(2){margin-left: 14.588vw; float: left;}
     footer>p:last-of-type{float: right;}
 
     footer>p:hover{opacity: 1;}  
+
+    /* dark mode */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border: 0.052vw solid #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type>a:hover{background: #fff; color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border-color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border-color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border-color: #0c4d1f;}
+    body.dark footer{border-color: #fff;}
 
 }/* 1600px ~ - pc */
 
@@ -109,19 +120,28 @@ a{text-decoration: none; color: #333333;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
     /* footer */
     footer>p{font-size: 3.125vw; font-family: "DM Serif Display"; opacity: 0.5; transition: all 0.3s ease 0s; cursor: pointer;}
     footer>p:first-of-type{float: left;}
-    footer>p:nth-of-type(2){margin-left: 17.188vw; float: left;}
+    footer>p:nth-of-type(2){margin-left: 15.188vw; float: left;}
     footer>p:last-of-type{float: right;}
 
     footer>p:hover{opacity: 1;}
+
+    /* dark mode */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border: 0.052vw solid #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type>a:hover{background: #fff; color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border-color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border-color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border-color: #0c4d1f;}
+    body.dark footer{border-color: #fff;}
+
 }/* 1024px ~ 1599px - laptop */
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -166,20 +186,29 @@ a{text-decoration: none; color: #333333;}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -19%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -25%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -25%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+    main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
     main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 
     /* footer */
     footer>p{font-size: 5.125vw; font-family: "DM Serif Display"; opacity: 0.5; transition: all 0.3s ease 0s; cursor: pointer;}
     footer>p:first-of-type{float: left;}
-    footer>p:nth-of-type(2){margin-left: 22.188vw; float: left;}
+    footer>p:nth-of-type(2){margin-left: 15.188vw; float: left;}
     footer>p:last-of-type{float: right;}
 
-    footer>p:hover{opacity: 1;}   
+    footer>p:hover{opacity: 1;}
+
+    /* dark mode */
+    body.dark main>.intro_p>dl>dd:last-of-type>a{border: 0.052vw solid #fff;}
+    body.dark main>.intro_p>dl>dd:last-of-type>a:hover{background: #fff; color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border-color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border-color: #0c4d1f;}
+    body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border-color: #0c4d1f;}
+    body.dark footer{border-color: #fff;}
+
 }/* 768px ~ 1023px - tablet */
 
 @media (max-width: 767px){
@@ -227,17 +256,27 @@ main>.intro_d_p>.intro_d_p_inner>.mockup_box{position: relative; width: 100%; he
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{position: absolute; left: 5vw; bottom: -30%; width: 80%; height: 100%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_pc.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -35%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{z-index: 2; position: absolute; bottom: -45%; width: 20%; height: 75%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_mobile.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
-main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -35%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
+main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{position: absolute; bottom: -45%; right: 0; width: 35%; height: 85%; border: 0.469vw solid #333333; border-radius: 1.563vw; box-sizing: border-box; box-shadow: 17px 17px 25px rgba(0,0,0,0.2);}
 main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03>span{display: block; width: 100%; height: 100%; background: url(../images/img_pre_melon_tablet.jpg) no-repeat 50% 0%; background-size: cover; border-radius: 1.094vw;}
 
 
 /* footer */
-footer>p{font-size: 7.125vw; font-family: "DM Serif Display"; opacity: 0.5; transition: all 0.3s ease 0s; cursor: pointer;}
+footer>p{font-size: 6.125vw; font-family: "DM Serif Display"; opacity: 0.5; transition: all 0.3s ease 0s; cursor: pointer;}
 footer>p:first-of-type{float: left;}
-footer>p:nth-of-type(2){float: right;}
+footer>p:nth-of-type(2){margin-left: 10.188vw; float: left;}
+footer>p:last-of-type{float: right;}
 
-footer>p:hover{opacity: 1;}      
+footer>p:hover{opacity: 1;}  
+
+/* dark mode */
+body.dark main>.intro_p>dl>dd:last-of-type>a{border: 0.052vw solid #fff;}
+body.dark main>.intro_p>dl>dd:last-of-type>a:hover{background: #fff; color: #0c4d1f;}
+body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_01{border-color: #0c4d1f;}
+body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_02{border-color: #0c4d1f;}
+body.dark main>.intro_d_p>.intro_d_p_inner>.mockup_box>.mockup_03{border-color: #0c4d1f;}
+body.dark footer{border-color: #fff;}
+
 }/* ~ 767px - mobile */

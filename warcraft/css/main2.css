@@ -1,0 +1,3376 @@
+@import url(reset.css);
+/* main.css */
+
+/* common */
+*{-webkit-text-size-adjust: none;}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 0.521vw;
+    }
+    body {
+        font-family: Noto Sans;
+        font-size: 1rem;
+        background: #18191c;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /* layout */
+    header {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10.667vw;
+        padding: 0 6.4vw;
+        box-sizing: border-box;
+        background: #01305e;
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.8);
+    }
+    main {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        background: #012d52;
+    }
+    /* header */
+    h1.logo {
+        position: absolute;
+        left: 50%;
+        top: 1vw;
+        width: 15vw;
+        height: 9.167vw;
+        transform: translateX(-50%);
+        /* margin: 1.042vw 0 0 0; */
+        background: url(../images/header_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+        transition: all 0.3s linear 0s;
+    }
+    h1.logo:hover,h1.logo:active{
+        background: url(../images/header_logo_w.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+
+
+    header a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    header>nav {
+        display: none;
+    }
+    header a.btn_ham{
+        display: block;
+        float: left;
+        background: url(../images/btn_ham.png) no-repeat 0 0;
+        width: 4.8vw;
+        height: 4.8vw;
+        margin-top: 2.8vw;
+        text-indent: -9999px;
+        overflow: hidden;
+        background-size: 100%;
+    }
+
+    header>div.drawer{
+        z-index: 3;
+        display: none;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+    }
+    header>div.drawer.on{
+        display: block;
+    }
+
+    header>div.drawer>nav{
+        position: relative;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        padding: 2.667vw 0 0;
+        background: #002448;
+        box-shadow: 0.8vw 0.8vw 2.667vw #000;
+        box-sizing: border-box;
+        transition: all 0.2s linear 0s;
+    }
+    header>div.drawer>nav.on{
+        left: 0;
+    }
+
+    header>div.drawer>nav>h2{
+        width: 25vw;
+        height: 14vw;
+        margin: 0 auto 2.667vw;
+        background: url(../images/header_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+        transition: all 0.3s linear 0s; 
+    }
+    header>div.drawer>nav>h2:hover,header>div.drawer>nav>h2:active{
+        background: url(../images/header_logo_w.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    
+    header>div.drawer>nav>a.btn_close{
+        position: absolute;
+        top: 4.5vw;
+        right: 4vw;
+        display: block;
+        width: 3.2vw;
+        height: 3.2vw;
+        background: url(../images/btn_close.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+        opacity: 0.6;
+        transition: all 0.3s linear 0s;
+    }
+    header>div.drawer>nav>a.btn_close:hover,header>div.drawer>nav>a.btn_close:active{
+        opacity: 1;    
+    }
+    header>div.drawer>nav>ul>li{
+        width: 100%;
+        padding-left: 4vw;
+        border-top: 0.267vw solid rgba(255,255,255,0.1);
+        box-sizing: border-box;
+        font-size: 6rem;
+        line-height: 12vw;
+    }
+
+    header>div.drawer>nav>ul>li>a{
+        color :rgba(255,255,255,0.5);
+        transition: all 0.3s linear 0s;    
+    }
+
+    header>div.drawer>nav>ul>li:last-child{
+        border-bottom: 0.267vw solid rgba(255,255,255,0.1);
+    }
+    header>div.drawer>nav>ul>li>a:hover,header>div.drawer>nav>ul>li>a:active{
+        color: #66b9ff;
+        opacity: 1;
+    }
+
+    header>dl.top_menu {
+        display: none;
+    }
+    header>div.mtop_menu {
+        position: relative;
+        float: right;
+    }
+    header>div.mtop_menu>a.mtop_btn {
+        display: block;
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-top: 3vw;
+        background: url(../images/btn_account.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    header>div.mtop_menu>dl {
+        position: absolute;
+        right: -0.911vw;
+        top: 10.7vw;
+        width: 18vw;
+        border: 0.104vw solid rgba(255, 255, 255, 0.5);
+        border-top: none;
+        box-sizing: border-box;
+        background: rgba(1, 48, 94, 0.8);
+    }
+    header>div.mtop_menu>dl>dd>a {
+        display: block;
+        margin: 0 2vw;
+        font-size: 4.5rem;
+        line-height: 6.5vw;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    header>div.mtop_menu>dl>dd>a:hover, header>div.mtop_menu>dl>dd>a:active {
+        color: #008ee6;
+        font-weight: bold;
+    }
+    header>div.mtop_menu>dl>dd:first-of-type>a {
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.3);    
+    }
+    /* main */
+    /* main_visual */
+    main>.main_visual {
+        position: relative;
+        width: 100%;
+        height: 85.333vw;
+        background: url(../images/main_bg_mobile.png) no-repeat 5% 0%;
+        background-size: cover;
+    }
+    main>.main_visual>div {
+        position: absolute;
+        top: 18vw;
+        right: 0;
+        width: 60vw;
+        height: 45vw;
+        background: url(../images/main_logo.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.main_visual>div>a {
+        display: none;
+    }
+    /* patch */
+    main>.patch_tv{
+        display: none;
+    }
+    main>.patch {
+        position: relative;
+        width: 100%;
+        height: 85.333vw;
+        background: url(../images/patch_bg_tablet.png) no-repeat 0 0;
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        overflow: hidden;
+    }
+    main>.patch>h2 {
+        position: absolute;
+        left: 50%;
+        top: 2.604vw;
+        width: 45vw;
+        height: 10vw;
+        transform: translateX(-50%);
+        background: url(../images/patch_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch>ul {
+        position: absolute;
+        left: 0;
+        top: 15vw;
+        width: 300%;
+    }
+    main>.patch>ul>li {
+        float: left;
+        width: 25.333%;
+        margin: 0 4%;
+        box-shadow: 0.26vw 0.26vw 1.563vw rgba(0, 0, 0, 0.7);
+    }
+    main>.patch>ul>li:last-child {
+        margin-right: 0;
+    }
+    main>.patch>ul>li>span {
+        display: block;
+        width: 100%;
+        height: 44vw;
+        background: url(../images/patch_01.png) no-repeat 0 0;
+        background-size: cover;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch>ul>li.patch_1>span {
+        background: url(../images/patch_01.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.patch>ul>li.patch_2>span {
+        background: url(../images/patch_02.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.patch>ul>li.patch_3>span {
+        background: url(../images/patch_03.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.patch>ul>li>dl {
+        position: relative;
+        width: 100%;
+        height: 20vw;
+        background: #132e42;
+        border-top: 0.8vw solid #245172;
+        box-sizing: border-box;
+        text-align: justify;
+        word-break: break-all;
+        color: #fff;
+    }
+    main>.patch>ul>li>dl>dt {
+        font-size: 11rem;
+        line-height: 18vw;
+        font-weight: bold;
+        text-align: center;
+    }
+    main>.patch>ul>li>dl>dd {
+        display: none;
+    }
+    main>.patch>ul>li>dl>dd.more {
+        display: none;
+    }
+    main>.patch>.p_arrow{
+        position: relative;
+        width: 100%;
+    }
+    main>.patch>.p_arrow>a.p_prev{
+        display: block;
+        position: absolute;
+        left: 4.5%;
+        top: 45vw;
+        width: 2.667vw;
+        height: 4.267vw;
+        background: url(../images/btn_arrow_left.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch>.p_arrow>a.p_next{
+        display: block;
+        position: absolute;
+        right: 4.5%;
+        top: 45vw;
+        width: 2.667vw;
+        height: 4.267vw;
+        background: url(../images/btn_arrow_rignt.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    
+
+    /* trailer */
+    main>.trailer {
+        width: 100%;
+        padding: 8.464vw 0;
+        box-sizing: border-box;
+        background: url(../images/trailer_bg_mobile.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.trailer>dl {
+        position: relative;
+        width: 75vw;
+        height: 40vw;
+        margin: 0 auto;
+    }
+    main>.trailer>dl:last-of-type {
+        display: none;
+    }
+    main>.trailer>dl>dt>a {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../images/trailer_01.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.26vw 0.26vw 1.563vw #000;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.trailer>dl>dd {
+        display: none;
+    }
+
+    /* notice */
+    main>.notice {
+        position: relative;
+        width: 100%;
+        height: 42.188vw;
+        background: url(../images/notice_bg_tablet.png) no-repeat 0 0;
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        overflow: hidden;
+    }
+    main>.notice>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.255vw;
+        width: 28vw;
+        height: 12vw;
+        transform: translateX(-50%);
+        background: url(../images/notice_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.notice>div {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        width: 78.125vw;
+        height: 24vw;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+    main>.notice>div>p {
+        display: none;
+    }
+    main>.notice>div>ul {
+        margin: 1.5vw auto 0;
+        width: 95%;
+    }
+    main>.notice>div>ul>li {
+        position: relative;
+        font-size: 5rem;
+        font-weight: bold;
+        line-height: 3;
+        border-bottom: 0.136vw solid #9aa9b7;
+    }
+    main>.notice>div>ul>li:nth-child(3) {
+        border-bottom: none;    
+    }
+    main>.notice>div>ul>li>span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4rem;
+        font-weight: normal;
+        color: #acacac;
+    }
+
+    /* race_info */
+    main>.race_info {
+        position: relative;
+        width: 100%;
+        padding: 6.771vw 0 6.51vw;
+        background: url(../images/race_bg_mobile.png) no-repeat 0 0;
+        background-size: cover;
+        -webkit-background-size: cover;
+        box-sizing: border-box;
+    }
+    main>.race_info>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 60vw;
+        height: 10vw;
+        transform: translateX(-50%);
+        background: url(../images/race_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>.race_mobile {
+        position: relative;
+        width: 78.125vw;
+        height: 44vw;
+        margin: 8vw auto 0;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+    }
+    main>.race_info>.race_mobile>ul {
+        float: left;
+        width: 20%;
+        height: 100%;
+    }
+
+    main>.race_info>.race_mobile>ul>li{
+        line-height: 11vw;
+        height: 25%;
+        background: #012d52;
+        border-bottom: 0.267vw solid #2e658e;
+        box-sizing: border-box;
+    }
+    main>.race_info>.race_mobile>ul>li:last-of-type{
+        border-bottom: none;
+    }
+
+    main>.race_info>.race_mobile>ul>li:nth-child(2n){
+        background: #1e4f82;
+    }
+    
+    main>.race_info>.race_mobile>ul>li>a {
+        display: block;
+        height: 100%;
+        font-size: 4.5rem;
+        color: rgba(127, 180, 209, 0.5);
+        text-align: center;    
+    }
+    
+    main>.race_info>.race_mobile>ul>li:first-of-type>a:hover,main>.race_info>.race_mobile>ul>li:first-of-type.on>a {
+        color: #75a5d3;
+    }
+    main>.race_info>.race_mobile>ul>li:nth-of-type(2)>a:hover,main>.race_info>.race_mobile>ul>li:nth-of-type(2).on>a {
+        color: #7e68ba;
+    }
+    main>.race_info>.race_mobile>ul>li:nth-of-type(3)>a:hover,main>.race_info>.race_mobile>ul>li:nth-of-type(3).on>a {
+        color: #42bc8d;
+    }
+    main>.race_info>.race_mobile>ul>li:last-of-type>a:hover,main>.race_info>.race_mobile>ul>li:last-of-type.on>a {
+        color: #c86253;
+    }
+    main>.race_info>.race_mobile>dl {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 80%;
+        height: 100%;
+        box-sizing: border-box;
+        border-left: 0.267vw solid rgba(127, 180, 209, 0.5);
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(1) {
+        z-index: 1;
+    }
+    main>.race_info>.race_mobile>dl.on{
+        display: block;
+    }
+
+    main>.race_info>.race_mobile>dl>dt{
+        height: 100%;
+    }
+    main>.race_info>.race_mobile>dl>dt>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../images/race_humans.png) no-repeat 50% 50%;
+        background-size: cover;
+        -webkit-background-size: cover;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(2)>dt>a {
+        background: url(../images/race_undead.png) no-repeat 50% 50%;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(3)>dt>a {
+        background: url(../images/race_nightelves.png) no-repeat 50% 50%;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(4)>dt>a {
+        background: url(../images/race_orcs.png) no-repeat 50% 50%;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    main>.race_info>.race_mobile>dl>dd>a {
+        display: none;
+    }
+    
+    main>.race_info>dl {
+        display: none;
+    }
+
+    /* hero */
+    main>.hero{
+        display: none;
+    }
+    main>.hero_mv {
+        position: relative;
+        width: 100%;
+        height: 71.745vw;
+        padding: 0 10%;
+        box-sizing: border-box;
+        background: url(../images/hero_bg_tablet.png) no-repeat 0 0;
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        overflow: hidden;
+    }
+    main>.hero_mv>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 30vw;
+        height: 12vw;
+        transform: translateX(-50%);
+        background: url(../images/hero_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.hero_mv>ul {
+        position: absolute;
+        top: 16.5vw;
+        width: 260vw;
+    }
+    main>.hero_mv>ul>li {
+        float: left;
+        width: 37.333vw;/* 
+        margin: 0 0 4.208vw 0; */
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+    }
+    main>.hero_mv>ul>li>span {
+        display: block;
+        width: 100%;
+        height: 37.333vw;
+        background: url(../images/hero_01.png) no-repeat 0 0;
+        background-size: cover;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+
+    main>.hero_mv>ul>li.hero_1>span {
+        background: url(../images/hero_01.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero_mv>ul>li.hero_2>span {
+        background: url(../images/hero_02.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero_mv>ul>li.hero_3>span {
+        background: url(../images/hero_03.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero_mv>ul>li.hero_4>span {
+        background: url(../images/hero_04.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero_mv>ul>li.hero_5>span {
+        background: url(../images/hero_05.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero_mv>ul>li.hero_6>span {
+        background: url(../images/hero_06.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero_mv>ul>li>dl {
+        width: 100%;
+        height: 12vw;
+        padding: 2.7vw 2vw 0;
+        border-top: 0.45vw solid rgba(255, 255, 255, 0.4);
+        box-sizing: border-box;
+        background: #012D52;
+        color: #ffffff;
+        text-align: center;
+    }
+    main>.hero_mv>ul>li.hero_1>dl {
+        background: #012d52;
+    }
+    main>.hero_mv>ul>li.hero_2>dl {
+        background: #23152d;
+    }
+    main>.hero_mv>ul>li.hero_3>dl {
+        background: #570116;
+    }
+    main>.hero_mv>ul>li.hero_4>dl {
+        background: #3a5b43;
+    }
+    main>.hero_mv>ul>li.hero_5>dl {
+        background: #32586a;
+    }
+    main>.hero_mv>ul>li.hero_6>dl {
+        background: #797ca9;
+    }
+    main>.hero_mv>ul>li>dl>dt {
+        font-size: 7.5rem;
+        font-weight: bold;
+    }
+    main>.hero_mv>ul>li>dl>dd {
+        display: none;
+    }
+    main>.game_info {
+        width: 100%;
+        height: 112vw;
+        background: url(../images/gameinfo_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.game_info>.play {
+        position: relative;
+        width: 100%;
+        height: 74vw;
+    }
+    main>.game_info>.play>h2 {
+        position: absolute;
+        top: 4vw;
+        left: 50%;
+        width: 85vw;
+        height: 10vw;
+        transform: translateX(-50%);
+        background: url(../images/game_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl {
+        position: absolute;
+        top: 14.5vw;
+        left: 10%;
+        width: 78.125vw;
+        box-shadow: 0.156vw 0.156vw 1.042vw rgba(0, 0, 0, 0.5);
+    }
+    main>.game_info>.play>dl>dt>a {
+        display: block;
+        width: 100%;
+        height: 43vw;
+        background: url(../images/game_main.png) no-repeat 0% 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl>dd {
+        width: 100%;
+        height: 11.733vw;
+        padding: 1.523vw 2vw 0;
+        box-sizing: border-box;
+        background: #012d52;
+        border-top: 0.208vw solid rgba(255, 255, 255, 0.4);
+        font-size: 2.6rem;
+        line-height: 2.4;
+        text-align: center;
+        color: #ebebeb;
+    }
+    main>.game_info>.play>dl>dd>span {
+        display: none;
+    }
+    main>.game_info>.play>dl>dd>strong {
+        display: block;
+        margin-bottom: 0.781vw;
+        font-weight: bold;
+        font-size: 6.5rem;
+    }
+    main>.game_info>.play>ul {
+        display: none;
+    }
+
+    /* other_game */
+    main>.game_info>.other_game {
+        position: relative;
+        width: 100%;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    main>.game_info>.other_game>h2 {
+        width: 80%;
+        margin: 3.5vw auto 3.5vw;
+        font-size: 7.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    }
+    main>.game_info>.other_game>ul {
+        position: relative;
+        width: 321%;
+        margin: 0 0 0 9%;
+    }
+    main>.game_info>.other_game>ul:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    main>.game_info>.other_game>ul>li {
+        float: left;
+        margin-bottom: 8vw;
+    }
+    main>.game_info>.other_game>ul>li>a {
+        position: relative;
+        display: inline-block;
+        width: 15.667vw;
+        height: 14.333vw;
+        margin-right: 16vw;
+    }
+    main>.game_info>.other_game>ul>li:last-child>a{
+        margin-right: 0;
+    }
+    main>.game_info>.other_game>ul>li>a>span {
+        display: block;
+        position: absolute;
+        bottom: -4.5vw;
+        left: 50%;
+        width: 150%;
+        transform: translateX(-50%);
+        font-size: 5rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    main>.game_info>.other_game>ul>li.other_game1>a {
+        background: url(../images/othergame_hearthstone.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game2>a {
+        background: url(../images/othergame_overwatch2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game3>a {
+        background: url(../images/othergame_overwatch.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game4>a {
+        background: url(../images/othergame_hos.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game4>a>span {
+        bottom: -8.2vw;
+    }
+    main>.game_info>.other_game>ul>li.other_game5>a {
+        background: url(../images/othergame_warcraftIII.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game5>a>span {
+        bottom: -8.2vw;
+    }
+    main>.game_info>.other_game>ul>li.other_game6>a {
+        background: url(../images/othergame_starcraft2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game7>a {
+        background: url(../images/othergame_starcraft.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game8>a {
+        background: url(../images/othergame_diabloIII.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game9>a {
+        background: url(../images/othergame_diabloIV.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game10>a {
+        background: url(../images/othergame_diabloM.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li.other_game10>a>span {
+        bottom: -8.2vw;
+    }
+    main>.game_info>.other_game>.o_arrow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;  
+    }
+    main>.game_info>.other_game>.o_arrow>.o_prev{
+        position: absolute;
+        left: 4%;
+        top: 18.133vw;
+        display: block;
+        width: 2.667vw;
+        height: 4.267vw;
+        background: url(../images/btn_arrow_left.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.other_game>.o_arrow>.o_next{
+        position: absolute;
+        right: 4%;
+        top: 18.133vw;
+        display: block;
+        width: 2.667vw;
+        height: 4.267vw;
+        background: url(../images/btn_arrow_rignt.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+
+
+    /* footer */
+    footer>.f_top {
+        padding: 4vw 10%;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+    footer>.f_top:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_top>h2 {
+        width: 20.533vw;
+        height: 10.667vw;
+        margin: 0 auto 4vw;
+        background: url(../images/ftop_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul {
+        width: 52vw;
+        margin: 0 auto;
+    }
+    footer>.f_top>ul:nth-of-type(1) {
+        display: none;
+    }
+    footer>.f_top>ul:nth-of-type(2) {
+        display: none;
+    }
+    footer>.f_top>ul:nth-of-type(4) {
+        display: none;
+    }
+    footer>.f_top>ul:nth-of-type(5) {
+        display: none;
+    }
+    footer>.f_top>ul>li>a {
+        float: left;
+        display: block;
+        margin-bottom: 0.7vw;
+        margin-right: 5.333vw;
+        padding-right: 5.333vw;
+        border-right: 0.267vw solid rgba(127, 180, 209, 0.7);
+        font-size: 5.5rem;
+        line-height: 0.8;
+        box-sizing: border-box;
+        color: rgba(127, 180, 209, 0.7);
+    }
+    footer>.f_top>ul>li:nth-child(3n)>a{
+        padding-right: 0;
+        margin-right: 0;
+        border-right: none;   
+    }
+    footer>.f_top>ul>li:nth-child(4)>a{
+        margin-left: 6.5vw;   
+    }
+    footer>.f_top>ul>li:nth-child(n+4):nth-child(-n+6)>a{
+        margin-top: 3vw;   
+    }
+    footer>.f_bottom {
+        padding: 0.521vw 0;
+        box-sizing: border-box;
+    }
+    footer>.f_bottom:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_bottom>h2 {
+        width: 19.467vw;
+        height: 11.733vw;
+        margin: 2.604vw auto 1.953vw;
+        background: url(../images/fbottom_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_bottom>ul {
+        margin: 0.521vw 0 2.604vw 0;
+        font-size: 4.3rem;
+        color: rgba(128, 181, 209, 0.7);
+        text-align: center;
+    }
+    footer>.f_bottom>ul:last-child{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 0.521vw;
+        -webkit-text-size-adjust: none;
+    }
+    body {
+        font-family: Noto Sans;
+        font-size: 1rem;
+        background: #18191c;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /* layout */
+    header {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6.51vw;
+        padding: 0 3.125vw;
+        box-sizing: border-box;
+        background: rgba(1, 48, 94, 0.8);
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.8);
+        line-height: 4.792vw;
+    }
+    main {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        background: #012d52;
+    }
+    /* header */
+    h1.logo {
+        float: left;
+        width: 7.813vw;
+        height: 4.167vw;
+        margin: 1.042vw 6.25vw 0 0;
+        background: url(../images/header_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+        transition: all 0.3s linear 0s;
+    }
+    h1.logo:hover{
+        background: url(../images/header_logo_w.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    header a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    nav {
+        float: left;
+    }
+    header a.btn_ham{
+        display: none;
+    }
+    header div.drawer{
+        display: none;
+    }
+    nav>ul>li {
+        float: left;
+        margin: 0.846vw 2.604vw 0 0;
+        font-size: 3.8rem;
+    }
+    header>dl.top_menu {
+        display: none;
+    }
+    header>div.mtop_menu {
+        position: relative;
+        float: right;
+    }
+    header>div.mtop_menu>a.mtop_btn {
+        display: block;
+        width: 2.083vw;
+        height: 2.083vw;
+        margin-top: 2.214vw;
+        background: url(../images/btn_account.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    header>div.mtop_menu>dl {
+        position: absolute;
+        right: -0.911vw;
+        top: 6.51vw;
+        width: 13.021vw;
+        border: 0.104vw solid rgba(255, 255, 255, 0.5);
+        border-top: none;
+        box-sizing: border-box;
+        background: rgba(1, 48, 94, 0.8);
+    }
+    header>div.mtop_menu>dl>dd>a {
+        display: block;
+        margin: 0 1.302vw;
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    header>div.mtop_menu>dl>dd>a:hover, header>div.mtop_menu>dl>dd>a:active {
+        color: #008ee6;
+        font-weight: bold;
+    }
+    header>div.mtop_menu>dl>dd:first-of-type>a {
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.3);
+    }
+    /* main */
+    /* main_visual */
+    main>.main_visual {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/main_bg.png) no-repeat 35% 0;
+        background-size: cover;
+    }
+    main>.main_visual>div {
+        position: absolute;
+        right: 2.604vw;
+        top: 23.438vw;
+        width: 49.479vw;
+        height: 31.25vw;
+        background: url(../images/main_logo.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.main_visual>div>a {
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 13.021vw;
+        height: 3.906vw;
+        transform: translateX(-50%);
+        background: #0e2033;
+        box-shadow: 0.156vw 0.156vw 0.521vw #000;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 3.906vw;
+    }
+    /* patch */
+    main>.patch{
+        display: none;
+    }
+    main>.patch_tv {
+        position: relative;
+        width: 100%;
+        height: 55.078vw;
+        padding: 0 10%;
+        box-sizing: border-box;
+        background: url(../images/patch_bg_tablet.png) no-repeat 0 0;
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        overflow: hidden;
+    }
+    main>.patch_tv>h2 {
+        position: absolute;
+        left: 50%;
+        top: 2.604vw;
+        width: 26.042vw;
+        height: 5.729vw;
+        transform: translateX(-50%);
+        background: url(../images/patch_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch_tv>ul {
+        position: absolute;
+        top: 11.719vw;
+        width: 109.375vw;
+    }
+    main>.patch_tv>ul>li {
+        float: left;
+        width: 30.344%;
+        box-shadow: 0.26vw 0.26vw 1.563vw rgba(0, 0, 0, 0.7);
+    }
+    main>.patch_tv>ul>li:last-child {
+        margin-right: 0;
+    }
+    main>.patch_tv>ul>li>span {
+        display: block;
+        width: 100%;
+        height: 18.88vw;
+        background: url(../images/patch_01.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch_tv>ul>li:nth-child(2)>span {
+        background: url(../images/patch_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch_tv>ul>li:nth-child(3)>span {
+        background: url(../images/patch_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch_tv>ul>li>dl {
+        position: relative;
+        width: 100%;
+        height: 18.88vw;
+        padding: 1.953vw 2.604vw;
+        background: #132e42;
+        border-top: 0.156vw solid #245172;
+        box-sizing: border-box;
+        text-align: justify;
+        word-break: break-all;
+        color: #fff;
+    }
+    main>.patch_tv>ul>li>dl>dt {
+        margin-bottom: 1.302vw;
+        font-size: 4.5rem;
+    }
+    main>.patch_tv>ul>li>dl>dd {
+        font-size: 3rem;
+        word-break: break-all;
+    }
+    main>.patch_tv>ul>li>dl>dd.more {
+        position: absolute;
+        right: 2.604vw;
+        bottom: 1.953vw;
+    }
+    main>.patch_tv>ul>li>dl>dd.more>a {
+        font-size: 3rem;
+        color: #1e4867;
+        font-weight: bold;
+    }
+    main>.patch_tv>ul>li>dl>dd.more>a:hover {
+        color: #fff;
+    }
+    main>.patch_tv>.p_arrow{
+        display: none;
+    }
+    /* trailer */
+    main>.trailer {
+        width: 100%;
+        padding: 8.464vw 0;
+        box-sizing: border-box;
+        background: url(../images/trailer_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.trailer>dl {
+        position: relative;
+        width: 78.125vw;
+        height: 44.169vw;
+        margin: 0 auto/* 12.5vw */
+        ;
+    }
+    main>.trailer>dl:last-of-type {
+        margin-top: 11.068vw;
+    }
+    main>.trailer>dl>dt>a {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 51.953vw;
+        height: 28.385vw;
+        background: url(../images/trailer_01.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.26vw 0.26vw 1.563vw #000;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.trailer>dl>dd {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 46.875vw;
+        height: 17.578vw;
+        padding: 3.5vw 1.823vw;
+        box-sizing: border-box;
+        background: #456d79;
+        box-shadow: 0.26vw 0.26vw 1.563vw #000;
+        font-size: 3.5rem;
+        line-height: 3vw;
+        color: #ffffff;
+    }
+    main>.trailer>dl:last-of-type>dt>a {
+        background: url(../images/trailer_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.trailer>dl:last-of-type>dd {
+        background: #4c4476;
+    }
+    main>.notice {
+        position: relative;
+        width: 100%;
+        height: 42.188vw;
+        background: url(../images/notice_bg_tablet.png) no-repeat 0 0;
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        overflow: hidden;
+    }
+    main>.notice>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.255vw;
+        width: 18vw;
+        height: 7vw;
+        transform: translateX(-50%);
+        background: url(../images/notice_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.notice>div {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        width: 78.125vw;
+        height: 18.75vw;
+        transform: translateX(-50%);
+    }
+    main>.notice>div>p {
+        float: left;
+        width: 42.318vw;
+        height: 23.438vw;
+        background: url(../images/notice_main.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 5px 5px 30px #000;
+    }
+    main>.notice>div>ul {
+        float: right;
+        width: 43%;
+    }
+    main>.notice>div>ul>li {
+        position: relative;
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3;
+        border-bottom: 0.13vw solid #9aa987;
+    }
+    main>.notice>div>ul>li:last-of-type {
+        border: none;
+    }
+    main>.notice>div>ul>li>span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        font-weight: normal;
+        color: #acacac;
+    }
+    main>.race_info {
+        position: relative;
+        width: 100%;
+        padding: 6.771vw 0 6.51vw;
+        background: url(../images/race_bg.png) no-repeat 0 0;
+        background-size: cover;
+        -webkit-background-size: cover;
+        box-sizing: border-box;
+    }
+    main>.race_info>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 40vw;
+        height: 5vw;
+        transform: translateX(-50%);
+        background: url(../images/race_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>.race_mobile {
+        position: relative;
+        width: 79.167vw;
+        height: 57.6vw;
+        margin: 5vw auto 0;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+    }
+    main>.race_info>.race_mobile>ul {
+        width: 100%;
+        height: 9.115vw;
+        padding: 3.255vw 9.115vw;
+        box-sizing: border-box;
+        background: #012d52;
+        border-bottom: 0.26vw solid rgba(127, 180, 209, 0.7);
+    }
+    main>.race_info>.race_mobile>ul>li>a {
+        float: left;
+        padding: 0 3.906vw;
+        border-right: 0.26vw solid rgba(127, 180, 209, 0.2);
+        box-sizing: border-box;
+        font-size: 4rem;
+        color: rgba(127, 180, 209, 0.5);
+    }
+    main>.race_info>.race_mobile>ul>li:first-of-type>a {
+        padding-left: 2.8vw;
+    }
+    main>.race_info>.race_mobile>ul>li:last-of-type>a {
+        padding-right: 0;
+        border-right: none;
+    }
+    main>.race_info>.race_mobile>ul>li:first-of-type>a:hover,main>.race_info>.race_mobile>ul>li:first-of-type.on>a {
+        color: #75a5d3;
+    }
+    main>.race_info>.race_mobile>ul>li:nth-of-type(2)>a:hover,main>.race_info>.race_mobile>ul>li:nth-of-type(2).on>a  {
+        color: #7e68ba;
+    }
+    main>.race_info>.race_mobile>ul>li:nth-of-type(3)>a:hover,main>.race_info>.race_mobile>ul>li:nth-of-type(3).on>a  {
+        color: #42bc8d;
+    }
+    main>.race_info>.race_mobile>ul>li:last-of-type>a:hover,main>.race_info>.race_mobile>ul>li:last-of-type.on>a {
+        color: #c86253;
+    }
+    main>.race_info>.race_mobile>dl {
+        display: none;
+        position: absolute;
+        top: 9.115vw;
+        width: 100%;
+    }
+    main>.race_info>.race_mobile>dl.on{
+        display: block;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(3) {
+        z-index: 1;
+    }
+    main>.race_info>.race_mobile>dl>dt>a {
+        display: block;
+        width: 100%;
+        height: 38.151vw;
+        background: url(../images/race_humans.png) no-repeat 0 0;
+        background-size: cover;
+        -webkit-background-size: cover;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(2)>dt>a {
+        background: url(../images/race_undead.png) no-repeat 0 0;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(3)>dt>a {
+        background: url(../images/race_nightelves.png) no-repeat 0 0;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(4)>dt>a {
+        background: url(../images/race_orcs.png) no-repeat 0 0;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    main>.race_info>.race_mobile>dl>dd>a {
+        display: block;
+        width: 100%;
+        height: 10.417vw;
+        padding: 2.2vw 4.5vw;
+        box-sizing: border-box;
+        background: #75a5d3;
+        font-size: 4rem;
+        text-align: center;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(2)>dd>a {
+        background: #7e68ba;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(3)>dd>a {
+        background: #42bc8d;
+    }
+    main>.race_info>.race_mobile>dl:nth-of-type(4)>dd>a {
+        background: #c86253;
+    }
+    main>.race_info>dl {
+        display: none;
+    }
+
+    /* hero */
+    main>.hero{
+        display: none;
+    }
+    main>.hero_mv {
+        position: relative;
+        width: 100%;
+        height: 71.745vw;
+        padding: 0 10%;
+        box-sizing: border-box;
+        background: url(../images/hero_bg_tablet.png) no-repeat 0 0;
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        overflow: hidden;
+    }
+    main>.hero_mv>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 19vw;
+        height: 7vw;
+        transform: translateX(-50%);
+        background: url(../images/hero_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.hero_mv>ul {
+        position: absolute;/* 
+        left: 10%; */
+        top: 13.5vw;
+        width: 235.677vw;
+    }
+    main>.hero_mv>ul>li {
+        float: left;
+        width: 32.031vw;/* 
+        margin: 0 7.161vw 5.208vw 0; */
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+    }
+    main>.hero_mv>ul>li>span {
+        display: block;
+        width: 100%;
+        height: 30.469vw;
+        background: url(../images/hero_01.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.hero_mv>ul>li:nth-of-type(2)>span {
+        background: url(../images/hero_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero_mv>ul>li:nth-of-type(3)>span {
+        background: url(../images/hero_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero_mv>ul>li:nth-of-type(4)>span {
+        background: url(../images/hero_04.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero_mv>ul>li:nth-of-type(5)>span {
+        background: url(../images/hero_05.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero_mv>ul>li:nth-of-type(6)>span {
+        background: url(../images/hero_06.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero_mv>ul>li>dl {
+        width: 100%;
+        height: 21.484vw;
+        padding: 2.4vw 2vw 0;
+        box-sizing: border-box;
+        border-top: 0.208vw solid rgba(255, 255, 255, 0.4);
+        background: #012D52;
+        color: #ffffff;
+        text-align: center;
+    }
+    main>.hero_mv>ul>li:nth-of-type(2)>dl {
+        background: #23152d;
+    }
+    main>.hero_mv>ul>li:nth-of-type(3)>dl {
+        background: #570116;
+    }
+    main>.hero_mv>ul>li:nth-of-type(4)>dl {
+        background: #3a5b43;
+    }
+    main>.hero_mv>ul>li:nth-of-type(5)>dl {
+        background: #32586a;
+    }
+    main>.hero_mv>ul>li:nth-of-type(6)>dl {
+        background: #797ca9;
+    }
+    main>.hero_mv>ul>li>dl>dt {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    main>.hero_mv>ul>li>dl>dd {
+        font-size: 4rem;
+        color: #ebebeb;
+        margin-top: 1.042vw;
+    }
+    main>.game_info {
+        width: 100%;
+        height: 94.401vw;
+        background: url(../images/gameinfo_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.game_info>.play {
+        position: relative;
+        width: 100%;
+        height: 52.083vw;
+    }
+    main>.game_info>.play>h2 {
+        position: absolute;
+        top: 3vw;
+        left: 50%;
+        width: 75.781vw;
+        height: 7vw;
+        transform: translateX(-50%);
+        background: url(../images/game_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl {
+        position: absolute;
+        top: 12.5vw;
+        left: 10%;
+        width: 47.396vw;
+        box-shadow: 0.156vw 0.156vw 1.042vw rgba(0, 0, 0, 0.5);
+    }
+    main>.game_info>.play>dl>dt>a {
+        display: block;
+        width: 100%;
+        height: 26.563vw;
+        background: url(../images/game_main.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl>dd {
+        width: 100%;
+        height: 9.115vw;
+        padding: 1.523vw 2vw 0;
+        box-sizing: border-box;
+        background: #012d52;
+        border-top: 0.208vw solid rgba(255, 255, 255, 0.4);
+        font-size: 2.6rem;
+        line-height: 2.6;
+        text-align: center;
+        color: #ebebeb;
+    }
+    main>.game_info>.play>dl>dd>span {
+        display: none;
+    }
+    main>.game_info>.play>dl>dd>strong {
+        display: block;
+        margin-bottom: 0.781vw;
+        font-weight: bold;
+        font-size: 4.2rem;
+    }
+    main>.game_info>.play>ul {
+        position: absolute;
+        right: 10%;
+        top: 12.5vw;
+    }
+    main>.game_info>.play>ul>li>a {
+        display: block;
+        width: 28.906vw;
+        height: 16.276vw;
+        margin-bottom: 3vw;
+        background: url(../images/game_01.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.156vw 0.156vw 1.563vw rgba(0, 0, 0, 0.75);
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>ul>li:nth-of-type(2)>a {
+        background: url(../images/game_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.game_info>.play>ul>li:nth-of-type(3)>a {
+        display: none;
+    }
+    main>.game_info>.other_game {
+        width: 100%;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+    main>.game_info>.other_game>h2 {
+        width: 80%;
+        margin: 3.5vw auto 4.5vw;
+        font-size: 4.5rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    main>.game_info>.other_game>ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+    main>.game_info>.other_game>ul:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    main>.game_info>.other_game>ul>li {
+        float: left;
+        margin-bottom: 8vw;
+    }
+    main>.game_info>.other_game>ul>li>a {
+        position: relative;
+        display: inline-block;
+        width: 7.161vw;
+        height: 7.161vw;
+        margin-right: 10vw;
+    }
+    main>.game_info>.other_game>ul>li>a>span {
+        display: block;
+        position: absolute;
+        bottom: -2.5vw;
+        left: 50%;
+        width: 150%;
+        transform: translateX(-50%);
+        font-size: 2.8rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(1)>a {
+        margin-left: 1vw;
+        background: url(../images/othergame_hearthstone.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(2)>a {
+        background: url(../images/othergame_overwatch2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(3)>a {
+        background: url(../images/othergame_overwatch.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(4)>a {
+        background: url(../images/othergame_hos.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(4)>a>span {
+        bottom: -4.5vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(5)>a {
+        margin-right: 0;
+        background: url(../images/othergame_warcraftIII.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(5)>a>span {
+        bottom: -4.5vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(6)>a {
+        margin-left: 1vw;
+        background: url(../images/othergame_starcraft2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(7)>a {
+        background: url(../images/othergame_starcraft.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(8)>a {
+        background: url(../images/othergame_diabloIII.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(9)>a {
+        background: url(../images/othergame_diabloIV.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(10)>a {
+        margin-right: 0;
+        background: url(../images/othergame_diabloM.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(10)>a>span {
+        bottom: -4.5vw;
+    }
+    main>.game_info>.other_game>.o_arrow{
+        display: none;
+    }
+
+
+    /* footer */
+    footer>.f_top {
+        padding: 3.906vw 10%;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+    footer>.f_top:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_top>h2 {
+        float: left;
+        width: 13.5vw;
+        height: 8vw;
+        margin-right: 4.688vw;
+        background: url(../images/ftop_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul {
+        float: left;
+        margin-right: 9.5vw;
+    }
+    footer>.f_top>ul:nth-of-type(2) {
+        display: none;
+    }
+    footer>.f_top>ul:nth-of-type(4) {
+        margin-right: 7.292vw;
+    }
+    footer>.f_top>ul:nth-of-type(5) {
+        margin-right: 0;
+    }
+    footer>.f_top>ul>li>a {
+        display: block;
+        margin-bottom: 0.7vw;
+        font-size: 3.5rem;
+        color: rgba(127, 180, 209, 0.7);
+    }
+    footer>.f_top>ul>li:last-of-type>a {
+        margin-bottom: 0;
+    }
+    footer>.f_top>ul:last-of-type>li>a {
+        width: 2.51vw;
+        height: 2.51vw;
+        margin-bottom: 2vw;
+        background: url(../images/instagram.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul:last-of-type>li:nth-of-type(2)>a {
+        width: 2.51vw;
+        height: 2.51vw;
+        background: url(../images/twitter.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul:last-of-type>li:nth-of-type(3)>a {
+        width: 2.51vw;
+        height: 2.51vw;
+        background: url(../images/facebook.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_bottom {
+        padding: 0.521vw 18.75vw;
+        box-sizing: border-box;
+    }
+    footer>.f_bottom:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_bottom>h2 {
+        width: 13vw;
+        height: 7.6vw;
+        margin: 2.604vw auto 1.953vw;
+        box-sizing: border-box;
+        background: url(../images/fbottom_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_bottom>ul {
+        margin-top: 0.521vw;
+        font-size: 2.7rem;
+        color: rgba(128, 181, 209, 0.7);
+        text-align: center;
+    }
+    footer>.f_bottom>ul:last-of-type{
+        margin-bottom: 2.604vw;
+    }
+
+    footer>.f_bottom>ul:last-of-type>li:nth-of-type(2)>span {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+    html {
+        font-size: 0.521vw;
+        -webkit-text-size-adjust: none;
+    }
+    body {
+        font-family: Noto Sans;
+        font-size: 1rem;
+        background: #18191c;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /* layout */
+    header {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4.792vw;
+        padding: 0 3.125vw;
+        box-sizing: border-box;
+        background: rgba(1, 48, 94, 0.8);
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.8);
+        line-height: 4.792vw;
+    }
+    main {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        background: #012d52;
+    }
+    /* header */
+    h1.logo {
+        float: left;
+        width: 6.771vw;
+        height: 76px;
+        margin: 0.521vw 6.25vw 0 0;
+        background: url(../images/header_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+        transition: all 0.3s linear 0s;
+    }
+    h1.logo:hover{
+        background: url(../images/header_logo_w.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    header a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    nav {
+        float: left;
+    }
+    header a.btn_ham{
+        display: none;
+    }
+    header div.drawer{
+        display: none;
+    }
+    nav>ul>li {
+        float: left;
+        margin-right: 2.604vw;
+        font-size: 2.6rem;
+    }
+    header>dl.top_menu {
+        float: right;
+    }
+    header>dl.top_menu>dd {
+        float: left;
+        font-size: 2.6rem;
+        margin-left: 1.302vw;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    header>dl.top_menu>dd:first-of-type>a {
+        margin-right: 1.302vw;
+    }
+    header>div.mtop_menu {
+        display: none;
+    }
+    /* main */
+    /* main_visual */
+    main>.main_visual {
+        position: relative;
+        width: 100%;
+        height: 56.25vw;
+        background: url(../images/main_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.main_visual>div {
+        position: absolute;
+        right: 13.542vw;
+        top: 11.979vw;
+        width: 41.25vw;
+        height: 27.125vw;
+        background: url(../images/main_logo.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.main_visual>div>a {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 11.458vw;
+        height: 3.125vw;
+        transform: translateX(-50%);
+        background: #0e2033;
+        box-shadow: 0.156vw 0.156vw 0.521vw #000;
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 3.125vw;
+    }
+    /* patch */
+    main>.patch_tv{
+        display: none;
+    }
+    main>.patch {
+        position: relative;
+        height: 37.288vw;
+        background: url(../images/patch_bg.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 23.125vw;
+        height: 5.729vw;
+        transform: translateX(-50%);
+        background: url(../images/patch_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    
+    main>.patch>ul {
+        position: absolute;
+        left: 50%;
+        top: 10.417vw;
+        width: 60.417vw;
+        transform: translateX(-50%);
+    }
+    main>.patch>ul>li {
+        float: left;
+        width: 30.344%;
+        margin-right: 4.31%;
+        box-shadow: 0.26vw 0.26vw 1.563vw rgba(0, 0, 0, 0.7);
+    }
+    main>.patch>ul>li:last-child {
+        margin-right: 0;
+    }
+    main>.patch>ul>li>span {
+        display: block;
+        width: 18.333vw;
+        height: 10.417vw;
+        background: url(../images/patch_01.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch>ul>li:nth-child(2)>span {
+        background: url(../images/patch_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch>ul>li:nth-child(3)>span {
+        background: url(../images/patch_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch>ul>li>dl {
+        position: relative;
+        width: 100%;
+        height: 10.938vw;
+        padding: 1.042vw 1.302vw;
+        background: #132e42;
+        border-top: 0.156vw solid #245172;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    main>.patch>ul>li>dl>dt {
+        margin-bottom: 0.26vw;
+        font-size: 2.4rem;
+    }
+    main>.patch>ul>li>dl>dd {
+        font-size: 1.8rem;
+        word-break: break-all;
+    }
+    main>.patch>ul>li>dl>dd.more {
+        position: absolute;
+        right: 1.302vw;
+        bottom: 1.042vw;
+    }
+    main>.patch>ul>li>dl>dd.more>a {
+        font-size: 1.6rem;
+        color: #1e4867;
+        font-weight: bold;
+    }
+    main>.patch>ul>li>dl>dd.more>a:hover {
+        color: #fff;
+    }
+    main>.patch>.p_arrow{
+        display: none;
+    }
+    /* trailer */
+    main>.trailer {
+        width: 100%;
+        padding: 6.25vw 0;
+        box-sizing: border-box;
+        background: url(../images/trailer_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.trailer>dl {
+        position: relative;
+        width: 60.417vw;
+        height: 35.417vw;
+        margin: 0 auto/* 12.5vw */
+        ;
+    }
+    main>.trailer>dl:last-of-type {
+        margin-top: 9.896vw;
+    }
+    main>.trailer>dl>dt>a {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 39.063vw;
+        height: 21.875vw;
+        background: url(../images/trailer_01.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.26vw 0.26vw 1.563vw #000;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.trailer>dl>dd {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 35.417vw;
+        height: 14.583vw;
+        padding: 2.604vw 1.823vw 1.823vw;
+        box-sizing: border-box;
+        background: #456d79;
+        box-shadow: 0.26vw 0.26vw 1.563vw #000;
+        font-size: 2.55rem;
+        line-height: 2.5vw;
+        color: #ffffff;
+    }
+    main>.trailer>dl:last-of-type>dt>a {
+        background: url(../images/trailer_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.trailer>dl:last-of-type>dd {
+        background: #4c4476;
+    }
+    main>.notice {
+        position: relative;
+        width: 100%;
+        height: 35.321vw;
+        background: url(../images/notice_bg.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.notice>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 13.802vw;
+        height: 5.781vw;
+        transform: translateX(-50%);
+        background: url(../images/notice_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.notice>div {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        width: 60.417vw;
+        height: 18.75vw;
+        transform: translateX(-50%);
+    }
+    main>.notice>div>p {
+        float: left;
+        width: 32.44vw;
+        height: 18.177vw;
+        background: url(../images/notice_main.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 5px 5px 30px #000;
+    }
+    main>.notice>div>ul {
+        float: right;
+        width: 43%;
+    }
+    main>.notice>div>ul>li {
+        position: relative;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 3.3;
+        border-bottom: 0.104vw solid #9aa987;
+    }
+    main>.notice>div>ul>li:last-of-type {
+        border: none;
+    }
+    main>.notice>div>ul>li>span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: #acacac;
+    }
+    main>.race_info {
+        position: relative;
+        width: 100%;
+        height: 156.25vw;
+        padding: 6.771vw 0;
+        background: url(../images/race_bg.png) no-repeat 0 0;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    main>.race_info>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 30.781vw;
+        height: 4.219vw;
+        transform: translateX(-50%);
+        background: url(../images/race_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>.race_mobile {
+        display: none;
+    }
+    main>.race_info>dl {
+        position: relative;
+        width: 60.417vw;
+        height: 27.865vw;
+        margin: 7.813vw auto 0;
+    }
+    main>.race_info>dl>dt>a {
+        display: block;
+        position: absolute;
+        width: 42.708vw;
+        height: 26.042vw;
+        background: url(../images/race_humans.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>dl:nth-of-type(2)>dt>a {
+        right: 0;
+        background: url(../images/race_undead.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.race_info>dl:nth-of-type(3)>dt>a {
+        background: url(../images/race_nightelves.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.race_info>dl:nth-of-type(4)>dt>a {
+        right: 0;
+        background: url(../images/race_orcs.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.race_info>dl>dd>a {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 20%;
+        width: 26.042vw;
+        height: 13.542vw;
+        padding: 1.563vw;
+        box-sizing: border-box;
+        background: #75a5d3;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+        font-size: 2.55rem;
+    }
+    main>.race_info>dl:nth-of-type(2)>dd>a {
+        right: auto;
+        left: 0;
+        background: #7e68ba;
+    }
+    main>.race_info>dl:nth-of-type(3)>dd>a {
+        background: #42bc8d;
+    }
+    main>.race_info>dl:nth-of-type(4)>dd>a {
+        right: auto;
+        left: 0;
+        background: #c86253;
+    }
+    main>.race_info>dl>dd>a>strong {
+        display: block;
+        font-size: 3.3rem;
+        font-weight: bold;
+    }
+
+    /* hero */
+    main>.hero_mv{
+        display: none;
+    }
+    main>.hero {
+        position: relative;
+        width: 100%;
+        height: 85.885vw;
+        background: url(../images/hero_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 15.208vw;
+        height: 5.729vw;
+        transform: translateX(-50%);
+        background: url(../images/hero_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.hero>ul {
+        position: absolute;
+        left: 50%;
+        top: 11.417vw;
+        width: 60.417vw;
+        transform: translateX(-50%);
+    }
+    main>.hero>ul>li {
+        float: left;
+        width: 18.229vw;
+        margin: 0 2.865vw 5.208vw 0;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+    }
+    main>.hero>ul>li:nth-of-type(n+4):nth-of-type(-n+6) {
+        margin-bottom: 0;
+    }
+    main>.hero>ul>li:nth-of-type(3n) {
+        margin-right: 0;
+    }
+    main>.hero>ul>li>span {
+        display: block;
+        width: 100%;
+        height: 17.188vw;
+        background: url(../images/hero_01.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.hero>ul>li:nth-of-type(2)>span {
+        background: url(../images/hero_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(3)>span {
+        background: url(../images/hero_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(4)>span {
+        background: url(../images/hero_04.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(5)>span {
+        background: url(../images/hero_05.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(6)>span {
+        background: url(../images/hero_06.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li>dl {
+        width: 100%;
+        height: 14.063vw;
+        padding: 1.563vw 1.042vw 0;
+        box-sizing: border-box;
+        border-top: 0.208vw solid rgba(255, 255, 255, 0.4);
+        background: #012D52;
+        color: #ffffff;
+        text-align: center;
+    }
+    main>.hero>ul>li:nth-of-type(2)>dl {
+        background: #23152d;
+    }
+    main>.hero>ul>li:nth-of-type(3)>dl {
+        background: #570116;
+    }
+    main>.hero>ul>li:nth-of-type(4)>dl {
+        background: #3a5b43;
+    }
+    main>.hero>ul>li:nth-of-type(5)>dl {
+        background: #32586a;
+    }
+    main>.hero>ul>li:nth-of-type(6)>dl {
+        background: #797ca9;
+    }
+    main>.hero>ul>li>dl>dt {
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
+    main>.hero>ul>li>dl>dd {
+        font-size: 2.2rem;
+        color: #ebebeb;
+    }
+    main>.game_info {
+        width: 100%;
+        height: 104.5vw;
+        background: url(../images/gameinfo_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.game_info>.play {
+        position: relative;
+        width: 100%;
+        height: 78.333vw;
+    }
+    main>.game_info>.play>h2 {
+        position: absolute;
+        top: 3.646vw;
+        left: 50%;
+        width: 55.104vw;
+        height: 5.78vw;
+        transform: translateX(-50%);
+        background: url(../images/game_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl {
+        position: absolute;
+        top: 9.896vw;
+        left: 50%;
+        width: 60.417vw;
+        transform: translateX(-50%);
+        box-shadow: 0.156vw 0.156vw 1.042vw rgba(0, 0, 0, 0.5);
+    }
+    main>.game_info>.play>dl>dt>a {
+        display: block;
+        width: 100%;
+        height: 33.802vw;
+        background: url(../images/game_main.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl>dd {
+        width: 100%;
+        height: 16.667vw;
+        padding: 1.523vw 3.385vw 0;
+        box-sizing: border-box;
+        background: #012d52;
+        border-top: 0.208vw solid rgba(255, 255, 255, 0.4);
+        font-size: 2.6rem;
+        line-height: 1.6;
+        text-align: center;
+        color: #ebebeb;
+    }
+    main>.game_info>.play>dl>dd>strong {
+        display: block;
+        margin-bottom: 0.781vw;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    main>.game_info>.play>ul {
+        position: absolute;
+        left: 50%;
+        top: 62.5vw;
+        width: 60.417vw;
+        transform: translateX(-50%);
+    }
+    main>.game_info>.play>ul>li {
+        float: left;
+    }
+    main>.game_info>.play>ul>li>a {
+        display: block;
+        float: left;
+        width: 18.75vw;
+        height: 10.573vw;
+        margin-right: 2.083vw;
+        background: url(../images/game_01.png) no-repeat 0 0;
+        box-shadow: 0.156vw 0.156vw 1.563vw rgba(0, 0, 0, 0.75);
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>ul>li:nth-of-type(2)>a {
+        background: url(../images/game_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.game_info>.play>ul>li:nth-of-type(3)>a {
+        margin-right: 0;
+        background: url(../images/game_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.game_info>.other_game {
+        width: 100%;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+    main>.game_info>.other_game>h2 {
+        width: 60.417vw;
+        margin: 2.344vw auto 2.083vw;
+        font-size: 2.5rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    main>.game_info>.other_game>ul {
+        width: 60.417vw;
+        margin: 0 auto;
+    }
+    main>.game_info>.other_game>ul:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    main>.game_info>.other_game>ul>li {
+        float: left;
+        margin-bottom: 4.323vw;
+    }
+    main>.game_info>.other_game>ul>li>a {
+        position: relative;
+        display: inline-block;
+        width: 5.208vw;
+        height: 4.948vw;
+        margin-right: 3.958vw;
+        background: url(../images/othergame_hearthstone.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li>a>span {
+        display: block;
+        position: absolute;
+        bottom: -1.302vw;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(2)>a {
+        background: url(../images/othergame_overwatch2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(3)>a {
+        background: url(../images/othergame_overwatch.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(4)>a {
+        background: url(../images/othergame_hos.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(4)>a>span {
+        bottom: -2.427vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(5)>a {
+        background: url(../images/othergame_warcraftIII.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(5)>a>span {
+        bottom: -2.427vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(6)>a {
+        background: url(../images/othergame_starcraft2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(7)>a {
+        background: url(../images/othergame_starcraft.png) no-repeat 50% 0;
+        background-size: contain;
+        margin-right: 0;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(8)>a {
+        background: url(../images/othergame_diabloIII.png) no-repeat 50% 0;
+        background-size: contain;
+        margin-left: 18.529vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(9)>a {
+        background: url(../images/othergame_diabloIV.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(10)>a {
+        background: url(../images/othergame_diabloM.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(10)>a>span {
+        bottom: -2.427vw;
+    }
+    main>.game_info>.other_game>.o_arrow{
+        display: none;
+    }
+
+
+    /* footer */
+    footer>.f_top {
+        padding: 2.604vw 18.75vw;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+    footer>.f_top:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_top>h2 {
+        float: left;
+        width: 7.5vw;
+        height: 3.958vw;
+        margin-right: 4.688vw;
+        background: url(../images/ftop_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul {
+        float: left;
+        margin-right: 4.688vw;
+    }
+    footer>.f_top>ul:nth-of-type(4) {
+        margin-right: 7.292vw;
+    }
+    footer>.f_top>ul:nth-of-type(5) {
+        margin-right: 0;
+    }
+    footer>.f_top>ul>li>a {
+        display: block;
+        margin-bottom: 0.781vw;
+        font-size: 1.8rem;
+        color: rgba(127, 180, 209, 0.7);
+    }
+    footer>.f_top>ul:last-of-type>li>a {
+        width: 1.51vw;
+        height: 1.51vw;
+        background: url(../images/instagram.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul:last-of-type>li:nth-of-type(2)>a {
+        width: 1.51vw;
+        height: 1.51vw;
+        background: url(../images/twitter.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul:last-of-type>li:nth-of-type(3)>a {
+        width: 1.51vw;
+        height: 1.51vw;
+        background: url(../images/facebook.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_bottom {
+        padding: 0.521vw 18.75vw;
+        box-sizing: border-box;
+    }
+    footer>.f_bottom:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_bottom>h2 {
+        float: left;
+        width: 4.792vw;
+        height: 4.813vw;
+        margin: 0 5.885vw 0 1.363vw;
+        box-sizing: border-box;
+        background: url(../images/fbottom_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_bottom>ul {
+        float: left;
+        margin-top: 0.521vw;
+        font-size: 1.8rem;
+        color: rgba(127, 180, 209, 0.7);
+    }
+    footer>.f_bottom>ul:first-of-type {
+        margin-right: 1.125vw;
+    }
+    footer>.f_bottom>ul:last-of-type>li:nth-of-type(2)>span {
+        display: inline-block;
+        margin-right: 0.521vw;
+    }
+}
+
+@media (min-width: 1601px) {
+    html {
+        font-size: 0.521vw;
+    }
+    body {
+        font-family: Noto Sans;
+        font-size: 1rem;
+        background: #18191c;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /* layout */
+    header {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4.792vw;
+        padding: 0 3.125vw;
+        box-sizing: border-box;
+        background: rgba(1, 48, 94, 0.8);
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.8);
+        line-height: 4.792vw;
+    }
+    main {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        background: #012d52;
+    }
+    /* header */
+    h1.logo {
+        float: left;
+        width: 6.771vw;
+        height: 76px;
+        margin: 0.521vw 6.25vw 0 0;
+        background: url(../images/header_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+        transition: all 0.3s linear 0s;
+    }
+    h1.logo:hover{
+        background: url(../images/header_logo_w.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    header a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    nav {
+        float: left;
+    }
+    header a.btn_ham{
+        display: none;
+    }
+    header div.drawer{
+        display: none;
+    }
+    nav>ul>li {
+        float: left;
+        margin-right: 2.604vw;
+        font-size: 2.6rem;
+    }
+    header>dl.top_menu {
+        float: right;
+    }
+    header>dl.top_menu>dd {
+        float: left;
+        font-size: 2.6rem;
+        margin-left: 1.302vw;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    header>dl.top_menu>dd:first-of-type>a {
+        margin-right: 1.302vw;
+    }
+    header>div.mtop_menu {
+        display: none;
+    }
+    /* main */
+    /* main_visual */
+    main>.main_visual {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/main_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.main_visual>div {
+        position: absolute;
+        right: 13.542vw;
+        top: 11.979vw;
+        width: 41.25vw;
+        height: 27.125vw;
+        background: url(../images/main_logo.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.main_visual>div>a {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 11.458vw;
+        height: 3.125vw;
+        transform: translateX(-50%);
+        background: #0e2033;
+        box-shadow: 0.156vw 0.156vw 0.521vw #000;
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 3.125vw;
+    }
+    /* patch */
+    main>.patch_tv{
+        display: none;
+    }
+    main>.patch {
+        position: relative;
+        height: 37.288vw;
+        background: url(../images/patch_bg.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 23.125vw;
+        height: 5.729vw;
+        transform: translateX(-50%);
+        background: url(../images/patch_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch>ul.web_patch{
+        display: none;
+    }
+    main>.patch>ul {
+        position: absolute;
+        left: 50%;
+        top: 10.417vw;
+        width: 60.417vw;
+        transform: translateX(-50%);
+    }
+    
+    main>.patch>ul>li {
+        float: left;
+        width: 30.344%;
+        margin-right: 4.31%;
+        box-shadow: 0.26vw 0.26vw 1.563vw rgba(0, 0, 0, 0.7);
+    }
+    main>.patch>ul>li:last-child {
+        margin-right: 0;
+    }
+    main>.patch>ul>li>span {
+        display: block;
+        width: 18.333vw;
+        height: 10.417vw;
+        background: url(../images/patch_01.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.patch>ul>li:nth-child(2)>span {
+        background: url(../images/patch_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch>ul>li:nth-child(3)>span {
+        background: url(../images/patch_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.patch>ul>li>dl {
+        position: relative;
+        width: 100%;
+        height: 10.938vw;
+        padding: 1.042vw 1.302vw;
+        background: #132e42;
+        border-top: 0.156vw solid #245172;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    main>.patch>ul>li>dl>dt {
+        margin-bottom: 0.26vw;
+        font-size: 2.4rem;
+    }
+    main>.patch>ul>li>dl>dd {
+        font-size: 1.8rem;
+        word-break: break-all;
+    }
+    main>.patch>ul>li>dl>dd.more {
+        position: absolute;
+        right: 1.302vw;
+        bottom: 1.042vw;
+    }
+    main>.patch>ul>li>dl>dd.more>a {
+        font-size: 1.6rem;
+        color: #1e4867;
+        font-weight: bold;
+    }
+    main>.patch>ul>li>dl>dd.more>a:hover {
+        color: #fff;
+    }
+    main>.patch>.p_arrow{
+        display: none;
+    }
+
+    /* trailer */
+    main>.trailer {
+        width: 100%;
+        padding: 6.25vw 0;
+        box-sizing: border-box;
+        background: url(../images/trailer_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.trailer>dl {
+        position: relative;
+        width: 60.417vw;
+        height: 35.417vw;
+        margin: 0 auto/* 12.5vw */
+        ;
+    }
+    main>.trailer>dl:last-of-type {
+        margin-top: 9.896vw;
+    }
+    main>.trailer>dl>dt>a {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 39.063vw;
+        height: 21.875vw;
+        background: url(../images/trailer_01.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.26vw 0.26vw 1.563vw #000;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.trailer>dl>dd {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 35.417vw;
+        height: 14.583vw;
+        padding: 2.604vw 1.823vw 1.823vw;
+        box-sizing: border-box;
+        background: #456d79;
+        box-shadow: 0.26vw 0.26vw 1.563vw #000;
+        font-size: 2.55rem;
+        line-height: 2.5vw;
+        color: #ffffff;
+    }
+    main>.trailer>dl:last-of-type>dt>a {
+        background: url(../images/trailer_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.trailer>dl:last-of-type>dd {
+        background: #4c4476;
+    }
+    main>.notice {
+        position: relative;
+        width: 100%;
+        height: 35.321vw;
+        background: url(../images/notice_bg.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.notice>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 13.802vw;
+        height: 5.781vw;
+        transform: translateX(-50%);
+        background: url(../images/notice_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.notice>div {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        width: 60.417vw;
+        height: 18.75vw;
+        transform: translateX(-50%);
+    }
+    main>.notice>div>p {
+        float: left;
+        width: 32.44vw;
+        height: 18.177vw;
+        background: url(../images/notice_main.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 5px 5px 30px #000;
+    }
+    main>.notice>div>ul {
+        float: right;
+        width: 43%;
+    }
+    main>.notice>div>ul>li {
+        position: relative;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 3.3;
+        border-bottom: 0.104vw solid #9aa987;
+    }
+    main>.notice>div>ul>li:last-of-type {
+        border: none;
+    }
+    main>.notice>div>ul>li>span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: #acacac;
+    }
+    main>.race_info {
+        position: relative;
+        width: 100%;
+        height: 156.25vw;
+        padding: 6.771vw 0;
+        background: url(../images/race_bg.png) no-repeat 0 0;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    main>.race_info>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 30.781vw;
+        height: 4.219vw;
+        transform: translateX(-50%);
+        background: url(../images/race_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>.race_mobile {
+        display: none;
+    }
+    main>.race_info>dl {
+        position: relative;
+        width: 60.417vw;
+        height: 27.865vw;
+        margin: 7.813vw auto 0;
+    }
+    main>.race_info>dl>dt>a {
+        display: block;
+        position: absolute;
+        width: 42.708vw;
+        height: 26.042vw;
+        background: url(../images/race_humans.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.race_info>dl:nth-of-type(2)>dt>a {
+        right: 0;
+        background: url(../images/race_undead.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.race_info>dl:nth-of-type(3)>dt>a {
+        background: url(../images/race_nightelves.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.race_info>dl:nth-of-type(4)>dt>a {
+        right: 0;
+        background: url(../images/race_orcs.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.race_info>dl>dd>a {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 20%;
+        width: 26.042vw;
+        height: 13.542vw;
+        padding: 1.563vw;
+        box-sizing: border-box;
+        background: #75a5d3;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+        font-size: 2.55rem;
+    }
+    main>.race_info>dl:nth-of-type(2)>dd>a {
+        right: auto;
+        left: 0;
+        background: #7e68ba;
+    }
+    main>.race_info>dl:nth-of-type(3)>dd>a {
+        background: #42bc8d;
+    }
+    main>.race_info>dl:nth-of-type(4)>dd>a {
+        right: auto;
+        left: 0;
+        background: #c86253;
+    }
+    main>.race_info>dl>dd>a>strong {
+        display: block;
+        font-size: 3.3rem;
+        font-weight: bold;
+    }
+
+    /* hero */
+    main>.hero_mv{
+        display: none;
+    }
+    main>.hero {
+        position: relative;
+        width: 100%;
+        height: 85.885vw;
+        background: url(../images/hero_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.hero>h2 {
+        position: absolute;
+        left: 50%;
+        top: 3.646vw;
+        width: 15.208vw;
+        height: 5.729vw;
+        transform: translateX(-50%);
+        background: url(../images/hero_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.hero>ul {
+        position: absolute;
+        left: 50%;
+        top: 11.417vw;
+        width: 60.417vw;
+        transform: translateX(-50%);
+    }
+    main>.hero>ul>li {
+        float: left;
+        width: 18.229vw;
+        margin: 0 2.865vw 5.208vw 0;
+        box-shadow: 0.156vw 0.156vw 1.563vw #000;
+    }
+    main>.hero>ul>li:nth-of-type(n+4):nth-of-type(-n+6) {
+        margin-bottom: 0;
+    }
+    main>.hero>ul>li:nth-of-type(3n) {
+        margin-right: 0;
+    }
+    main>.hero>ul>li>span {
+        display: block;
+        width: 100%;
+        height: 17.188vw;
+        background: url(../images/hero_01.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.hero>ul>li:nth-of-type(2)>span {
+        background: url(../images/hero_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(3)>span {
+        background: url(../images/hero_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(4)>span {
+        background: url(../images/hero_04.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(5)>span {
+        background: url(../images/hero_05.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li:nth-of-type(6)>span {
+        background: url(../images/hero_06.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.hero>ul>li>dl {
+        width: 100%;
+        height: 14.063vw;
+        padding: 1.563vw 1.042vw 0;
+        box-sizing: border-box;
+        border-top: 0.208vw solid rgba(255, 255, 255, 0.4);
+        background: #012D52;
+        color: #ffffff;
+        text-align: center;
+    }
+    main>.hero>ul>li:nth-of-type(2)>dl {
+        background: #23152d;
+    }
+    main>.hero>ul>li:nth-of-type(3)>dl {
+        background: #570116;
+    }
+    main>.hero>ul>li:nth-of-type(4)>dl {
+        background: #3a5b43;
+    }
+    main>.hero>ul>li:nth-of-type(5)>dl {
+        background: #32586a;
+    }
+    main>.hero>ul>li:nth-of-type(6)>dl {
+        background: #797ca9;
+    }
+    main>.hero>ul>li>dl>dt {
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
+    main>.hero>ul>li>dl>dd {
+        font-size: 2.2rem;
+        color: #ebebeb;
+    }
+    main>.game_info {
+        width: 100%;
+        height: 104.5vw;
+        background: url(../images/gameinfo_bg.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    main>.game_info>.play {
+        position: relative;
+        width: 100%;
+        height: 78.333vw;
+    }
+    main>.game_info>.play>h2 {
+        position: absolute;
+        top: 3.646vw;
+        left: 50%;
+        width: 55.104vw;
+        height: 5.78vw;
+        transform: translateX(-50%);
+        background: url(../images/game_title.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl {
+        position: absolute;
+        top: 9.896vw;
+        left: 50%;
+        width: 60.417vw;
+        transform: translateX(-50%);
+        box-shadow: 0.156vw 0.156vw 1.042vw rgba(0, 0, 0, 0.5);
+    }
+    main>.game_info>.play>dl>dt>a {
+        display: block;
+        width: 100%;
+        height: 33.802vw;
+        background: url(../images/game_main.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>dl>dd {
+        width: 100%;
+        height: 16.667vw;
+        padding: 1.523vw 3.385vw 0;
+        box-sizing: border-box;
+        background: #012d52;
+        border-top: 0.208vw solid rgba(255, 255, 255, 0.4);
+        font-size: 2.6rem;
+        line-height: 1.6;
+        text-align: center;
+        color: #ebebeb;
+    }
+    main>.game_info>.play>dl>dd>strong {
+        display: block;
+        margin-bottom: 0.781vw;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    main>.game_info>.play>ul {
+        position: absolute;
+        left: 50%;
+        top: 62.5vw;
+        width: 60.417vw;
+        transform: translateX(-50%);
+    }
+    main>.game_info>.play>ul>li {
+        float: left;
+    }
+    main>.game_info>.play>ul>li>a {
+        display: block;
+        float: left;
+        width: 18.75vw;
+        height: 10.573vw;
+        margin-right: 2.083vw;
+        background: url(../images/game_01.png) no-repeat 0 0;
+        background-size: 100%;
+        box-shadow: 0.156vw 0.156vw 1.563vw rgba(0, 0, 0, 0.75);
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    main>.game_info>.play>ul>li:nth-of-type(2)>a {
+        background: url(../images/game_02.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.game_info>.play>ul>li:nth-of-type(3)>a {
+        margin-right: 0;
+        background: url(../images/game_03.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    main>.game_info>.other_game {
+        width: 100%;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+    main>.game_info>.other_game>h2 {
+        width: 60.417vw;
+        margin: 2.344vw auto 2.083vw;
+        font-size: 2.5rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    main>.game_info>.other_game>ul {
+        width: 60.417vw;
+        margin: 0 auto;
+    }
+    main>.game_info>.other_game>ul:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    main>.game_info>.other_game>ul>li {
+        float: left;
+        margin-bottom: 4.323vw;
+    }
+    main>.game_info>.other_game>ul>li>a {
+        position: relative;
+        display: inline-block;
+        width: 5.208vw;
+        height: 4.948vw;
+        margin-right: 3.958vw;
+        background: url(../images/othergame_hearthstone.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li>a>span {
+        display: block;
+        position: absolute;
+        bottom: -1.302vw;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(2)>a {
+        background: url(../images/othergame_overwatch2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(3)>a {
+        background: url(../images/othergame_overwatch.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(4)>a {
+        background: url(../images/othergame_hos.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(4)>a>span {
+        bottom: -2.427vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(5)>a {
+        background: url(../images/othergame_warcraftIII.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(5)>a>span {
+        bottom: -2.427vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(6)>a {
+        background: url(../images/othergame_starcraft2.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(7)>a {
+        background: url(../images/othergame_starcraft.png) no-repeat 50% 0;
+        background-size: contain;
+        margin-right: 0;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(8)>a {
+        background: url(../images/othergame_diabloIII.png) no-repeat 50% 0;
+        background-size: contain;
+        margin-left: 18.529vw;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(9)>a {
+        background: url(../images/othergame_diabloIV.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(10)>a {
+        background: url(../images/othergame_diabloM.png) no-repeat 50% 0;
+        background-size: contain;
+    }
+    main>.game_info>.other_game>ul>li:nth-of-type(10)>a>span {
+        bottom: -2.427vw;
+    }
+    main>.game_info>.other_game>.o_arrow{
+        display: none;
+    }
+
+    footer>.f_top {
+        padding: 2.604vw 18.75vw;
+        border-top: 0.104vw solid rgba(255, 255, 255, 0.2);
+        border-bottom: 0.104vw solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+    footer>.f_top:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_top>h2 {
+        float: left;
+        width: 7.5vw;
+        height: 3.958vw;
+        margin-right: 4.688vw;
+        background: url(../images/ftop_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul {
+        float: left;
+        margin-right: 4.688vw;
+    }
+    footer>.f_top>ul:nth-of-type(4) {
+        margin-right: 7.292vw;
+    }
+    footer>.f_top>ul:nth-of-type(5) {
+        margin-right: 0;
+    }
+    footer>.f_top>ul>li>a {
+        display: block;
+        margin-bottom: 0.781vw;
+        font-size: 1.8rem;
+        color: rgba(127, 180, 209, 0.7);
+    }
+    footer>.f_top>ul:last-of-type>li>a {
+        width: 1.51vw;
+        height: 1.51vw;
+        background: url(../images/instagram.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul:last-of-type>li:nth-of-type(2)>a {
+        width: 1.51vw;
+        height: 1.51vw;
+        background: url(../images/twitter.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_top>ul:last-of-type>li:nth-of-type(3)>a {
+        width: 1.51vw;
+        height: 1.51vw;
+        background: url(../images/facebook.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_bottom {
+        padding: 0.521vw 18.75vw;
+        box-sizing: border-box;
+    }
+    footer>.f_bottom:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer>.f_bottom>h2 {
+        float: left;
+        width: 4.792vw;
+        height: 2.813vw;
+        margin: 0 5.885vw 0 1.363vw;
+        box-sizing: border-box;
+        background: url(../images/fbottom_logo.png) no-repeat 0 0;
+        background-size: 100%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    footer>.f_bottom>ul {
+        float: left;
+        margin-top: 0.521vw;
+        font-size: 1.2rem;
+        color: rgba(127, 180, 209, 0.7);
+    }
+    footer>.f_bottom>ul:first-of-type {
+        margin-right: 3.125vw;
+    }
+    footer>.f_bottom>ul:last-of-type>li:nth-of-type(2)>span {
+        display: inline-block;
+        margin-right: 0.521vw;
+    }
+}
