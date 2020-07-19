@@ -4,7 +4,7 @@
 
 /* common */
 html{font-size: 62.5%;}
-body{font-family: 'NanumBarunGothic'; font-size: 1rem;}
+body{font-family: 'NanumBarunGothic'; font-size: 1rem; transition: all 0.5s ease 0s;}
 h1, h2, h3, h4{font-family: 'DM Serif Display';}
 a{text-decoration: none; color: #333333;}
 
