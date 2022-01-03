@@ -12,23 +12,13 @@ $(function(){
         var last2 = $(".about_p>dl>dd").eq(2).offset().top;
         var last3 = $(".about_p>dl>dt").eq(1).offset().top;
 
-        console.log(work_top);
-        console.log(resume_top);
-        console.log(about_top);
-        console.log(contact_top);
-
 
         $(window).scroll(function(){
 
 
             var scroll_top = $(document).scrollTop();
-            console.log(scroll_top);
             var height = $(document).height();
-            console.log(height);
             var height_win = $(window).height();
-            console.log(height_win);
-
-            console.log(scroll_top);
 
             if(scroll_top < resume_top){
                 $(".snb>li").removeClass("on")
@@ -83,7 +73,6 @@ $(function(){
                 $('body,html').animate({scrollTop: h},1500,"swing");    
             }
 
-            console.log(h);
         })
 
         $(".snb>li").click(function(){
@@ -103,7 +92,6 @@ $(function(){
                 $('body,html').animate({scrollTop: h},1500,"swing");    
             }
 
-            console.log(h);
         })
 
 
@@ -162,8 +150,6 @@ $(function(){
                 var scroll_top = $(document).scrollTop();
                 var height = $(document).height();
                 var height_win = $(window).height();
-    
-                console.log(scroll_top);
     
                 if(scroll_top < resume_top){
                     $(".snb>li").removeClass("on")
