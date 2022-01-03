@@ -139,7 +139,6 @@ window.onload = function(){
     function currentCLassName(){
  
         let currentClass = btnDarkMode.classList;
-        console.log(currentClass);
 
         if(currentClass.contains("on")){
             
